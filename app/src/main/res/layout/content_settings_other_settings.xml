@@ -56,6 +56,7 @@
         android:id="@+id/autofillLoginsSetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:primaryText="@string/settingsPasswordsAndAutofillLoginsSetting"
         app:leadingIcon="@drawable/ic_key_color_24"/>
 

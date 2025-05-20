@@ -234,7 +234,8 @@ class SettingsActivity : DuckDuckGoActivity() {
     }
 
     private fun configureInternalFeatures() {
-        viewsInternal.settingsSectionInternal.visibility = if (internalFeaturePlugins.getPlugins().isEmpty()) View.GONE else View.VISIBLE
+        //viewsInternal.settingsSectionInternal.visibility = if (internalFeaturePlugins.getPlugins().isEmpty()) View.GONE else View.VISIBLE
+        viewsInternal.settingsSectionInternal.visibility = View.GONE
         internalFeaturePlugins.getPlugins().forEach { feature ->
             Timber.v("Adding internal feature ${feature.internalFeatureTitle()}")
             val view = TwoLineListItem(this).apply {
@@ -304,7 +305,7 @@ class SettingsActivity : DuckDuckGoActivity() {
 
     private fun updateAutofill(autofillEnabled: Boolean) = with(viewsMain.autofillLoginsSetting) {
         visibility = if (autofillEnabled) {
-            View.VISIBLE
+            View.GONE
         } else {
             View.GONE
         }
@@ -316,7 +317,7 @@ class SettingsActivity : DuckDuckGoActivity() {
 
     private fun updateSyncSetting(visible: Boolean) {
         with(viewsMain.syncSetting) {
-            isVisible = visible
+            isVisible = false
         }
     }
 

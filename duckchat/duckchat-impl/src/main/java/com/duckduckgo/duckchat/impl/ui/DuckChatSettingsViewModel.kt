@@ -53,9 +53,9 @@ class DuckChatSettingsViewModel @Inject constructor(
         duckChat.observeShowInAddressBarUserSetting(),
     ) { isDuckChatUserEnabled, showInBrowserMenu, showInAddressBar ->
         ViewState(
-            isDuckChatUserEnabled = isDuckChatUserEnabled,
-            showInBrowserMenu = showInBrowserMenu,
-            showInAddressBar = showInAddressBar,
+            isDuckChatUserEnabled = false,
+            showInBrowserMenu = false,
+            showInAddressBar = false,
             shouldShowBrowserMenuToggle = isDuckChatUserEnabled,
             shouldShowAddressBarToggle = isDuckChatUserEnabled && duckChat.isAddressBarEntryPointEnabled(),
         )
@@ -67,7 +67,7 @@ class DuckChatSettingsViewModel @Inject constructor(
 
     fun onDuckChatUserEnabledToggled(checked: Boolean) {
         viewModelScope.launch {
-            duckChat.setEnableDuckChatUserSetting(checked)
+            duckChat.setEnableDuckChatUserSetting(false)
         }
     }
 

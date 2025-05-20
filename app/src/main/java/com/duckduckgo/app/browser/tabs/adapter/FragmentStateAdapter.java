@@ -29,6 +29,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
+
 import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,13 +47,18 @@ import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.adapter.StatefulAdapter;
 import androidx.viewpager2.widget.ViewPager2;
+
 import com.duckduckgo.app.browser.tabs.TabManager;
+import com.duckduckgo.common.ui.tabs.SwipingTabsFeatureProvider;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+
 import timber.log.Timber;
 
 /**
@@ -85,7 +91,6 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         implements StatefulAdapter {
     // State saving config
     private static final String KEY_PREFIX_FRAGMENT = "f#";
-    private static final String KEY_PREFIX_STATE = "s#";
 
     // Fragment GC config
     private static final long GRACE_WINDOW_TIME_MS = 10_000; // 10 seconds
@@ -96,11 +101,13 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
     @SuppressWarnings("WeakerAccess") // to avoid creation of a synthetic accessor
     final FragmentManager mFragmentManager;
 
+    @SuppressWarnings("WeakerAccess") // to avoid creation of a synthetic accessor
+    final SwipingTabsFeatureProvider mSwipingTabsFeature;
+
     // Fragment bookkeeping
     @SuppressWarnings("WeakerAccess") // to avoid creation of a synthetic accessor
     final LongSparseArray<Fragment> mFragments = new LongSparseArray<>();
 
-    private final LongSparseArray<Fragment.SavedState> mSavedStates = new LongSparseArray<>();
     private final LongSparseArray<Integer> mItemIdToViewHolder = new LongSparseArray<>();
 
     private FragmentMaxLifecycleEnforcer mFragmentMaxLifecycleEnforcer;
@@ -114,38 +121,37 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
 
     private boolean mHasStaleFragments = false;
 
+    // Used for synchronizing access to the container when adding fragment views
+    private final ConcurrentHashMap<FrameLayout, Object> containerLocks = new ConcurrentHashMap<>();
+
     // Add a LinkedList to store itemIds in FIFO order
     private final ArrayDeque<Long> itemIdQueue = new ArrayDeque<>();
 
     /**
      * @param fragmentActivity if the {@link ViewPager2} lives directly in a {@link
      *     FragmentActivity} subclass.
-     * @see FragmentStateAdapter#FragmentStateAdapter(Fragment)
-     * @see FragmentStateAdapter#FragmentStateAdapter(FragmentManager, Lifecycle)
+     * @param swipingTabsFeature Feature flag to enable swiping tabs fixes
      */
-    public FragmentStateAdapter(@NonNull FragmentActivity fragmentActivity) {
-        this(fragmentActivity.getSupportFragmentManager(), fragmentActivity.getLifecycle());
-    }
-
-    /**
-     * @param fragment if the {@link ViewPager2} lives directly in a {@link Fragment} subclass.
-     * @see FragmentStateAdapter#FragmentStateAdapter(FragmentActivity)
-     * @see FragmentStateAdapter#FragmentStateAdapter(FragmentManager, Lifecycle)
-     */
-    public FragmentStateAdapter(@NonNull Fragment fragment) {
-        this(fragment.getChildFragmentManager(), fragment.getLifecycle());
+    public FragmentStateAdapter(
+            @NonNull FragmentActivity fragmentActivity,
+            SwipingTabsFeatureProvider swipingTabsFeature) {
+        this(fragmentActivity.getSupportFragmentManager(),
+                fragmentActivity.getLifecycle(),
+                swipingTabsFeature);
     }
 
     /**
      * @param fragmentManager of {@link ViewPager2}'s host
      * @param lifecycle of {@link ViewPager2}'s host
-     * @see FragmentStateAdapter#FragmentStateAdapter(FragmentActivity)
-     * @see FragmentStateAdapter#FragmentStateAdapter(Fragment)
+     * @param swipingTabsFeature Feature flag to enable swiping tabs fixes
      */
     public FragmentStateAdapter(
-            @NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+            @NonNull FragmentManager fragmentManager,
+            @NonNull Lifecycle lifecycle,
+            SwipingTabsFeatureProvider swipingTabsFeature) {
         mFragmentManager = fragmentManager;
         mLifecycle = lifecycle;
+        mSwipingTabsFeature = swipingTabsFeature;
         super.setHasStableIds(true);
     }
 
@@ -182,7 +188,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
     @NonNull
     @Override
     public final FragmentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return FragmentViewHolder.create(parent);
+        return FrameLayoutViewHolder.create(parent);
     }
 
     @Override
@@ -279,7 +285,6 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         if (!mFragments.containsKey(itemId)) {
             // TODO(133419201): check if a Fragment provided here is a new Fragment
             Fragment newFragment = createFragment(position);
-            newFragment.setInitialSavedState(mSavedStates.get(itemId));
             mFragments.put(itemId, newFragment);
         }
     }
@@ -327,7 +332,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         // { f:notAdded, v:created, v:attached } -> illegal state
         // { f:notAdded, v:created, v:notAttached } -> illegal state
         if (!fragment.isAdded() && view != null) {
-            throw new IllegalStateException("Design assumption violated.");
+            throwDesignAssumptionViolatedException();
         }
 
         // { f:added, v:notCreated, v:notAttached} -> schedule callback for when created
@@ -415,23 +420,30 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
 
     @SuppressWarnings("WeakerAccess") // to avoid creation of a synthetic accessor
     void addViewToContainer(@NonNull View v, @NonNull FrameLayout container) {
-        if (container.getChildCount() > 1) {
-            throw new IllegalStateException("Design assumption violated.");
-        }
+        Object lock = containerLocks.computeIfAbsent(container, k -> new Object());
+        synchronized(lock) {
+            if (container.getChildCount() > 1) {
+                throwDesignAssumptionViolatedException();
+            }
 
-        if (v.getParent() == container) {
-            return;
-        }
+            if (v.getParent() == container) {
+                return;
+            }
 
-        if (container.getChildCount() > 0) {
-            container.removeAllViews();
-        }
+            if (container.getChildCount() > 0) {
+                container.removeAllViews();
+            }
 
-        if (v.getParent() != null) {
-            ((ViewGroup) v.getParent()).removeView(v);
-        }
+            if (v.getParent() != null) {
+                ((ViewGroup) v.getParent()).removeView(v);
+            }
 
-        container.addView(v);
+            container.addView(v);
+        }
+    }
+
+    private void throwDesignAssumptionViolatedException() {
+        throw new IllegalStateException("Design assumption violated");
     }
 
     @Override
@@ -484,13 +496,8 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
             }
         }
 
-        if (!containsItem(itemId)) {
-            mSavedStates.remove(itemId);
-        }
-
         if (!fragment.isAdded()) {
             mFragments.remove(itemId);
-            Timber.d("$$$ Fragment (not added) removed: %s", itemId);
             return;
         }
 
@@ -504,15 +511,12 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
                     mFragmentEventDispatcher.dispatchPreSavedInstanceState(fragment);
             Fragment.SavedState savedState = mFragmentManager.saveFragmentInstanceState(fragment);
             mFragmentEventDispatcher.dispatchPostEvents(onPost);
-
-            mSavedStates.put(itemId, savedState);
         }
         List<FragmentTransactionCallback.OnPostEventListener> onPost =
                 mFragmentEventDispatcher.dispatchPreRemoved(fragment);
         try {
             mFragmentManager.beginTransaction().remove(fragment).commitNow();
             mFragments.remove(itemId);
-            Timber.d("$$$ Fragment removed (after transaction): %s", itemId);
         } finally {
             mFragmentEventDispatcher.dispatchPostEvents(onPost);
         }
@@ -523,6 +527,13 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
 
         if (fragment == null) {
             return;
+        }
+
+        if (fragment.getView() != null) {
+            ViewParent viewParent = fragment.getView().getParent();
+            if (viewParent != null) {
+                ((FrameLayout) viewParent).removeAllViews();
+            }
         }
 
         if (fragment.isAdded() && !fragment.isHidden()) {
@@ -595,7 +606,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
     @Override
     public final @NonNull Parcelable saveState() {
         /* TODO(b/122670461): use custom {@link Parcelable} instead of Bundle to save space */
-        Bundle savedState = new Bundle(mFragments.size() + mSavedStates.size());
+        Bundle savedState = new Bundle(mFragments.size());
 
         /* save references to active fragments */
         for (int ix = 0; ix < mFragments.size(); ix++) {
@@ -606,23 +617,13 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
                 mFragmentManager.putFragment(savedState, key, fragment);
             }
         }
-
-        /* Write {@link mSavedStates) into a {@link Parcelable} */
-        for (int ix = 0; ix < mSavedStates.size(); ix++) {
-            long itemId = mSavedStates.keyAt(ix);
-            if (containsItem(itemId)) {
-                String key = createKey(KEY_PREFIX_STATE, itemId);
-                savedState.putParcelable(key, mSavedStates.get(itemId));
-            }
-        }
-
         return savedState;
     }
 
     @Override
     @SuppressWarnings("deprecation")
     public final void restoreState(@NonNull Parcelable savedState) {
-        if (!mSavedStates.isEmpty() || !mFragments.isEmpty()) {
+        if (!mFragments.isEmpty()) {
             throw new IllegalStateException(
                     "Expected the adapter to be 'fresh' while restoring state.");
         }
@@ -636,21 +637,14 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         for (String key : bundle.keySet()) {
             if (isValidKey(key, KEY_PREFIX_FRAGMENT)) {
                 long itemId = parseIdFromKey(key, KEY_PREFIX_FRAGMENT);
-                Fragment fragment = mFragmentManager.getFragment(bundle, key);
-                mFragments.put(itemId, fragment);
-                continue;
-            }
-
-            if (isValidKey(key, KEY_PREFIX_STATE)) {
-                long itemId = parseIdFromKey(key, KEY_PREFIX_STATE);
-                Fragment.SavedState state = bundle.getParcelable(key);
-                if (containsItem(itemId)) {
-                    mSavedStates.put(itemId, state);
+                try {
+                    Fragment fragment = mFragmentManager.getFragment(bundle, key);
+                    mFragments.put(itemId, fragment);
+                } catch (IllegalStateException e) {
+                    Timber.w("FragmentManager is in a bad state, unable to restore fragment %d",
+                            itemId);
                 }
-                continue;
             }
-
-            throw new IllegalArgumentException("Unexpected key in savedState: " + key);
         }
 
         if (!mFragments.isEmpty()) {

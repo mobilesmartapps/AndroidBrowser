@@ -23,11 +23,11 @@ import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
 import android.view.animation.DecelerateInterpolator
-import android.widget.RelativeLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.ViewCompat.NestedScrollType
 import com.duckduckgo.app.browser.R
+import com.duckduckgo.app.browser.webview.BottomOmnibarBrowserContainerLayoutBehavior
 import com.google.android.material.snackbar.Snackbar
 import kotlin.math.max
 import kotlin.math.min
@@ -46,7 +46,16 @@ class BottomAppBarBehavior<V : View>(
     private var lastStartedType: Int = 0
     private var offsetAnimator: ValueAnimator? = null
 
-    private var browserLayout: RelativeLayout? = null
+    /**
+     * We don't want any offset when in full screen.
+     *
+     * The browser, new tab page, etc padding management, to avoid omnibar overlapping with the content, is handled in [BottomOmnibarBrowserContainerLayoutBehavior].
+     */
+    private val viewIDsExemptedFromForceOffset = setOf(
+        R.id.webViewFullScreenContainer,
+        R.id.browserLayout,
+        R.id.includeNewBrowserTab,
+    )
 
     @SuppressLint("RestrictedApi")
     override fun layoutDependsOn(parent: CoordinatorLayout, child: V, dependency: View): Boolean {
@@ -54,9 +63,7 @@ class BottomAppBarBehavior<V : View>(
             updateSnackbar(child, dependency)
         }
 
-        if (dependency.id == R.id.browserLayout) {
-            browserLayout = dependency as RelativeLayout
-        } else if (dependency.id != R.id.webViewFullScreenContainer) {
+        if (!viewIDsExemptedFromForceOffset.contains(dependency.id)) {
             offsetBottomByToolbar(dependency)
         }
 
@@ -95,7 +102,6 @@ class BottomAppBarBehavior<V : View>(
             // only hide the app bar in the browser layout
             if (target.id == R.id.browserWebView) {
                 toolbar.translationY = max(0f, min(toolbar.height.toFloat(), toolbar.translationY + dy))
-                offsetBottomByToolbar(browserLayout)
             }
         }
     }
@@ -132,7 +138,6 @@ class BottomAppBarBehavior<V : View>(
         } else {
             val targetTranslation = if (expanded) 0f else omnibar.height().toFloat()
             omnibar.setTranslation(targetTranslation)
-            offsetBottomByToolbar(browserLayout)
         }
     }
 
@@ -149,7 +154,6 @@ class BottomAppBarBehavior<V : View>(
         offsetAnimator?.addUpdateListener { animation ->
             val animatedValue = animation.animatedValue as Float
             omnibar.setTranslation(animatedValue)
-            offsetBottomByToolbar(browserLayout)
         }
 
         val targetTranslation = if (isVisible) 0f else omnibar.height().toFloat()

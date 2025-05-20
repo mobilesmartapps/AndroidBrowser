@@ -30,7 +30,7 @@ import androidx.recyclerview.widget.ItemTouchHelper.ACTION_STATE_DRAG
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.duckduckgo.app.tabs.model.TabSwitcherData.LayoutType
-import com.duckduckgo.app.tabs.ui.TabSwitcherAdapter.TabSwitcherViewHolder
+import com.duckduckgo.app.tabs.ui.TabSwitcherViewModel.SelectionViewState.Mode
 import kotlin.math.abs
 
 class TabTouchHelper(
@@ -43,6 +43,8 @@ class TabTouchHelper(
     /* dragDirs = */ ItemTouchHelper.START or ItemTouchHelper.END or ItemTouchHelper.UP or ItemTouchHelper.DOWN,
     /* swipeDirs = */ ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT,
 ) {
+    var mode: Mode = Mode.Normal
+
     override fun onSwiped(viewHolder: ViewHolder, direction: Int) {
         onTabSwiped(viewHolder.bindingAdapterPosition)
     }
@@ -123,7 +125,7 @@ class TabTouchHelper(
         recyclerView: RecyclerView,
         viewHolder: ViewHolder,
     ): Int {
-        if (viewHolder.isTabAnimatedTabViewHolder()) {
+        if (viewHolder.isTabAnimatedTabViewHolder() || mode is Mode.Selection) {
             return 0
         }
         return super.getMovementFlags(recyclerView, viewHolder)
@@ -148,7 +150,8 @@ class TabTouchHelper(
         return ObjectAnimator.ofFloat(view, View.SCALE_Y, view.scaleY, scaleTo)
     }
 
-    private fun ViewHolder?.isTabAnimatedTabViewHolder(): Boolean = this is TabSwitcherViewHolder.TrackerAnimationInfoPanelViewHolder
+    private fun ViewHolder?.isTabAnimatedTabViewHolder(): Boolean =
+        this is TabSwitcherAdapter.TabSwitcherViewHolder.TrackerAnimationInfoPanelViewHolder
 
     companion object {
         private const val ANIM_DURATION = 100L

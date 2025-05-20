@@ -31,6 +31,7 @@ import com.duckduckgo.app.browser.omnibar.Omnibar.ViewMode.MaliciousSiteWarning
 import com.duckduckgo.app.browser.omnibar.Omnibar.ViewMode.NewTab
 import com.duckduckgo.app.browser.omnibar.Omnibar.ViewMode.SSLWarning
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration
+import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration.ChangeCustomTabTitle
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration.LaunchCookiesAnimation
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration.LaunchTrackersAnimation
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.StateChange
@@ -40,6 +41,7 @@ import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconStat
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconState.GLOBE
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconState.PRIVACY_SHIELD
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconState.SEARCH
+import com.duckduckgo.app.browser.senseofprotection.SenseOfProtectionExperiment
 import com.duckduckgo.app.browser.viewstate.HighlightableButton
 import com.duckduckgo.app.browser.viewstate.LoadingViewState
 import com.duckduckgo.app.browser.viewstate.OmnibarViewState
@@ -54,6 +56,8 @@ import com.duckduckgo.browser.api.UserBrowserProperties
 import com.duckduckgo.common.ui.experiments.visual.store.VisualDesignExperimentDataStore
 import com.duckduckgo.common.utils.DispatcherProvider
 import com.duckduckgo.di.scopes.FragmentScope
+import com.duckduckgo.duckchat.api.DuckChat
+import com.duckduckgo.duckchat.impl.pixel.DuckChatPixelName
 import com.duckduckgo.duckplayer.api.DuckPlayer
 import com.duckduckgo.privacy.dashboard.impl.pixels.PrivacyDashboardPixels
 import com.duckduckgo.voice.api.VoiceSearchAvailability
@@ -83,24 +87,33 @@ class OmnibarLayoutViewModel @Inject constructor(
     private val userBrowserProperties: UserBrowserProperties,
     private val dispatcherProvider: DispatcherProvider,
     private val defaultBrowserPromptsExperiment: DefaultBrowserPromptsExperiment,
-    visualDesignExperimentDataStore: VisualDesignExperimentDataStore,
+    private val visualDesignExperimentDataStore: VisualDesignExperimentDataStore,
+    private val senseOfProtectionExperiment: SenseOfProtectionExperiment,
+    private val duckChat: DuckChat,
 ) : ViewModel() {
 
-    private val _viewState = MutableStateFlow(ViewState())
+    private val _viewState = MutableStateFlow(
+        ViewState(
+            showChatMenu = duckChat.showInAddressBar.value,
+        ),
+    )
     val viewState = combine(
         _viewState,
         tabRepository.flowTabs,
         defaultBrowserPromptsExperiment.highlightPopupMenu,
-        visualDesignExperimentDataStore.navigationBarState,
-    ) { state, tabs, highlightOverflowMenu, navigationBarState ->
+        visualDesignExperimentDataStore.isExperimentEnabled,
+        duckChat.showInAddressBar,
+    ) { state, tabs, highlightOverflowMenu, isVisualDesignExperimentEnabled, showInAddressBar ->
         state.copy(
             shouldUpdateTabsCount = tabs.size != state.tabCount && tabs.isNotEmpty(),
             tabCount = tabs.size,
             hasUnreadTabs = tabs.firstOrNull { !it.viewed } != null,
             showBrowserMenuHighlight = highlightOverflowMenu,
-            isNavigationBarEnabled = navigationBarState.isEnabled,
+            isVisualDesignExperimentEnabled = isVisualDesignExperimentEnabled,
+            showChatMenu = showInAddressBar && state.viewMode !is CustomTab &&
+                (state.viewMode is NewTab || state.hasFocus && state.omnibarText.isNotBlank() || isVisualDesignExperimentEnabled),
         )
-    }.flowOn(dispatcherProvider.io()).stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000L), ViewState())
+    }.flowOn(dispatcherProvider.io()).stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000L), _viewState.value)
 
     private val command = Channel<Command>(1, DROP_OLDEST)
     fun commands(): Flow<Command> = command.receiveAsFlow()
@@ -124,13 +137,17 @@ class OmnibarLayoutViewModel @Inject constructor(
         val showTabsMenu: Boolean = true,
         val showFireIcon: Boolean = true,
         val showBrowserMenu: Boolean = true,
+        val showChatMenu: Boolean = true,
         val showBrowserMenuHighlight: Boolean = false,
         val scrollingEnabled: Boolean = true,
         val isLoading: Boolean = false,
         val loadingProgress: Int = 0,
         val highlightPrivacyShield: HighlightableButton = HighlightableButton.Visible(enabled = false),
         val highlightFireButton: HighlightableButton = HighlightableButton.Visible(),
-        val isNavigationBarEnabled: Boolean = false,
+        val isVisualDesignExperimentEnabled: Boolean = false,
+        val trackersBlocked: Int = 0,
+        val previouslyTrackersBlocked: Int = 0,
+        val showShadows: Boolean = false,
     ) {
         fun shouldUpdateOmnibarText(): Boolean {
             return this.viewMode is Browser || this.viewMode is MaliciousSiteWarning
@@ -140,7 +157,10 @@ class OmnibarLayoutViewModel @Inject constructor(
     sealed class Command {
         data object CancelAnimations : Command()
         data class StartTrackersAnimation(val entities: List<Entity>?) : Command()
+        data class StartVisualDesignTrackersAnimation(val entities: List<Entity>?) : Command()
         data class StartCookiesAnimation(val isCosmetic: Boolean) : Command()
+        data object StartExperimentVariant1Animation : Command()
+        data class StartExperimentVariant2OrVariant3Animation(val entities: List<Entity>?) : Command()
         data object MoveCaretToFront : Command()
     }
 
@@ -293,46 +313,53 @@ class OmnibarLayoutViewModel @Inject constructor(
     }
 
     fun onViewModeChanged(viewMode: ViewMode) {
+        val currentViewMode = _viewState.value.viewMode
         Timber.d("Omnibar: onViewModeChanged $viewMode")
-        when (viewMode) {
-            is CustomTab -> {
-                _viewState.update {
-                    it.copy(
-                        viewMode = viewMode,
-                        showClearButton = false,
-                        showVoiceSearch = false,
-                        showBrowserMenu = true,
-                        showTabsMenu = false,
-                        showFireIcon = false,
-                    )
-                }
-            }
-
-            else -> {
-                val scrollingEnabled = viewMode != NewTab
-                val hasFocus = _viewState.value.hasFocus
-                val leadingIcon = if (hasFocus) {
-                    LeadingIconState.SEARCH
-                } else {
-                    when (viewMode) {
-                        Error, SSLWarning, MaliciousSiteWarning -> GLOBE
-                        NewTab -> SEARCH
-                        else -> SEARCH
+        if (currentViewMode is CustomTab) {
+            Timber.d("Omnibar: custom tab mode enabled, sending updates there")
+        } else {
+            when (viewMode) {
+                is CustomTab -> {
+                    _viewState.update {
+                        it.copy(
+                            viewMode = viewMode,
+                            showClearButton = false,
+                            showVoiceSearch = false,
+                            showBrowserMenu = true,
+                            showTabsMenu = false,
+                            showFireIcon = false,
+                            showShadows = true,
+                        )
                     }
                 }
 
-                _viewState.update {
-                    it.copy(
-                        viewMode = viewMode,
-                        leadingIconState = leadingIcon,
-                        scrollingEnabled = scrollingEnabled,
-                        showVoiceSearch = shouldShowVoiceSearch(
-                            hasFocus = _viewState.value.hasFocus,
-                            query = _viewState.value.omnibarText,
-                            hasQueryChanged = false,
-                            urlLoaded = _viewState.value.url,
-                        ),
-                    )
+                else -> {
+                    val scrollingEnabled = viewMode != NewTab
+                    val hasFocus = _viewState.value.hasFocus
+                    val leadingIcon = if (hasFocus) {
+                        LeadingIconState.SEARCH
+                    } else {
+                        when (viewMode) {
+                            Error, SSLWarning, MaliciousSiteWarning -> GLOBE
+                            NewTab -> SEARCH
+                            else -> SEARCH
+                        }
+                    }
+
+                    _viewState.update {
+                        it.copy(
+                            viewMode = viewMode,
+                            leadingIconState = leadingIcon,
+                            scrollingEnabled = scrollingEnabled,
+                            showVoiceSearch = shouldShowVoiceSearch(
+                                hasFocus = _viewState.value.hasFocus,
+                                query = _viewState.value.omnibarText,
+                                hasQueryChanged = false,
+                                urlLoaded = _viewState.value.url,
+                            ),
+                            showShadows = false,
+                        )
+                    }
                 }
             }
         }
@@ -343,15 +370,6 @@ class OmnibarLayoutViewModel @Inject constructor(
         _viewState.update {
             it.copy(
                 privacyShield = privacyShield,
-            )
-        }
-    }
-
-    fun onOutlineEnabled(enabled: Boolean) {
-        Timber.d("Omnibar: onOutlineEnabled")
-        _viewState.update {
-            it.copy(
-                hasFocus = enabled,
             )
         }
     }
@@ -391,11 +409,12 @@ class OmnibarLayoutViewModel @Inject constructor(
                 )
             }
         }
-
-        pixel.fire(
-            AppPixelName.MENU_ACTION_FIRE_PRESSED.pixelName,
-            mapOf(FIRE_BUTTON_STATE to pulseAnimationPlaying.toString()),
-        )
+        if (!_viewState.value.isVisualDesignExperimentEnabled) {
+            pixel.fire(
+                AppPixelName.MENU_ACTION_FIRE_PRESSED.pixelName,
+                mapOf(FIRE_BUTTON_STATE to pulseAnimationPlaying.toString()),
+            )
+        }
     }
 
     fun onPrivacyShieldButtonPressed() {
@@ -566,6 +585,15 @@ class OmnibarLayoutViewModel @Inject constructor(
         }
     }
 
+    fun onBackButtonPressed() {
+        Timber.d("Omnibar: onBackButtonPressed")
+        firePixelBasedOnCurrentUrl(
+            AppPixelName.ADDRESS_BAR_NEW_TAB_PAGE_CLOSED,
+            AppPixelName.ADDRESS_BAR_SERP_CLOSED,
+            AppPixelName.ADDRESS_BAR_WEBSITE_CLOSED,
+        )
+    }
+
     fun onEnterKeyPressed() {
         Timber.d("Omnibar: onEnterKeyPressed")
         firePixelBasedOnCurrentUrl(
@@ -584,9 +612,9 @@ class OmnibarLayoutViewModel @Inject constructor(
             }
 
             is LaunchTrackersAnimation -> {
-                Timber.d("Omnibar: LaunchTrackersAnimation")
                 if (!decoration.entities.isNullOrEmpty()) {
                     val hasFocus = _viewState.value.hasFocus
+                    val visualDesignExperiment = viewState.value.isVisualDesignExperimentEnabled
                     if (!hasFocus) {
                         _viewState.update {
                             it.copy(
@@ -594,7 +622,27 @@ class OmnibarLayoutViewModel @Inject constructor(
                             )
                         }
                         viewModelScope.launch {
-                            command.send(Command.StartTrackersAnimation(decoration.entities))
+                            when {
+                                visualDesignExperiment -> {
+                                    command.send(
+                                        Command.StartVisualDesignTrackersAnimation(decoration.entities),
+                                    )
+                                }
+
+                                senseOfProtectionExperiment.isUserEnrolledInModifiedControlCohortAndExperimentEnabled() -> {
+                                    command.send(Command.StartExperimentVariant1Animation)
+                                }
+
+                                senseOfProtectionExperiment.isUserEnrolledInAVariantAndExperimentEnabled() -> {
+                                    command.send(
+                                        Command.StartExperimentVariant2OrVariant3Animation(decoration.entities),
+                                    )
+                                }
+
+                                else -> {
+                                    command.send(Command.StartTrackersAnimation(decoration.entities))
+                                }
+                            }
                         }
                     }
                 }
@@ -653,5 +701,40 @@ class OmnibarLayoutViewModel @Inject constructor(
                 ),
             )
         }
+    }
+
+    fun onCustomTabTitleUpdate(decoration: ChangeCustomTabTitle) {
+        val customTabMode = viewState.value.viewMode
+        if (customTabMode is CustomTab) {
+            _viewState.update {
+                it.copy(
+                    viewMode = customTabMode.copy(
+                        title = decoration.title,
+                        domain = decoration.domain,
+                        showDuckPlayerIcon = decoration.showDuckPlayerIcon,
+                    ),
+                )
+            }
+        }
+    }
+
+    fun onDuckChatButtonPressed() {
+        val experimentEnabled = viewState.value.isVisualDesignExperimentEnabled
+        if (experimentEnabled) {
+            pixel.fire(DuckChatPixelName.DUCK_CHAT_EXPERIMENT_SEARCHBAR_BUTTON_OPEN)
+        } else {
+            pixel.fire(DuckChatPixelName.DUCK_CHAT_SEARCHBAR_BUTTON_OPEN)
+        }
+    }
+
+    fun onNewTabScrollingStateChanged(scrollingState: Decoration.NewTabScrollingState) {
+        val viewMode = viewState.value.viewMode
+        // if (viewMode is NewTab) {
+        //     _viewState.update {
+        //         it.copy(
+        //             showShadows = (scrollingState.canScrollUp || scrollingState.canScrollDown) && !scrollingState.topOfPage,
+        //         )
+        //     }
+        // }
     }
 }

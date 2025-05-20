@@ -1,5 +1,6 @@
 package com.duckduckgo.app.browser.omnibar
 
+import android.annotation.SuppressLint
 import android.view.MotionEvent
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import app.cash.turbine.test
@@ -7,10 +8,12 @@ import com.duckduckgo.app.browser.DuckDuckGoUrlDetectorImpl
 import com.duckduckgo.app.browser.defaultbrowsing.prompts.DefaultBrowserPromptsExperiment
 import com.duckduckgo.app.browser.omnibar.Omnibar.ViewMode
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration
+import com.duckduckgo.app.browser.omnibar.OmnibarLayout.Decoration.ChangeCustomTabTitle
 import com.duckduckgo.app.browser.omnibar.OmnibarLayout.StateChange
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.Command
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconState
 import com.duckduckgo.app.browser.omnibar.OmnibarLayoutViewModel.LeadingIconState.SEARCH
+import com.duckduckgo.app.browser.senseofprotection.SenseOfProtectionExperiment
 import com.duckduckgo.app.browser.viewstate.HighlightableButton
 import com.duckduckgo.app.browser.viewstate.LoadingViewState
 import com.duckduckgo.app.browser.viewstate.OmnibarViewState
@@ -28,7 +31,8 @@ import com.duckduckgo.app.trackerdetection.model.Entity
 import com.duckduckgo.browser.api.UserBrowserProperties
 import com.duckduckgo.common.test.CoroutineTestRule
 import com.duckduckgo.common.ui.experiments.visual.store.VisualDesignExperimentDataStore
-import com.duckduckgo.common.ui.experiments.visual.store.VisualDesignExperimentDataStore.FeatureState
+import com.duckduckgo.duckchat.api.DuckChat
+import com.duckduckgo.duckchat.impl.pixel.DuckChatPixelName
 import com.duckduckgo.duckplayer.api.DuckPlayer
 import com.duckduckgo.privacy.dashboard.impl.pixels.PrivacyDashboardPixels
 import com.duckduckgo.voice.api.VoiceSearchAvailability
@@ -63,10 +67,15 @@ class OmnibarLayoutViewModelTest {
     private val userBrowserProperties: UserBrowserProperties = mock()
 
     private val mockVisualDesignExperimentDataStore: VisualDesignExperimentDataStore = mock()
-    private val defaultVisualExperimentNavBarStateFlow = MutableStateFlow(FeatureState(isAvailable = true, isEnabled = false))
+    private val disabledVisualExperimentNavBarStateFlow = MutableStateFlow(false)
+    private val enabledVisualExperimentNavBarStateFlow = MutableStateFlow(true)
 
     private val defaultBrowserPromptsExperimentHighlightOverflowMenuFlow = MutableStateFlow(false)
     private val defaultBrowserPromptsExperiment: DefaultBrowserPromptsExperiment = mock()
+
+    private val mockSenseOfProtectionExperiment: SenseOfProtectionExperiment = mock()
+    private val duckChat: DuckChat = mock()
+    private val duckChatShowInAddressBarFlow = MutableStateFlow(true)
 
     private lateinit var testee: OmnibarLayoutViewModel
 
@@ -82,7 +91,8 @@ class OmnibarLayoutViewModelTest {
         whenever(tabRepository.flowTabs).thenReturn(flowOf(emptyList()))
         whenever(voiceSearchAvailability.shouldShowVoiceSearch(any(), any(), any(), any())).thenReturn(true)
         whenever(duckPlayer.isDuckPlayerUri(DUCK_PLAYER_URL)).thenReturn(true)
-        whenever(mockVisualDesignExperimentDataStore.navigationBarState).thenReturn(defaultVisualExperimentNavBarStateFlow)
+        whenever(mockVisualDesignExperimentDataStore.isExperimentEnabled).thenReturn(disabledVisualExperimentNavBarStateFlow)
+        whenever(duckChat.showInAddressBar).thenReturn(duckChatShowInAddressBarFlow)
 
         initializeViewModel()
     }
@@ -120,6 +130,8 @@ class OmnibarLayoutViewModelTest {
             dispatcherProvider = coroutineTestRule.testDispatcherProvider,
             defaultBrowserPromptsExperiment = defaultBrowserPromptsExperiment,
             visualDesignExperimentDataStore = mockVisualDesignExperimentDataStore,
+            senseOfProtectionExperiment = mockSenseOfProtectionExperiment,
+            duckChat = duckChat,
         )
     }
 
@@ -287,16 +299,67 @@ class OmnibarLayoutViewModelTest {
 
     @Test
     fun whenViewModeChangedToCustomTabThenViewStateCorrect() = runTest {
-        testee.onViewModeChanged(ViewMode.CustomTab(0, "example.com", false))
+        val expectedToolbarColor = 100
+        val expectedTitle = "example"
+        val expectedDomain = "example.com"
+        val expectedShowDuckPlayerIcon = false
+        testee.onViewModeChanged(
+            ViewMode.CustomTab(
+                toolbarColor = expectedToolbarColor,
+                title = expectedTitle,
+                domain = expectedDomain,
+                showDuckPlayerIcon = expectedShowDuckPlayerIcon,
+            ),
+        )
 
         testee.viewState.test {
             val viewState = awaitItem()
-            assertTrue(viewState.viewMode is ViewMode.CustomTab)
             assertFalse(viewState.showClearButton)
             assertFalse(viewState.showVoiceSearch)
             assertFalse(viewState.showTabsMenu)
             assertFalse(viewState.showFireIcon)
             assertTrue(viewState.showBrowserMenu)
+
+            assertTrue(viewState.viewMode is ViewMode.CustomTab)
+            val customTabMode = viewState.viewMode as ViewMode.CustomTab
+            assertEquals(expectedToolbarColor, customTabMode.toolbarColor)
+            assertEquals(expectedTitle, customTabMode.title)
+            assertEquals(expectedDomain, customTabMode.domain)
+            assertEquals(expectedShowDuckPlayerIcon, customTabMode.showDuckPlayerIcon)
+        }
+    }
+
+    @Test
+    fun `when custom tab title updates, update view mode state`() = runTest {
+        val expectedTitle = "newTitle"
+        val expectedDomain = "newDomain"
+        val expectedShowDuckPlayerIcon = true
+        val decoration = ChangeCustomTabTitle(
+            title = expectedTitle,
+            domain = expectedDomain,
+            showDuckPlayerIcon = expectedShowDuckPlayerIcon,
+        )
+
+        testee.onViewModeChanged(ViewMode.CustomTab(100, "example", "example.com", showDuckPlayerIcon = false))
+        testee.viewState.test {
+            // skipping initial update
+            skipItems(1)
+            // this function needs to be called only when the flow is consumed,
+            // otherwise, the values are not produced and the internal check for custom tab state fails
+            testee.onCustomTabTitleUpdate(decoration)
+            val viewState = awaitItem()
+            assertFalse(viewState.showClearButton)
+            assertFalse(viewState.showVoiceSearch)
+            assertFalse(viewState.showTabsMenu)
+            assertFalse(viewState.showFireIcon)
+            assertTrue(viewState.showBrowserMenu)
+
+            assertTrue(viewState.viewMode is ViewMode.CustomTab)
+            val customTabMode = viewState.viewMode as ViewMode.CustomTab
+            assertEquals(100, customTabMode.toolbarColor)
+            assertEquals(expectedTitle, customTabMode.title)
+            assertEquals(expectedDomain, customTabMode.domain)
+            assertEquals(expectedShowDuckPlayerIcon, customTabMode.showDuckPlayerIcon)
         }
     }
 
@@ -461,24 +524,6 @@ class OmnibarLayoutViewModelTest {
         testee.viewState.test {
             val viewState = awaitItem()
             assertTrue(viewState.privacyShield == privacyShield)
-        }
-    }
-
-    @Test
-    fun whenOutlineEnabledThenViewStateCorrect() = runTest {
-        testee.onOutlineEnabled(true)
-        testee.viewState.test {
-            val viewState = awaitItem()
-            assertTrue(viewState.hasFocus)
-        }
-    }
-
-    @Test
-    fun whenOutlineDisabledThenViewStateCorrect() = runTest {
-        testee.onOutlineEnabled(false)
-        testee.viewState.test {
-            val viewState = awaitItem()
-            assertFalse(viewState.hasFocus)
         }
     }
 
@@ -878,11 +923,47 @@ class OmnibarLayoutViewModelTest {
     fun whenTrackersAnimationStartedAndOmnibarFocusedThenCommandAndViewStateCorrect() = runTest {
         testee.onOmnibarFocusChanged(true, SERP_URL)
         val trackers = givenSomeTrackers()
+
         testee.onAnimationStarted(Decoration.LaunchTrackersAnimation(trackers))
 
         testee.viewState.test {
             val viewState = awaitItem()
             assertTrue(viewState.leadingIconState == LeadingIconState.SEARCH)
+        }
+    }
+
+    @SuppressLint("DenyListedApi")
+    @Test
+    fun whenTrackersAnimationStartedAndOmnibarFocusedAndSelfAndVariant1EnabledThenStartExperimentVariant1AnimationCommandSent() = runTest {
+        whenever(mockSenseOfProtectionExperiment.isUserEnrolledInModifiedControlCohortAndExperimentEnabled()).thenReturn(true)
+        whenever(mockSenseOfProtectionExperiment.isUserEnrolledInVariant2CohortAndExperimentEnabled()).thenReturn(false)
+        whenever(mockSenseOfProtectionExperiment.isUserEnrolledInVariant1CohortAndExperimentEnabled()).thenReturn(false)
+
+        testee.onOmnibarFocusChanged(false, SERP_URL)
+        val trackers = givenSomeTrackers()
+
+        testee.onAnimationStarted(Decoration.LaunchTrackersAnimation(trackers))
+
+        testee.commands().test {
+            awaitItem().assertCommand(Command.StartExperimentVariant1Animation::class)
+            cancelAndIgnoreRemainingEvents()
+        }
+    }
+
+    @SuppressLint("DenyListedApi")
+    @Test
+    fun whenTrackersAnimationStartedAndOmnibarFocusedAndSelfAndVariant1DisabledThenStartExperimentVariant2Or3AnimationCommandSent() = runTest {
+        whenever(mockSenseOfProtectionExperiment.isUserEnrolledInAVariantAndExperimentEnabled()).thenReturn(true)
+        whenever(mockSenseOfProtectionExperiment.isUserEnrolledInModifiedControlCohortAndExperimentEnabled()).thenReturn(false)
+
+        testee.onOmnibarFocusChanged(false, SERP_URL)
+        val trackers = givenSomeTrackers()
+
+        testee.onAnimationStarted(Decoration.LaunchTrackersAnimation(trackers))
+
+        testee.commands().test {
+            awaitItem().assertCommand(Command.StartExperimentVariant2OrVariant3Animation::class)
+            cancelAndIgnoreRemainingEvents()
         }
     }
 
@@ -992,6 +1073,121 @@ class OmnibarLayoutViewModelTest {
             val viewState = awaitItem()
             assertTrue(viewState.showBrowserMenuHighlight)
         }
+    }
+
+    @Test
+    fun whenViewModelAttachedThenShowChatMenuFalse() = runTest {
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenViewModeIsNewTabThenShowChatMenuTrue() = runTest {
+        testee.onViewModeChanged(ViewMode.NewTab)
+
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertTrue(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenViewModeIsNewTabAndChatEntryPointDisabledThenShowChatMenuFalse() = runTest {
+        duckChatShowInAddressBarFlow.value = false
+        testee.onViewModeChanged(ViewMode.NewTab)
+
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenNavigationBarExperimentEnabledThenShowChatMenuTrue() = runTest {
+        disabledVisualExperimentNavBarStateFlow.value = true
+
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertTrue(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenNavigationBarExperimentEnabledAndChatEntryPointDisabledThenShowChatMenuFalse() = runTest {
+        duckChatShowInAddressBarFlow.value = false
+        disabledVisualExperimentNavBarStateFlow.value = true
+
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenOmnibarNotFocusedThenShowChatMenuFalse() = runTest {
+        testee.onOmnibarFocusChanged(false, QUERY)
+        testee.viewState.test {
+            val viewState = expectMostRecentItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenViewModeChangedToCustomTabThenShowChatMenuFalse() = runTest {
+        testee.onViewModeChanged(ViewMode.CustomTab(0, "example", "example.com", false))
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenClearTextButtonPressedThenShowChatMenuFalse() = runTest {
+        testee.onClearTextButtonPressed()
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenInputStateChangedWithEmptyQueryThenShowChatMenuFalse() = runTest {
+        testee.onInputStateChanged("", hasFocus = true, clearQuery = true, deleteLastCharacter = false)
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertFalse(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenInputStateChangedWithNonEmptyQueryThenShowChatMenuTrue() = runTest {
+        testee.onInputStateChanged(QUERY, hasFocus = true, clearQuery = true, deleteLastCharacter = false)
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertTrue(viewState.showChatMenu)
+        }
+    }
+
+    @Test
+    fun whenDuckChatButtonPressedAndExperimentEnabledThenPixelSent() = runTest {
+        whenever(mockVisualDesignExperimentDataStore.isExperimentEnabled).thenReturn(enabledVisualExperimentNavBarStateFlow)
+        initializeViewModel()
+
+        testee.viewState.test {
+            val viewState = awaitItem()
+            assertTrue(viewState.isVisualDesignExperimentEnabled)
+            testee.onDuckChatButtonPressed()
+            verify(pixel).fire(DuckChatPixelName.DUCK_CHAT_EXPERIMENT_SEARCHBAR_BUTTON_OPEN)
+        }
+    }
+
+    @Test
+    fun whenDuckChatButtonPressedAndExperimentDisabledThenPixelSent() = runTest {
+        testee.onDuckChatButtonPressed()
+
+        verify(pixel).fire(DuckChatPixelName.DUCK_CHAT_SEARCHBAR_BUTTON_OPEN)
     }
 
     private fun givenSiteLoaded(loadedUrl: String) {

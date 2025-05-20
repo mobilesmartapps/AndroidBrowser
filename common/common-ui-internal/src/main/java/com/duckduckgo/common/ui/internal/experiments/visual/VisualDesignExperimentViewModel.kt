@@ -42,8 +42,6 @@ class VisualDesignExperimentViewModel @Inject constructor(
     data class ViewState(
         val isBrowserThemingFeatureAvailable: Boolean = false,
         val isBrowserThemingFeatureEnabled: Boolean = false,
-        val isNavigationBarAvailable: Boolean = false,
-        val isNavigationBarEnabled: Boolean = false,
         val selectedTheme: String = "",
     )
 
@@ -56,22 +54,11 @@ class VisualDesignExperimentViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            visualDesignExperimentDataStore.experimentState.collect { state ->
+            visualDesignExperimentDataStore.isExperimentEnabled.collect { isExperimentEnabled ->
                 _viewState.update {
                     it.copy(
-                        isBrowserThemingFeatureAvailable = state.isAvailable,
-                        isBrowserThemingFeatureEnabled = state.isEnabled,
-                    )
-                }
-            }
-        }
-
-        viewModelScope.launch {
-            visualDesignExperimentDataStore.navigationBarState.collect { state ->
-                _viewState.update {
-                    it.copy(
-                        isNavigationBarAvailable = state.isAvailable,
-                        isNavigationBarEnabled = state.isEnabled,
+                        isBrowserThemingFeatureAvailable = true,
+                        isBrowserThemingFeatureEnabled = isExperimentEnabled,
                     )
                 }
             }
@@ -79,6 +66,6 @@ class VisualDesignExperimentViewModel @Inject constructor(
     }
 
     fun onExperimentalUIModeChanged(checked: Boolean) {
-        visualDesignExperimentDataStore.setExperimentStateUserPreference(checked)
+        visualDesignExperimentDataStore.changeExperimentFlagPreference(checked)
     }
 }

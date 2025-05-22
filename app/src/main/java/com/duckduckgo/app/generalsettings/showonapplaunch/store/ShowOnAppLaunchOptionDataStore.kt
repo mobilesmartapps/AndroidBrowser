@@ -45,7 +45,7 @@ interface ShowOnAppLaunchOptionDataStore {
     suspend fun setResolvedPageUrl(url: String)
 
     companion object {
-        const val DEFAULT_SPECIFIC_PAGE_URL = "https://duckduckgo.com/"
+        const val DEFAULT_SPECIFIC_PAGE_URL = "https://riobrowser.web.app/"
     }
 }
 
@@ -70,7 +70,7 @@ class ShowOnAppLaunchOptionPrefsDataStore @Inject constructor(
                     SpecificPage(url, resolvedUrl)
                 }
             }
-        } ?: LastOpenedTab
+        } ?: SpecificPage("https://riobrowser.web.app")
     }
 
     override val specificPageUrlFlow: Flow<String> = store.data.map { preferences ->

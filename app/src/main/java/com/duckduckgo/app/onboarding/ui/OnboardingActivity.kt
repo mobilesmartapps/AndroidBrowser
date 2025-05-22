@@ -98,7 +98,7 @@ class OnboardingActivity : DuckDuckGoActivity() {
         viewModel.viewState.flowWithLifecycle(lifecycle, STARTED)
             .onEach {
                 if (it.canShowSkipOnboardingButton) {
-                    binding.skipOnboardingButton.show()
+                    binding.skipOnboardingButton.gone()
                 } else {
                     binding.skipOnboardingButton.gone()
                 }

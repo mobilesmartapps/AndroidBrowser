@@ -191,7 +191,7 @@ class WelcomePage : OnboardingPageFragment(R.layout.content_onboarding_welcome_p
                     binding.daxDialogCta.progressBarText.gone()
                     binding.daxDialogCta.progressBar.gone()
                     binding.daxDialogCta.descriptionCta.gone()
-                    binding.daxDialogCta.secondaryCta.show()
+                    binding.daxDialogCta.secondaryCta.gone()
 
                     val ctaText = it.getString(R.string.highlightsPreOnboardingDaxDialog1Title)
                     binding.daxDialogCta.hiddenTextCta.text = ctaText.html(it)
@@ -199,7 +199,7 @@ class WelcomePage : OnboardingPageFragment(R.layout.content_onboarding_welcome_p
                     afterAnimation = {
                         binding.daxDialogCta.dialogTextCta.finishAnimation()
                         binding.daxDialogCta.primaryCta.text = it.getString(R.string.preOnboardingDaxDialog1Button)
-                        binding.daxDialogCta.primaryCta.setOnClickListener { viewModel.onPrimaryCtaClicked(INITIAL_REINSTALL_USER) }
+                        binding.daxDialogCta.primaryCta.setOnClickListener { viewModel.onPrimaryCtaClicked(SKIP_ONBOARDING_OPTION) }
                         binding.daxDialogCta.primaryCta.animate().alpha(MAX_ALPHA).duration = ANIMATION_DURATION
                         binding.daxDialogCta.secondaryCta.text = it.getString(R.string.preOnboardingDaxDialog1SecondaryButton)
                         binding.daxDialogCta.secondaryCta.setOnClickListener { viewModel.onSecondaryCtaClicked(INITIAL_REINSTALL_USER) }

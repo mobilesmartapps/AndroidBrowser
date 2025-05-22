@@ -157,6 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/keyline_0"
                     android:alpha="0"
+                    android:visibility="gone"
                     android:text="@string/preOnboardingDaxDialog1SecondaryButton"
                     app:daxButtonSize="large"
                     tools:alpha="1" />

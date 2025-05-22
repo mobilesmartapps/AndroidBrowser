@@ -365,18 +365,7 @@
         <item name="daxColorPrimaryIcon">@color/white</item>
     </style>
 
-    <style name="Theme.DuckDuckGo.SplashScreen" parent="Theme.DuckDuckGo.Splash">
-        <item name="android:statusBarColor">@color/gray0</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@color/gray0</item>
-
-        <item name="windowSplashScreenBackground">@color/gray0</item>
-        <item name="postSplashScreenTheme">@style/Theme.DuckDuckGo.Light</item>
-    </style>
-
-    <style name="Theme.DuckDuckGo.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dax_splash_screen_icon</item>
-    </style>
+    <style name="Theme.DuckDuckGo.SplashScreen" parent="Theme.DuckDuckGo.Light"/>
 
     <style name="Theme.AppCompat.Transparent.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>

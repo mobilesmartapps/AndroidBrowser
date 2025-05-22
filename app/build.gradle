@@ -129,16 +129,16 @@ android {
             applicationIdSuffix ".debug"
             pseudoLocalesEnabled false
             manifestPlaceholders = [
-                    appIcon     : "@mipmap/ic_launcher_blue",
-                    appIconRound: "@mipmap/ic_launcher_blue_round"
+                    appIcon     : "@mipmap/rio_launcher_icon",
+                    appIconRound: "@mipmap/rio_launcher_icon"
             ]
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [
-                    appIcon     : "@mipmap/ic_launcher_red",
-                    appIconRound: "@mipmap/ic_launcher_red_round"
+                    appIcon     : "@mipmap/rio_launcher_icon",
+                    appIconRound: "@@mipmap/rio_launcher_icon"
             ]
 
             if (project.hasProperty('useUploadSigning')) {

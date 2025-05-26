@@ -189,7 +189,8 @@ class RealDuckChat @Inject constructor(
     }
 
     override fun isEnabled(): Boolean {
-        return isDuckChatEnabled
+    return false
+    //return isDuckChatEnabled
     }
 
     override fun observeEnableDuckChatUserSetting(): Flow<Boolean> {

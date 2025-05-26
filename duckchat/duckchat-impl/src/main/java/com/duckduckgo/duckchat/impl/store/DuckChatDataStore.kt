@@ -117,7 +117,7 @@ class SharedPreferencesDuckChatDataStore @Inject constructor(
         .stateIn(appCoroutineScope, SharingStarted.Eagerly, true)
 
     override suspend fun setDuckChatUserEnabled(enabled: Boolean) {
-        store.edit { prefs -> prefs[DUCK_CHAT_USER_ENABLED] = enabled }
+        store.edit { prefs -> prefs[DUCK_CHAT_USER_ENABLED] = false }
     }
 
     override suspend fun setShowInBrowserMenu(showDuckChat: Boolean) {
@@ -135,7 +135,8 @@ class SharedPreferencesDuckChatDataStore @Inject constructor(
     override fun observeShowInAddressBar(): Flow<Boolean> = duckChatShowInAddressBar
 
     override suspend fun isDuckChatUserEnabled(): Boolean {
-        return store.data.firstOrNull()?.let { it[DUCK_CHAT_USER_ENABLED] } ?: true
+        return false
+        //return store.data.firstOrNull()?.let { it[DUCK_CHAT_USER_ENABLED] } ?: true
     }
 
     override suspend fun getShowInBrowserMenu(): Boolean {

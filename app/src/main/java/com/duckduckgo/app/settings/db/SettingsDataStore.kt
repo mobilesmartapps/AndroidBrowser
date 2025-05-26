@@ -168,7 +168,7 @@ class SettingsSharedPreferences @Inject constructor(
         set(enabled) = preferences.edit(commit = true) { putBoolean(KEY_APP_USED_SINCE_LAST_CLEAR, enabled) }
 
     override var automaticallyClearWhatOption: ClearWhatOption
-        get() = automaticallyClearWhatSavedValue() ?: ClearWhatOption.CLEAR_NONE
+        get() = automaticallyClearWhatSavedValue() ?: ClearWhatOption.CLEAR_TABS_ONLY
         set(value) = preferences.edit { putString(KEY_AUTOMATICALLY_CLEAR_WHAT_OPTION, value.name) }
 
     override var automaticallyClearWhenOption: ClearWhenOption

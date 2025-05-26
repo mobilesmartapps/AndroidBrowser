@@ -54,12 +54,16 @@ class QueryUrlConverter @Inject constructor(private val requestRewriter: Request
             .appendQueryParameter(AppUrl.ParamKey.QUERY, searchQuery)
             .authority(Url.HOST)
 
+        //rio browser_changes
+        val uriBuilderGoogle = "www.google.com/search?q=" + searchQuery;
+
         if (vertical != null && majorVerticals.contains(vertical)) {
             uriBuilder.appendQueryParameter(AppUrl.ParamKey.VERTICAL_REWRITE, vertical)
         }
 
         requestRewriter.addCustomQueryParams(uriBuilder)
-        return uriBuilder.build().toString()
+        //return uriBuilder.build().toString()
+        return uriBuilderGoogle;
     }
 
     private fun convertUri(input: String): String {

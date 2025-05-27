@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">DuckDuckGo logotips</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">Rio Browser logotips</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Aizsardzība. Privātums. Sirds miers.</string>
     <string name="yes">Jā</string>
     <string name="no">Nē</string>
@@ -28,15 +28,15 @@
     <string name="search">Meklēt</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Atver iestatījumu sadaļu, lai katru reizi meklētu un pārlūkotu ar DuckDuckGo.</string>
-    <string name="onboardingDefaultBrowserTitle">Padarīt DuckDuckGo par noklusējumu</string>
+    <string name="onboardingDefaultBrowserDescription">Atver iestatījumu sadaļu, lai katru reizi meklētu un pārlūkotu ar Rio Browser.</string>
+    <string name="onboardingDefaultBrowserTitle">Padarīt Rio Browser par noklusējumu</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Nevar palaist lietotnes noklusējuma iestatījumu ekrānu</string>
     <string name="setAsDefaultBrowser">Iestatīt kā noklusējuma pārlūku</string>
     <string name="defaultBrowserMaybeLater">Varbūt vēlāk</string>
     <string name="defaultBrowserDescriptionNoDefault">Katru reizi atver saites bez raizēm.</string>
-    <string name="defaultBrowserInstructions">Atlasi DuckDuckGo un pieskaries <font color="#678fff">Vienmēr</font>.</string>
+    <string name="defaultBrowserInstructions">Atlasi Rio Browser un pieskaries <font color="#678fff">Vienmēr</font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Pārlūka izvēlne</string>
@@ -98,11 +98,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Atvērt ārējo lietotni</string>
     <string name="launchingExternalApp">Atvērt citā lietotnē</string>
-    <string name="confirmOpenExternalApp">Vai vēlies iziet no DuckDuckGo, lai skatītu šo saturu?</string>
+    <string name="confirmOpenExternalApp">Vai vēlies iziet no Rio Browser, lai skatītu šo saturu?</string>
     <string name="unableToOpenLink">Nevar atvērt šāda veida saites</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Cilnes</string>
     <string name="tabsMenuItem">Cilnes</string>
     <string name="newTabMenuItem">Jauna cilne</string>
@@ -136,7 +136,7 @@
     <string name="settingsHeadingProtections">Aizsardzība</string>
     <string name="settingsHeadingAppearance">Izskats</string>
     <string name="settingsHeadingAbout">Par</string>
-    <string name="settingsAboutDuckduckgo">Par DuckDuckGo</string>
+    <string name="settingsAboutDuckduckgo">Par Rio Browser</string>
     <string name="settingsVersion">Versija</string>
     <string name="leaveFeedback">Kopīgot atsauksmi</string>
     <string name="leaveFeedbackNew">Sūtīt atsauksmi</string>
@@ -166,11 +166,11 @@
     <string name="settingsAddWidget">Pievienot logrīku sākuma ekrānam</string>
     <string name="settingsAddressBarPosition">Iestati adreses joslas pozīciju</string>
     <string name="settingsEnableVoiceSearch">Iespējo privātu balss meklēšanu</string>
-    <string name="settingsDDGOnOtherPlatforms">DuckDuckGo citās platformās</string>
+    <string name="settingsDDGOnOtherPlatforms">Rio Browser citās platformās</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">Privāta meklēšana</string>
-    <string name="privateSearchDescription">DuckDuckGo Private Search ir tava noklusējuma meklētājprogramma, tāpēc vari meklēt tīmeklī, netiekot izsekotam.</string>
+    <string name="privateSearchDescription">Rio Browser Private Search ir tava noklusējuma meklētājprogramma, tāpēc vari meklēt tīmeklī, netiekot izsekotam.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Vairāk meklēšanas iestatījumu</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Pielāgo savu meklēšanas valodu, reģionu un citus iestatījumus</string>
     <string name="privateSearchMoreSearchSettingsTitle">Vairāk meklēšanas iestatījumu</string>
@@ -189,7 +189,7 @@
     <string name="webTrackingProtectionActivityTitle">Tīmekļa izsekošanas aizsardzība</string>
     <string name="webTrackingProtectionLearnMoreTitle">Tīmekļa izsekošanas aizsardzība</string>
     <string name="webTrackingProtectionTitle">Tīmekļa izsekošanas aizsardzība</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[DuckDuckGo automātiski bloķē slēptos izsekotājus tīmekļa pārlūkošanas laikā.\n<a href=\"\">Uzzināt vairāk</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[Rio Browser automātiski bloķē slēptos izsekotājus tīmekļa pārlūkošanas laikā.\n<a href=\"\">Uzzināt vairāk</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Sīkfailu uznirstošo logu aizsardzība</string>
@@ -223,10 +223,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">Iziešana no lietotnes, neaktīva 1 stundu</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">Par DuckDuckGo</string>
+    <string name="aboutActivityTitle">Par Rio Browser</string>
     <string name="aboutActivityTitleNew">Par</string>
     <string name="aboutHeaderNewTagLine">Aizsardzība. Privātums. Sirds miers.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Laipni lūgti Duck pusē!\n\nDuckDuckGo ir neatkarīgs tiešsaistes aizsardzības uzņēmums ikvienam, kurš vēlas atgūt kontroli pār savu personisko informāciju.\n\nMēs uzskatām, ka labākais veids, kā aizsargāt savu personisko informāciju no hakeriem, krāpniekiem un privātumu apdraudošiem uzņēmumiem, ir to neievākt vispār. Tāpēc miljoniem cilvēku <annotation type="chart_comparison">izvēlas DuckDuckGo, nevis Chrome un citas pārlūkprogrammas</annotation> meklēšanai un pārlūkošanai tiešsaistē. Mūsu iebūvētā meklētājprogramma ir līdzīga Google, taču tā neizsekotavus meklēšanas vaicājumus. Mūsu pārlūkošanas aizsardzība, piemēram, reklāmu izsekotāju bloķēšana un sīkfailu bloķēšana neļauj citiem uzņēmumiem ievākt tavus datus. Turklāt mūsu pārlūkprogramma ir bezmaksas — mēs pelnām ar <annotation type="privacy_respecting_ads">meklēšanas laikā rādītām reklāmām, kas ievēro privātumu</annotation>, nevis izmantojot tavus datus.Turklāt mēs piedāvājam arī <annotation type="ppro_help_page">Privacy Pro</annotation>, mūsu trīs vienā abonēšanas pakalpojumu, kas ir integrēts mūsu pārlūkprogrammā. Privacy Pro abonenti saņem vēl lielāku privātuma aizsardzību ar ātru un vienkāršu <annotation type="vpn_help_page">VPN</annotation>, kas palīdz pasargāt tavas darbības tiešsaistē, pakalpojumu, kas atrod un izdzēš tavu personisko informāciju no cilvēku meklētāju vietnēm, un pakalpojumu, kas atjauno tavu identitāti, ja tā tiek nozagta.\n\nAtgūsti kontroli pār savu personisko informāciju ar pārlūkprogrammu, kas paredzēta datu aizsardzībai, nevis datu apkopošanai.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Laipni lūgti Duck pusē!\n\nRio Browser ir neatkarīgs tiešsaistes aizsardzības uzņēmums ikvienam, kurš vēlas atgūt kontroli pār savu personisko informāciju.\n\nMēs uzskatām, ka labākais veids, kā aizsargāt savu personisko informāciju no hakeriem, krāpniekiem un privātumu apdraudošiem uzņēmumiem, ir to neievākt vispār. Tāpēc miljoniem cilvēku <annotation type="chart_comparison">izvēlas Rio Browser, nevis Chrome un citas pārlūkprogrammas</annotation> meklēšanai un pārlūkošanai tiešsaistē. Mūsu iebūvētā meklētājprogramma ir līdzīga Google, taču tā neizsekotavus meklēšanas vaicājumus. Mūsu pārlūkošanas aizsardzība, piemēram, reklāmu izsekotāju bloķēšana un sīkfailu bloķēšana neļauj citiem uzņēmumiem ievākt tavus datus. Turklāt mūsu pārlūkprogramma ir bezmaksas — mēs pelnām ar <annotation type="privacy_respecting_ads">meklēšanas laikā rādītām reklāmām, kas ievēro privātumu</annotation>, nevis izmantojot tavus datus.Turklāt mēs piedāvājam arī <annotation type="ppro_help_page">Privacy Pro</annotation>, mūsu trīs vienā abonēšanas pakalpojumu, kas ir integrēts mūsu pārlūkprogrammā. Privacy Pro abonenti saņem vēl lielāku privātuma aizsardzību ar ātru un vienkāršu <annotation type="vpn_help_page">VPN</annotation>, kas palīdz pasargāt tavas darbības tiešsaistē, pakalpojumu, kas atrod un izdzēš tavu personisko informāciju no cilvēku meklētāju vietnēm, un pakalpojumu, kas atjauno tavu identitāti, ja tā tiek nozagta.\n\nAtgūsti kontroli pār savu personisko informāciju ar pārlūkprogrammu, kas paredzēta datu aizsardzībai, nevis datu apkopošanai.</string>
     <string name="no_suggestions">Nav ieteikumu</string>
 
     <!-- Broken Site Activity -->
@@ -237,7 +237,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">Aizsardzības IZSLĒGŠANA var palīdzēt.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">Meklēt DuckDuckGo</string>
+    <string name="searchWidgetTextHint">Meklēt Rio Browser</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 Pievienot izlasei</string>
@@ -262,7 +262,7 @@
     <string name="surveyCtaLaunchButton">Piedalīties aptaujā</string>
     <string name="surveyCtaDismissButton">Nē, paldies</string>
     <string name="surveyActivityTitle">Lietotāju aptauja</string>
-    <string name="surveyTitle">DUCKDUCKGO APTAUJA</string>
+    <string name="surveyTitle">RIO BROWSER APTAUJA</string>
     <string name="surveyDismissContentDescription">Nerādīt aptauju</string>
     <string name="surveyLoadingErrorTitle">Ak, vai!</string>
     <string name="surveyLoadingErrorText">Mūsu aptauju pašlaik nevar ielādēt.\nLūdzu, vēlāk pamēģini vēlreiz.</string>
@@ -277,14 +277,14 @@
     <string name="addWidgetInstruction1Label">1</string>
     <string name="addWidgetInstruction1">Ilgi nospied sākuma ekrānā, pēc tam atver logrīku izvēlni.</string>
     <string name="addWidgetInstruction2Label">2</string>
-    <string name="addWidgetInstruction2">Atrodi DuckDuckGo logrīku.</string>
+    <string name="addWidgetInstruction2">Atrodi Rio Browser logrīku.</string>
     <string name="addWidgetInstruction3Label">3</string>
     <string name="addWidgetInstruction3">Velc logrīku uz sākuma ekrānu.</string>
     <string name="addWidgetInstructionsButtonGoHome">Doties uz sākuma ekrānu</string>
     <string name="addWidgetInstructionsButtonClose">Aizvērt</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Vai tev patīk DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Vai tev patīk Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Mēs labprāt uzzinātu tavas domas.</string>
     <string name="appEnjoymentDialogPositiveButton">Man patīk</string>
     <string name="appEnjoymentDialogNegativeButton">Nepieciešami uzlabojumi</string>
@@ -306,15 +306,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Datu notīrīšana ir iestatīta uz manuālu notīrīšanu</string>
-    <string name="clearNotificationDescription">Pielāgo DuckDuckGo, lai pēc katras sesijas automātiski notīrītu pārlūkošanas datus.</string>
+    <string name="clearNotificationDescription">Pielāgo Rio Browser, lai pēc katras sesijas automātiski notīrītu pārlūkošanas datus.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Mēs aizsargājam tavu privātumu</string>
     <string name="privacyProtectionNotificationReportTitle">Tavs privātuma ziņojums</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Izmantojot lietotni DuckDuckGo, tavi dati tiek aizsargāti, bloķējot izsekotājus un šifrējot savienojumus.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">DuckDuckGo izmantošanas laikā tu aizsargāji savus datus, nodrošinot %1$d nešifrētos savienojumus.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">DuckDuckGo izmantošanas laikā tu aizsargāji savus datus, bloķējot %1$d izsekotājus.</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">DuckDuckGo izmantošanas laikā tu aizsargāji savus datus, bloķējot %1$d izsekotājus un nodrošinot %2$d nešifrētos savienojumus.</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Izmantojot lietotni Rio Browser, tavi dati tiek aizsargāti, bloķējot izsekotājus un šifrējot savienojumus.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Rio Browser izmantošanas laikā tu aizsargāji savus datus, nodrošinot %1$d nešifrētos savienojumus.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Rio Browser izmantošanas laikā tu aizsargāji savus datus, bloķējot %1$d izsekotājus.</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Rio Browser izmantošanas laikā tu aizsargāji savus datus, bloķējot %1$d izsekotājus un nodrošinot %2$d nešifrētos savienojumus.</string>
     <string name="privacyProtectionNotificationLaunchButton">Atsākt pārlūkošanu</string>
 
     <!-- Authentication -->
@@ -326,7 +326,7 @@
     <string name="authenticationDialogPasswordHint">Parole</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">Meklēt DuckDuckGo</string>
+    <string name="systemTextSearchMessage">Meklēt Rio Browser</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Kopīgot atsauksmi</string>
@@ -345,8 +345,8 @@
     <string name="websiteNotLoadingTitleShort">Vietņu ielādes problēmas</string>
     <string name="websiteNotLoadingSubtitle">Kura vietne ir bojāta?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">DuckDuckGo meklētājs nav pietiekami labs</string>
-    <string name="searchNotGoodEnoughTitleShort">DuckDuckGo meklēšanas problēmas</string>
+    <string name="searchNotGoodEnoughTitleLong">Rio Browser meklētājs nav pietiekami labs</string>
+    <string name="searchNotGoodEnoughTitleShort">Rio Browser meklēšanas problēmas</string>
     <string name="searchNotGoodEnoughSubtitle">Kuru meklēšanas funkciju mēs varam pievienot vai uzlabot?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Programmēšana/tehniskā meklēšana</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">Izkārtojumam vajadzētu vairāk līdzināties Google izkārtojumam</string>
@@ -407,8 +407,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">No šīs ierīces</string>
     <string name="systemSearchAppNotFound">Lietojumprogrammu nevarēja atrast</string>
-    <string name="systemSearchOnboardingThanks">Paldies, ka izvēlējies DuckDuckGo!\nMūsu pārlūkprogrammas izmantošana palīdz aizsargāt tevi no hakeriem, krāpniekiem un uzņēmumiem, kas alkst pēc personu datiem.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">Tāpat DuckDuckGo lietotne:</string>
+    <string name="systemSearchOnboardingThanks">Paldies, ka izvēlējies Rio Browser!\nMūsu pārlūkprogrammas izmantošana palīdz aizsargāt tevi no hakeriem, krāpniekiem un uzņēmumiem, kas alkst pēc personu datiem.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">Tāpat Rio Browser lietotne:</string>
     <string name="systemSearchOnboardingFeatureOneText">Bloķē nedrošus izsekotājus.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Veic piespiedu šifrēšanu vietnēs.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Notīra datus ar vienu pieskārienu.</string>
@@ -426,7 +426,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Ne tagad</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Laipni lūdzam DuckDuckGo!"</string>
+    <string name="onboardingWelcomeTitle">"Laipni lūdzam Rio Browser!"</string>
     <string name="onboardingDaxText"><![CDATA[Internets var būt diezgan “mežonīgs”.\n\nBet neuztraucies! Meklēt un pārlūkot privātā režīmā ir vieglāk, nekā tu domā.]]></string>
     <string name="onboardingLetsDoItButton">Aiziet!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Tev pieskaroties un ritinot, es bloķēšu uzmācīgos izsekotājus. <br/><br/>Aiziet! Turpini pārlūkot!]]></string>
@@ -517,7 +517,7 @@
     <string name="dosErrorMessage">Savienojums pārtraukts. Šī vietne var kaitēt tavai ierīcei.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Vai iespējot ierīces atrašanās vietu DuckDuckGo privātuma pārlūkprogrammai?</string>
+    <string name="preciseLocationSystemDialogTitle">Vai iespējot ierīces atrašanās vietu Rio Browser privātuma pārlūkprogrammai?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s pieprasa tavas ierīces atrašanās vietu. Vispirms tev ir jāatļauj lietotnei nosūtīt tavas ierīces atrašanās vietu, pēc tam %2$s var pieprasīt atļauju.</string>
     <string name="preciseLocationSystemDialogAllow">Iespējot</string>
     <string name="preciseLocationSystemDialogDeny">Varbūt vēlāk</string>
@@ -529,7 +529,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Tikai šai sesijai</string>
     <string name="preciseLocationSiteDialogDenyAlways">Vienmēr aizliegt</string>
     <string name="preciseLocationSiteDialogDenyOnce">Aizliegt šai sesijai</string>
-    <string name="preciseLocationFeatureDescription">Apmeklētās vietnes var prasīt atklāt tavas ierīces atrašanās vietu. Tās nevarēs tai piekļūt, ja tu skaidri nepiešķirsi atļauju. DuckDuckGo izmanto tavu atrašanās vietu tikai anonīmi, lai nodrošinātu lokālās meklēšanas rezultātus.</string>
+    <string name="preciseLocationFeatureDescription">Apmeklētās vietnes var prasīt atklāt tavas ierīces atrašanās vietu. Tās nevarēs tai piekļūt, ja tu skaidri nepiešķirsi atļauju. Rio Browser izmanto tavu atrašanās vietu tikai anonīmi, lai nodrošinātu lokālās meklēšanas rezultātus.</string>
     <string name="preciseLocationToggleText">Vietnes var pieprasīt manu atrašanās vietu</string>
     <string name="preciseLocationEmptyListHint">Nevienai vietnei nav piešķirta atļauja piekļūt atrašanās vietai</string>
     <string name="preciseLocationNoSystemPermission">Lai pārvaldītu savas atsevišķām vietnēm piešķirtās atrašanās vietas piekļuves atļaujas, šai lietotnei iespējo atrašanās vietu Android iestatījumos.</string>
@@ -545,7 +545,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Globālā privātuma kontrole (GPC)</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo automātiski bloķē daudzus izsekotājus. Izmantojot globālo privātuma kontroli (GPC), vari arī lūgt iesaistītajām vietnēm ierobežot savu personas datu pārdošanu vai kopīgošanu ar citiem uzņēmumiem. <u><a href=\"\">Uzzini vairāk</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[Rio Browser automātiski bloķē daudzus izsekotājus. Izmantojot globālo privātuma kontroli (GPC), vari arī lūgt iesaistītajām vietnēm ierobežot savu personas datu pārdošanu vai kopīgošanu ar citiem uzņēmumiem. <u><a href=\"\">Uzzini vairāk</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Globālā privātuma kontrole (GPC)</string>
     <string name="globalPrivacyControlToggle">Globālā privātuma kontrole (GPC)</string>
     <string name="disabled">Atspējots</string>
@@ -583,11 +583,11 @@
     <string name="settingsAccessibility">Pieejamība</string>
     <string name="accessibilityActivityTitle">Pieejamība</string>
     <string name="accessibilityFontSizeTitle">Burtu izmērs</string>
-    <string name="accessibilityFontSizeHint">Velc slīdni, līdz vari šo ērti izlasīt. Vietnes tavā DuckDuckGo tam pielāgosies.</string>
+    <string name="accessibilityFontSizeHint">Velc slīdni, līdz vari šo ērti izlasīt. Vietnes tavā Rio Browser tam pielāgosies.</string>
     <string name="accessibilityForceZoomTitle">Ieviest manuālu lapas tālummaiņu</string>
     <string name="accessibilityForceZoomSubtitle">Savelc un tuvini jebkurā vietnē, pat tajās, kas parasti to neļautu</string>
     <string name="accessibilityTextSizeOverrideTitle">Pārvaldīt teksta lielumu</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">Teksts vietnēs, kuras skati pakalpojumā DuckDuckGo, tiks pielāgots, lai atbilstu tālāk norādītajam iestatījumam</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">Teksts vietnēs, kuras skati pakalpojumā Rio Browser, tiks pielāgots, lai atbilstu tālāk norādītajam iestatījumam</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Privātuma politika</string>
@@ -656,7 +656,7 @@
     <string name="tabSelectedIndicator">Atlasītās cilnes indikators</string>
     <string name="tabNotSelectedIndicator">Nav atlasīts cilnes indikators</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d saites no DuckDuckGo</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d saites no Rio Browser</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="zero">Kopīgot %1$d saites</item>
         <item quantity="one">Kopīgot saiti</item>
@@ -730,7 +730,7 @@
     </plurals>
 
     <!-- Private voice search -->
-    <string name="accessibilityVoiceSearchSubtitle">Pievienot adreses joslai opciju \"Privātā meklēšana ar balsi\". Audioieraksti netiek saglabāti un kopīgoti ar citiem, pat ne ar DuckDuckGo.</string>
+    <string name="accessibilityVoiceSearchSubtitle">Pievienot adreses joslai opciju \"Privātā meklēšana ar balsi\". Audioieraksti netiek saglabāti un kopīgoti ar citiem, pat ne ar Rio Browser.</string>
     <string name="accessibilityVoiceSearchTitle">Privātā balss meklēšana</string>
 
     <!-- Uploading an image from the camera or choosing to use existing image -->
@@ -738,8 +738,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Augšupielādēt attēlu</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Izvēlēties failu</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Uzņemt foto</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Atļaut DuckDuckGo pieprasīt piekļuvi kamerai šajā ierīcē</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Vietnes var izmantot tavu kameru tikai tad, ja tu atļauj DuckDuckGo prasīt piekļuvi.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Atļaut Rio Browser pieprasīt piekļuvi kamerai šajā ierīcē</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Vietnes var izmantot tavu kameru tikai tad, ja tu atļauj Rio Browser prasīt piekļuvi.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Atvērt iestatījumus</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Atcelt</string>
 
@@ -749,15 +749,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Parole atjaunināta</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Atvērt vietnē DuckDuckGo</string>
-    <string name="runningInDdgMenuItemTitle">Darbojas programmā DuckDuckGo</string>
+    <string name="openInDdgMenuItemTitle">Atvērt vietnē Rio Browser</string>
+    <string name="runningInDdgMenuItemTitle">Darbojas programmā Rio Browser</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Brīdinājums: šī vietne var būt nedroša</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">Šīs vietnes sertifikāts nav derīgs. Tu, iespējams, izveido savienojumu ar serveri, kas izliekas par %1$s un var pakļaut riskam tavu konfidenciālo informāciju.</string>
     <string name="sslErrorLeaveCTA">Pamest šo vietni</string>
     <string name="sslErrorAdvancedCTA">Detalizēti</string>
-    <string name="sslErrorExpandedHeadline">DuckDuckGo brīdina tevi, ja vietnei ir nederīgs sertifikāts.</string>
+    <string name="sslErrorExpandedHeadline">Rio Browser brīdina tevi, ja vietnei ir nederīgs sertifikāts.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Pieņemt risku un apmeklēt vietni</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">%1$s drošības sertifikāta derīguma termiņš ir beidzies. Iespējams, ka vietne ir nepareizi konfigurēta, ka tavu savienojumu ir apdraudējis kāds uzbrucējs vai ka tavas sistēmas pulkstenis ir nepareizs.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">%1$s drošības sertifikāts neatbilst *.%2$s. Iespējams, ka vietne ir nepareizi konfigurēta, ka tavu savienojumu ir apdraudējis kāds uzbrucējs vai ka tavas sistēmas pulkstenis ir nepareizs.</string>
@@ -776,7 +776,7 @@
     <string name="preOnboardingDaxDialog3Title">Lieliski! Apsveicam ar pievienošanos pīļu komandai.</string>
     <string name="preOnboardingDaxDialog3Button">Sākt pārlūkošanu</string>
     <string name="onboardingSearchDaxDialogTitle">Izmēģini meklēt!</string>
-    <string name="onboardingSearchDaxDialogDescription">Tavi DuckDuckGo meklējumi vienmēr ir anonīmi.</string>
+    <string name="onboardingSearchDaxDialogDescription">Tavi Rio Browser meklējumi vienmēr ir anonīmi.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">kā angliski pateikt “pīle”</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">kā spāniski pateikt “pīle”</string>
     <string name="onboardingSearchQueryOption1">kā angliski pateikt “pīle”</string>
@@ -793,7 +793,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Pārsteidz mani!</string>
-    <string name="onboardingSerpDaxDialogDescription">Tas ir DuckDuckGo Search. Privāti. Ātri. Mazāk reklāmu.</string>
+    <string name="onboardingSerpDaxDialogDescription">Tas ir Rio Browser Search. Privāti. Ātri. Mazāk reklāmu.</string>
     <string name="onboardingSerpDaxDialogButton">Sapratu!</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">Tagad pamēģini atvērt kādu vietni!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -812,7 +812,7 @@
     <string name="onboardingEndDaxDialogDescription">Atceries: katru reizi, kad pārlūkosi kopā ar mani, uzmācīgās reklāmas zaudēs savu spēku! 👌</string>
     <string name="onboardingEndDaxDialogButton">Viss pabeigts!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Ak, pirms es aizmirsu...</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[DuckDuckGo ir arī iebūvēts <b>VPN</b>!<br/><br/>Aktivizējiet to, izmantojot <b>maksas Privacy Pro abonementu.</b>]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[Rio Browser ir arī iebūvēts <b>VPN</b>!<br/><br/>Aktivizējiet to, izmantojot <b>maksas Privacy Pro abonementu.</b>]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Uzzināt vairāk</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Izlaist</string>
 
@@ -833,8 +833,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">Apakšā</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Viegli pieejama</string>
     <string name="highlightsOnboardingSearchQueryOption4">mazi pīlēni</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">Tavi DuckDuckGo meklējumi vienmēr ir privāti.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Tas ir <b>DuckDuckGo Search</b>! Privāti. Ātri. Mazāk reklāmu.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">Tavi Rio Browser meklējumi vienmēr ir privāti.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Tas ir <b>Rio Browser Search</b>! Privāti. Ātri. Mazāk reklāmu.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Atceries: katru reizi, kad pārlūkosi kopā ar mani, kaitinošās reklāmas zaudēs savu spēku!</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Dod pieci!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Izmēģini</string>
@@ -856,27 +856,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Konkrēta lapa</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Paldies! Tavs ziņojums palīdz padarīt DuckDuckGo labāku visiem lietotājiem!</string>
+    <string name="brokenSiteSubmittedReportMessage">Paldies! Tavs ziņojums palīdz padarīt Rio Browser labāku visiem lietotājiem!</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Jauns MI tērzēšanas rīks</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Ļauj DuckDuckGo vairāk aizsargāt to, ko dari tiešsaistē</string>
-    <string name="defaultBrowserBottomSheetDialogSubTitle">Iestati mūs kā savu noklusējuma pārlūku, lai visas vietņu saites atvērtos DuckDuckGo.</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Ļauj Rio Browser vairāk aizsargāt to, ko dari tiešsaistē</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">Iestati mūs kā savu noklusējuma pārlūku, lai visas vietņu saites atvērtos Rio Browser.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Ne tagad</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">DuckDuckGo bloķē izsekotājus, lai aizsargātu tavu pārlūkošanu</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Rio Browser bloķē izsekotājus, lai aizsargātu tavu pārlūkošanu</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">Notīrot savas cilnes un datus, tiks izdzēsta tava izsekotāja bloķēšanas vēsture un šis skaitlis tiks atiestatīts uz nulli.\n\nPaslēp šo reklāmkarogu, ja nevēlies to redzēt cilņu skatā.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Paslēpt reklāmkarogu</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Brīdinājums: šī vietne var radīt drošības risku</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[DuckDuckGo bloķēja šo lapu, jo tajā, iespējams, tiek izplatīta ļaunprātīga programmatūra, kas paredzēta, lai apdraudētu tavu ierīci vai nozagtu tavu personisko informāciju.\n<a href=\"\">Uzzini vairāk</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[Rio Browser bloķēja šo lapu, jo tajā, iespējams, tiek izplatīta ļaunprātīga programmatūra, kas paredzēta, lai apdraudētu tavu ierīci vai nozagtu tavu personisko informāciju.\n<a href=\"\">Uzzini vairāk</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[Iespējams, ka šī vietne uzdodas par likumīgu vietni, lai tevi maldinātu sniegt personisku informāciju, piemēram, paroles vai kredītkartes numurus.\n<a href=\"\">Uzzini vairāk</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[DuckDuckGo bloķēja šo lapu, jo tā, iespējams, mēģina tevi apkrāpt vai manipulēt ar tevi, lai tu pārskaitītu naudu, iegādātos viltotas preces vai maldināšanas rezultātā instalētu ļaunprātīgu programmatūru.\n<a href=\"\">Uzzini vairāk</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[Rio Browser bloķēja šo lapu, jo tā, iespējams, mēģina tevi apkrāpt vai manipulēt ar tevi, lai tu pārskaitītu naudu, iegādātos viltotas preces vai maldināšanas rezultātā instalētu ļaunprātīgu programmatūru.\n<a href=\"\">Uzzini vairāk</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Pamest šo vietni</string>
     <string name="maliciousSiteAdvancedCTA">Detalizēti</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Ja uzskati, ka šī vietne ir droša, vari <a href=\"\">ziņot par kļūdu</a>. Tu joprojām vari apmeklēt šo vietni, apzinoties savu risku.]]></string>

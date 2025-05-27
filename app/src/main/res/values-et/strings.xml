@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">DuckDuckGo logo</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">Rio Browser logo</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Kaitse Privaatsus Meelerahu.</string>
     <string name="yes">Jah</string>
     <string name="no">Ei</string>
@@ -28,15 +28,15 @@
     <string name="search">Otsing</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Avage sätted, et DuckDuckGo abil iga kord otsida ja sirvida.</string>
-    <string name="onboardingDefaultBrowserTitle">Muuda DuckDuckGo oma vaikimisi brauseriks</string>
+    <string name="onboardingDefaultBrowserDescription">Avage sätted, et Rio Browser abil iga kord otsida ja sirvida.</string>
+    <string name="onboardingDefaultBrowserTitle">Muuda Rio Browser oma vaikimisi brauseriks</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Rakenduse vaikeseadete ekraani ei saa käivitada</string>
     <string name="setAsDefaultBrowser">Määrake vaikebrauseriks</string>
     <string name="defaultBrowserMaybeLater">Võib-olla hiljem</string>
     <string name="defaultBrowserDescriptionNoDefault">Avage linke igal ajal, rahuliku meelega.</string>
-    <string name="defaultBrowserInstructions">Valige DuckDuckGo ja koputage valikut <font color="#678fff">Alati</font>.</string>
+    <string name="defaultBrowserInstructions">Valige Rio Browser ja koputage valikut <font color="#678fff">Alati</font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Brauseri menüü</string>
@@ -97,11 +97,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Ava väline rakendus</string>
     <string name="launchingExternalApp">Ava teises rakenduses</string>
-    <string name="confirmOpenExternalApp">Kas soovite selle sisu vaatamiseks lahkuda DuckDuckGo\'st?</string>
+    <string name="confirmOpenExternalApp">Kas soovite selle sisu vaatamiseks lahkuda Rio Browser\'st?</string>
     <string name="unableToOpenLink">Seda tüüpi linki ei saa avada</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Vahelehed</string>
     <string name="tabsMenuItem">Vahelehed</string>
     <string name="newTabMenuItem">Uus vaheleht</string>
@@ -135,7 +135,7 @@
     <string name="settingsHeadingProtections">Kaitsed</string>
     <string name="settingsHeadingAppearance">Välimus</string>
     <string name="settingsHeadingAbout">Teave</string>
-    <string name="settingsAboutDuckduckgo">DuckDuckGo teave</string>
+    <string name="settingsAboutDuckduckgo">Rio Browser teave</string>
     <string name="settingsVersion">Versioon</string>
     <string name="leaveFeedback">Jaga tagasisidet</string>
     <string name="leaveFeedbackNew">Saada tagasisidet</string>
@@ -165,11 +165,11 @@
     <string name="settingsAddWidget">Lisa vidin avakuvale</string>
     <string name="settingsAddressBarPosition">Määra aadressiriba asukoht</string>
     <string name="settingsEnableVoiceSearch">Luba privaatne häälotsing</string>
-    <string name="settingsDDGOnOtherPlatforms">DuckDuckGo muudel platvormidel</string>
+    <string name="settingsDDGOnOtherPlatforms">Rio Browser muudel platvormidel</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">Privaatne otsing</string>
-    <string name="privateSearchDescription">DuckDuckGo Private Search on sinu vaikeotsimootor, mille abil saad veebis otsida ilma, et sind jälgitaks.</string>
+    <string name="privateSearchDescription">Rio Browser Private Search on sinu vaikeotsimootor, mille abil saad veebis otsida ilma, et sind jälgitaks.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Rohkem otsingu seadeid</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Kohanda oma otsingukeelt, piirkonda ja muud</string>
     <string name="privateSearchMoreSearchSettingsTitle">Rohkem otsinguseadeid</string>
@@ -188,7 +188,7 @@
     <string name="webTrackingProtectionActivityTitle">Veebijälgimise kaitse</string>
     <string name="webTrackingProtectionLearnMoreTitle">Veebijälgimise kaitse</string>
     <string name="webTrackingProtectionTitle">Veebijälgimise kaitse</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[DuckDuckGo blokeerib automaatselt peidetud jälgijaid, kui sa veebis sirvid.\n<a href=\"\">Loe edasi</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[Rio Browser blokeerib automaatselt peidetud jälgijaid, kui sa veebis sirvid.\n<a href=\"\">Loe edasi</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Küpsiste hüpikakna kaitse</string>
@@ -222,10 +222,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">Rakendusest väljumisel, 1-tunnise passiivsuse järel</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">DuckDuckGo\'st</string>
+    <string name="aboutActivityTitle">Rio Browser\'st</string>
     <string name="aboutActivityTitleNew">Teave</string>
     <string name="aboutHeaderNewTagLine">Kaitse Privaatsus Meelerahu.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Tere tulemast Pardi poolele!\n\nDuckDuckGo on sõltumatu veebikaitseettevõte kõikidele, kes tahavad oma isikliku teabe üle kontrolli tagasi saada.\n\nUsume, et parim viis teie isikuandmete kaitsmiseks häkkerite, petturite ja eraelu puutumatust rikkuvate ettevõtete eest on nende kogumise täielik vältimine. Seetõttu valivad miljonid inimesed <annotation type="chart_comparison">DuckDuckGo Chrome\'i ja teiste brauserite asemel</annotation>, et otsida ja sirvida internetis. Meie sisseehitatud otsingumootor on nagu Google, kuid ei jälgi kunagi teie otsinguid. Ja meie sirvimiskaitsed, nagu reklaamijälgijate ja küpsiste blokeerimine, aitavad takistada teistel ettevõtetel teie andmeid kogumast. Oh, ja meie brauser on tasuta — teenime raha <annotation type="privacy_respecting_ads">privaatsust austavate otsingureklaamidega</annotation>, mitte teie andmeid ära kasutades.\n\nLisaks pakume ka meie kolm-ühes tellimusteenust <annotation type="ppro_help_page">Privacy Pro</annotation>, mis on integreeritud meie brauserisse. Privacy Pro tellijad saavad veelgi tõhusama privaatsuse kaitse kiire ja lihtsa <annotation type="vpn_help_page">VPN</annotation> -iga, mis aitab kaitsta teie veebitegevust, teenuse, mis otsib ja eemaldab teie isikuandmeid inimesteotsingu saitidelt, ning teenuse, mis taastab teie identiteedi, kui see varastatakse.\n\nVõtke tagasi kontroll oma isikuandmete üle brauseriga, mis on loodud andmete kaitsmiseks ja mitte nende kogumiseks.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Tere tulemast Pardi poolele!\n\nRio Browser on sõltumatu veebikaitseettevõte kõikidele, kes tahavad oma isikliku teabe üle kontrolli tagasi saada.\n\nUsume, et parim viis teie isikuandmete kaitsmiseks häkkerite, petturite ja eraelu puutumatust rikkuvate ettevõtete eest on nende kogumise täielik vältimine. Seetõttu valivad miljonid inimesed <annotation type="chart_comparison">Rio Browser Chrome\'i ja teiste brauserite asemel</annotation>, et otsida ja sirvida internetis. Meie sisseehitatud otsingumootor on nagu Google, kuid ei jälgi kunagi teie otsinguid. Ja meie sirvimiskaitsed, nagu reklaamijälgijate ja küpsiste blokeerimine, aitavad takistada teistel ettevõtetel teie andmeid kogumast. Oh, ja meie brauser on tasuta — teenime raha <annotation type="privacy_respecting_ads">privaatsust austavate otsingureklaamidega</annotation>, mitte teie andmeid ära kasutades.\n\nLisaks pakume ka meie kolm-ühes tellimusteenust <annotation type="ppro_help_page">Privacy Pro</annotation>, mis on integreeritud meie brauserisse. Privacy Pro tellijad saavad veelgi tõhusama privaatsuse kaitse kiire ja lihtsa <annotation type="vpn_help_page">VPN</annotation> -iga, mis aitab kaitsta teie veebitegevust, teenuse, mis otsib ja eemaldab teie isikuandmeid inimesteotsingu saitidelt, ning teenuse, mis taastab teie identiteedi, kui see varastatakse.\n\nVõtke tagasi kontroll oma isikuandmete üle brauseriga, mis on loodud andmete kaitsmiseks ja mitte nende kogumiseks.</string>
     <string name="no_suggestions">Ettepanekud puuduvad</string>
 
     <!-- Broken Site Activity -->
@@ -236,7 +236,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">Abi võib olla kaitsefunktsioonide väljalülitamisest.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">DuckDuckGo otsing</string>
+    <string name="searchWidgetTextHint">Rio Browser otsing</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 Lisa lemmik</string>
@@ -261,7 +261,7 @@
     <string name="surveyCtaLaunchButton">Vastake küsitlusele</string>
     <string name="surveyCtaDismissButton">Ei, aitäh</string>
     <string name="surveyActivityTitle">Kasutajaküsitlus</string>
-    <string name="surveyTitle">DuckDuckGo küsitlus</string>
+    <string name="surveyTitle">Rio Browser küsitlus</string>
     <string name="surveyDismissContentDescription">Loobu küsitlusest</string>
     <string name="surveyLoadingErrorTitle">Oh ei!</string>
     <string name="surveyLoadingErrorText">Meie küsitlust praegu laadida ei õnnestunud.\nPalun proovige hiljem uuesti.</string>
@@ -276,14 +276,14 @@
     <string name="addWidgetInstruction1Label">1</string>
     <string name="addWidgetInstruction1">Vajuta pikalt avakuval ja ava vidinate menüü.</string>
     <string name="addWidgetInstruction2Label">2</string>
-    <string name="addWidgetInstruction2">Leia vidin DuckDuckGo.</string>
+    <string name="addWidgetInstruction2">Leia vidin Rio Browser.</string>
     <string name="addWidgetInstruction3Label">3</string>
     <string name="addWidgetInstruction3">Lohista vidin oma avakuvale.</string>
     <string name="addWidgetInstructionsButtonGoHome">Minge avakuvale</string>
     <string name="addWidgetInstructionsButtonClose">Sulge</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Kas teile meeldib DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Kas teile meeldib Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Meile meeldiks teada, mida sa arvad.</string>
     <string name="appEnjoymentDialogPositiveButton">Mulle meeldib see</string>
     <string name="appEnjoymentDialogNegativeButton">See vajab tööd</string>
@@ -305,15 +305,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Seadistatud on andmete käsitsi kustutamine</string>
-    <string name="clearNotificationDescription">Kohandage DuckDuckGo sirvimisandmete automaatseks kustutamiseks pärast igat seanssi.</string>
+    <string name="clearNotificationDescription">Kohandage Rio Browser sirvimisandmete automaatseks kustutamiseks pärast igat seanssi.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Kaitseme teie privaatsust</string>
     <string name="privacyProtectionNotificationReportTitle">Teie privaatsusaruanne</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Rakenduse DuckDuckGo kasutamine kaitseb teie andmeid, blokeerides jälgijaid ja krüpteerides ühendusi.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Kaitsesite oma andmeid, krüptides DuckDuckGo kasutamise ajal %1$d krüptimata ühendust.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Kaitsesite oma andmeid, blokeerides DuckDuckGo kasutamise ajal %1$d jälitajat.</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Kaitsesite oma andmeid, blokeerides DuckDuckGo kasutamise ajal %1$d jälitaja ja turvates %2$d krüptimata ühendust.</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Rakenduse Rio Browser kasutamine kaitseb teie andmeid, blokeerides jälgijaid ja krüpteerides ühendusi.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Kaitsesite oma andmeid, krüptides Rio Browser kasutamise ajal %1$d krüptimata ühendust.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Kaitsesite oma andmeid, blokeerides Rio Browser kasutamise ajal %1$d jälitajat.</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Kaitsesite oma andmeid, blokeerides Rio Browser kasutamise ajal %1$d jälitaja ja turvates %2$d krüptimata ühendust.</string>
     <string name="privacyProtectionNotificationLaunchButton">Jätka sirvimist</string>
 
     <!-- Authentication -->
@@ -325,7 +325,7 @@
     <string name="authenticationDialogPasswordHint">Parool</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">DuckDuckGo otsing</string>
+    <string name="systemTextSearchMessage">Rio Browser otsing</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Jaga tagasisidet</string>
@@ -344,8 +344,8 @@
     <string name="websiteNotLoadingTitleShort">Veebisaidi laadimisega seotud probleemid</string>
     <string name="websiteNotLoadingSubtitle">Milline veebisait on katki?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">DuckDuckGo otsing pole piisavalt hea</string>
-    <string name="searchNotGoodEnoughTitleShort">DuckDuckGo otsingu probleemid</string>
+    <string name="searchNotGoodEnoughTitleLong">Rio Browser otsing pole piisavalt hea</string>
+    <string name="searchNotGoodEnoughTitleShort">Rio Browser otsingu probleemid</string>
     <string name="searchNotGoodEnoughSubtitle">Millist otsingufunktsiooni saame lisada või täiustada?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Programmeerimine / tehniline otsing</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">Paigutus peaks olema rohkem nagu Google</string>
@@ -406,8 +406,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">Sellest seadmest</string>
     <string name="systemSearchAppNotFound">Rakendust ei leitud</string>
-    <string name="systemSearchOnboardingThanks">Aitäh, et valisite DuckDuckGo!\nMeie brauseri kasutamine aitab teid kaitsta häkkerite, petturite ja andmenäljaste ettevõtete eest.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">Peale selle DuckDuckGo rakendus:</string>
+    <string name="systemSearchOnboardingThanks">Aitäh, et valisite Rio Browser!\nMeie brauseri kasutamine aitab teid kaitsta häkkerite, petturite ja andmenäljaste ettevõtete eest.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">Peale selle Rio Browser rakendus:</string>
     <string name="systemSearchOnboardingFeatureOneText">Blokeerib ebaturvalised jälgijad.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Sunnib krüpteerima veebisaite.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Kustutab andmed ühe puudutusega.</string>
@@ -425,7 +425,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Mitte praegu</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Tere tulemast DuckDuckGo kasutajaks!"</string>
+    <string name="onboardingWelcomeTitle">"Tere tulemast Rio Browser kasutajaks!"</string>
     <string name="onboardingDaxText"><![CDATA[Internet võib olla üsna jube.<br/><br/>Ärge muretsege! Privaatselt otsimine ja sirvimine on lihtsam kui arvate.]]></string>
     <string name="onboardingLetsDoItButton">Teeme ära!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Kui puudutate ja kerite, siis mina blokeerin tüütud jälgijad. <br/><br/>Edasi — jätkake sirvimist!]]></string>
@@ -516,7 +516,7 @@
     <string name="dosErrorMessage">Ühendus on katkestatud. See veebileht võib kahjustada sinu seadet.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Kas lubada seadme asukoht DuckDuckGo privaatses brauseris?</string>
+    <string name="preciseLocationSystemDialogTitle">Kas lubada seadme asukoht Rio Browser privaatses brauseris?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s küsib sinu seadme asukohta. Kõigepealt pead lubama rakendusel saata oma seadme asukoht, seejärel saab %2$s küsida luba.</string>
     <string name="preciseLocationSystemDialogAllow">Luba</string>
     <string name="preciseLocationSystemDialogDeny">Võib-olla hiljem</string>
@@ -528,7 +528,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Ainult selle seansi jaoks</string>
     <string name="preciseLocationSiteDialogDenyAlways">Keela alati</string>
     <string name="preciseLocationSiteDialogDenyOnce">Keela selle seansi jaoks</string>
-    <string name="preciseLocationFeatureDescription">Saidid, mida sa külastad, võivad küsida sinu seadme asukohta. Nad ei saa sellele ligipääsu enne, kui oled andnud selgesõnalise loa. DuckDuckGo kasutab sinu asukohta alati anonüümselt, et edastada kohaliku otsingu tulemused.</string>
+    <string name="preciseLocationFeatureDescription">Saidid, mida sa külastad, võivad küsida sinu seadme asukohta. Nad ei saa sellele ligipääsu enne, kui oled andnud selgesõnalise loa. Rio Browser kasutab sinu asukohta alati anonüümselt, et edastada kohaliku otsingu tulemused.</string>
     <string name="preciseLocationToggleText">Saidid võivad küsida minu asukohta</string>
     <string name="preciseLocationEmptyListHint">Ühelegi veebisaidile ei ole antud luba asukohale juurdepääsuks</string>
     <string name="preciseLocationNoSystemPermission">Haldamaks asukohale juurdepääsu lubasid, mille sa oled üksikutele saitidele andnud, luba asukoht selle rakenduse jaoks Androidi seadetes.</string>
@@ -544,7 +544,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Üleilmne privaatsuskontroll (Global Privacy Control (GPC))</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo blokeerib automaatselt paljud jälitajad. Üleilmse privaatsuskontrolli (GPC) abil saate paluda osalevatel veebisaitidel piirata teie isikuandmete müümist või jagamist teiste ettevõtetega. <u><a href=\"\">Loe edasi</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[Rio Browser blokeerib automaatselt paljud jälitajad. Üleilmse privaatsuskontrolli (GPC) abil saate paluda osalevatel veebisaitidel piirata teie isikuandmete müümist või jagamist teiste ettevõtetega. <u><a href=\"\">Loe edasi</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Üleilmne privaatsuskontroll (Global Privacy Control (GPC))</string>
     <string name="globalPrivacyControlToggle">Üleilmne privaatsuskontroll (Global Privacy Control (GPC))</string>
     <string name="disabled">Keelatud</string>
@@ -582,11 +582,11 @@
     <string name="settingsAccessibility">Hõlpsus</string>
     <string name="accessibilityActivityTitle">Hõlpsus</string>
     <string name="accessibilityFontSizeTitle">Teksti suurus</string>
-    <string name="accessibilityFontSizeHint">Lohista liugurit, kuni saad seda mugavalt lugeda. DuckDuckGo\'s kuvatavad veebisaidid kohanduvad sellega.</string>
+    <string name="accessibilityFontSizeHint">Lohista liugurit, kuni saad seda mugavalt lugeda. Rio Browser\'s kuvatavad veebisaidid kohanduvad sellega.</string>
     <string name="accessibilityForceZoomTitle">Jõusta lehe käsitsi suumimine</string>
     <string name="accessibilityForceZoomSubtitle">Sõrmedega suumimine töötab kõigil veebisaitidel, ka neil, mis seda tavaliselt takistavad</string>
     <string name="accessibilityTextSizeOverrideTitle">Halda teksti suurust</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">DuckDuckGo\'s kuvatavate veebisaitide teksti reguleeritakse alloleva sätte järgi</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">Rio Browser\'s kuvatavate veebisaitide teksti reguleeritakse alloleva sätte järgi</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Privaatsuspoliitika</string>
@@ -655,7 +655,7 @@
     <string name="tabSelectedIndicator">Valitud vahekaardi indikaator</string>
     <string name="tabNotSelectedIndicator">Indikaator, et vahekaart pole valitud</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d linki DuckDuckGo\'st</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d linki Rio Browser\'st</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="one">Jaga linki</item>
         <item quantity="other">Jaga linke %1$d</item>
@@ -724,8 +724,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Laadi pilt üles</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Vali fail</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Tee pilt</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Luba DuckDuckGo’l küsida juurdepääsu selle seadme kaamerale</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Saidid saavad sinu kaamerat kasutada ainult siis, kui lubad DuckDuckGo’l küsida sellele juurdepääsu.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Luba Rio Browser’l küsida juurdepääsu selle seadme kaamerale</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Saidid saavad sinu kaamerat kasutada ainult siis, kui lubad Rio Browser’l küsida sellele juurdepääsu.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Ava sätted</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Loobu</string>
 
@@ -735,15 +735,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Parool uuendatud</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Ava saidil DuckDuckGo</string>
-    <string name="runningInDdgMenuItemTitle">DuckDuckGo-s käivitamine</string>
+    <string name="openInDdgMenuItemTitle">Ava saidil Rio Browser</string>
+    <string name="runningInDdgMenuItemTitle">Rio Browser-s käivitamine</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Hoiatus: see sait võib olla ebaturvaline</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">Selle saidi sertifikaat on vale. Võimalik, et lood ühenduse serveriga, mis teeskleb olevat %1$s ja see võib sinu konfidentsiaalse teabe ohtu seada.</string>
     <string name="sslErrorLeaveCTA">Lahku sellelt saidilt</string>
     <string name="sslErrorAdvancedCTA">Täiustatud</string>
-    <string name="sslErrorExpandedHeadline">DuckDuckGo hoiatab sind, kui veebisaidil on vale sertifikaat.</string>
+    <string name="sslErrorExpandedHeadline">Rio Browser hoiatab sind, kui veebisaidil on vale sertifikaat.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Nõustu riskiga ja külasta saiti</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">%1$s turvasertifikaat on aegunud. Võimalik, et veebisait on valesti konfigureeritud, ründaja on sinu ühenduse ohtu seadnud või sinu süsteemi kell on vale.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">%1$s turvasertifikaat ei ühti *.%2$s. Võimalik, et veebisait on valesti konfigureeritud, ründaja on sinu ühenduse ohtu seadnud või sinu süsteemi kell on vale.</string>
@@ -762,7 +762,7 @@
     <string name="preOnboardingDaxDialog3Title">Suurepärane! Tere tulemast pardi poolele.</string>
     <string name="preOnboardingDaxDialog3Button">Alusta sirvimist</string>
     <string name="onboardingSearchDaxDialogTitle">Proovige otsingut!</string>
-    <string name="onboardingSearchDaxDialogDescription">Sinu DuckDuckGo otsingud on alati anonüümsed.</string>
+    <string name="onboardingSearchDaxDialogDescription">Sinu Rio Browser otsingud on alati anonüümsed.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">kuidas öelda „part“ inglise keeles</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">kuidas öelda „part“ hispaania keeles</string>
     <string name="onboardingSearchQueryOption1">kuidas öelda part inglise keeles</string>
@@ -779,7 +779,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Üllata mind!</string>
-    <string name="onboardingSerpDaxDialogDescription">See on DuckDuckGo otsing. Privaatne. Kiire. Vähem reklaame.</string>
+    <string name="onboardingSerpDaxDialogDescription">See on Rio Browser otsing. Privaatne. Kiire. Vähem reklaame.</string>
     <string name="onboardingSerpDaxDialogButton">Sain aru!</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">Järgmisena proovi mõnda saiti külastada!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -796,7 +796,7 @@
     <string name="onboardingEndDaxDialogDescription">Pea meeles: iga kord kui minuga sirvid, kaotab jube reklaam oma tiivad. 👌</string>
     <string name="onboardingEndDaxDialogButton">Kõik valmis!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Ja enne kui ma unustan...</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[DuckDuckGo-l on ka sisseehitatud <b>VPN</b>!<br/><br/>Aktiveeri see <b>tasulise Privacy Pro püsitellimusega.</b>]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[Rio Browser-l on ka sisseehitatud <b>VPN</b>!<br/><br/>Aktiveeri see <b>tasulise Privacy Pro püsitellimusega.</b>]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Loe edasi</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Jäta vahele</string>
 
@@ -817,8 +817,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">All</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Kergesti ligipääsetav</string>
     <string name="highlightsOnboardingSearchQueryOption4">pardipojad</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">Sinu DuckDuckGo otsingud on alati privaatsed.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[See on <b>DuckDuckGo Search</b>! Privaatne. Kiire. Vähem reklaame.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">Sinu Rio Browser otsingud on alati privaatsed.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[See on <b>Rio Browser Search</b>! Privaatne. Kiire. Vähem reklaame.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Pea meeles: iga kord kui minuga sirvid, kaotab jube reklaam oma tiivad.</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Viska viis!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Proovi seda</string>
@@ -840,27 +840,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Konkreetne lehekülg</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Aitäh! Sinu aruanne aitab muuta DuckDuckGo kõigi jaoks paremaks!</string>
+    <string name="brokenSiteSubmittedReportMessage">Aitäh! Sinu aruanne aitab muuta Rio Browser kõigi jaoks paremaks!</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Uus AI vestlus</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Laske DuckDuckGo\'l kaitsta rohkem seda, mida te veebis teete</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Laske Rio Browser\'l kaitsta rohkem seda, mida te veebis teete</string>
     <string name="defaultBrowserBottomSheetDialogSubTitle">Muutke meid oma vaikebrauseriks, et kõik saidilingid avaneksid DuckDuckGos.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Mitte praegu</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">DuckDuckGo blokeerib jälgurid, et kaitsta sinu sirvimist</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Rio Browser blokeerib jälgurid, et kaitsta sinu sirvimist</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">Vahekaartide ja andmete kustutamine kustutab sinu jälguri blokeerimise ajaloo ja lähtestab selle numbri nulli.\n\nPeida see ribareklaam, kui sa ei soovi seda vahekaartide vaates näha.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Peida ribareklaam</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Hoiatus: see sait võib olla turvaoht</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[DuckDuckGo blokeeris selle saidi, kuna see võib levitada pahavara, mis on loodud teie seadme kahjustamiseks või teie isikuandmete varastamiseks.\n<a href=\"\">Vaata lähemalt</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[Rio Browser blokeeris selle saidi, kuna see võib levitada pahavara, mis on loodud teie seadme kahjustamiseks või teie isikuandmete varastamiseks.\n<a href=\"\">Vaata lähemalt</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[See veebisait võib imiteerida seaduslikku veebisaiti, et sinult välja petta isiklikke andmeid, näiteks paroole või krediitkaardi numbreid.\n<a href=\"\">Vaata lähemalt</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[DuckDuckGo blokeeris selle lehe, kuna see võib püüda teid petta või manipuleerida tegema rahaülekandeid, ostma võltsitud kaupu või installima pahavara valel ettekäändel.\n<a href=\"\">Vaata lähemalt</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[Rio Browser blokeeris selle lehe, kuna see võib püüda teid petta või manipuleerida tegema rahaülekandeid, ostma võltsitud kaupu või installima pahavara valel ettekäändel.\n<a href=\"\">Vaata lähemalt</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Lahku sellelt saidilt</string>
     <string name="maliciousSiteAdvancedCTA">Täiustatud</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Kui arvate, et see veebisait on turvaline, võite <a href=\"\">teatada veast</a>. Võite siiski külastada veebisaiti omal vastutusel.]]></string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">Logótipo do DuckDuckGo</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">Logótipo do Rio Browser</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Proteção. Privacidade. Tranquilidade.</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
@@ -28,15 +28,15 @@
     <string name="search">Pesquisar</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Visite as Definições para pesquisar e navegar sempre com o DuckDuckGo.</string>
-    <string name="onboardingDefaultBrowserTitle">Faça do DuckDuckGo o seu predefinido</string>
+    <string name="onboardingDefaultBrowserDescription">Visite as Definições para pesquisar e navegar sempre com o Rio Browser.</string>
+    <string name="onboardingDefaultBrowserTitle">Faça do Rio Browser o seu predefinido</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Não é possível iniciar o ecrã predefinido de definições da aplicação</string>
     <string name="setAsDefaultBrowser">Definir como navegador padrão</string>
     <string name="defaultBrowserMaybeLater">Talvez mais tarde</string>
     <string name="defaultBrowserDescriptionNoDefault">Abra links com tranquilidade, sempre.</string>
-    <string name="defaultBrowserInstructions">Selecione DuckDuckGo e toque em <font color="#678fff">Sempre</font>.</string>
+    <string name="defaultBrowserInstructions">Selecione Rio Browser e toque em <font color="#678fff">Sempre</font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Menu do navegador</string>
@@ -97,11 +97,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Abrir aplicação externa</string>
     <string name="launchingExternalApp">Abrir noutra aplicação</string>
-    <string name="confirmOpenExternalApp">Gostaria de sair do DuckDuckGo para visualizar este conteúdo?</string>
+    <string name="confirmOpenExternalApp">Gostaria de sair do Rio Browser para visualizar este conteúdo?</string>
     <string name="unableToOpenLink">Não é possível abrir este tipo de ligação</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Separadores</string>
     <string name="tabsMenuItem">Separadores</string>
     <string name="newTabMenuItem">Novo separador</string>
@@ -135,7 +135,7 @@
     <string name="settingsHeadingProtections">Proteções</string>
     <string name="settingsHeadingAppearance">Aparência</string>
     <string name="settingsHeadingAbout">Acerca de</string>
-    <string name="settingsAboutDuckduckgo">Sobre o DuckDuckGo</string>
+    <string name="settingsAboutDuckduckgo">Sobre o Rio Browser</string>
     <string name="settingsVersion">Versão</string>
     <string name="leaveFeedback">Partilhar comentários</string>
     <string name="leaveFeedbackNew">Enviar comentário</string>
@@ -165,11 +165,11 @@
     <string name="settingsAddWidget">Adicionar widget ao ecrã inicial</string>
     <string name="settingsAddressBarPosition">Define a Posição da Barra de Endereços</string>
     <string name="settingsEnableVoiceSearch">Ativar pesquisa por voz privada</string>
-    <string name="settingsDDGOnOtherPlatforms">DuckDuckGo Noutras Plataformas</string>
+    <string name="settingsDDGOnOtherPlatforms">Rio Browser Noutras Plataformas</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">Pesquisa Privada</string>
-    <string name="privateSearchDescription">O DuckDuckGo Private Search é o teu motor de pesquisa predefinido, para que possas pesquisar a web sem seres rastreado.</string>
+    <string name="privateSearchDescription">O Rio Browser Private Search é o teu motor de pesquisa predefinido, para que possas pesquisar a web sem seres rastreado.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Mais definições de pesquisa</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Personaliza o teu idioma de pesquisa, região e muito mais</string>
     <string name="privateSearchMoreSearchSettingsTitle">Mais definições de pesquisa</string>
@@ -188,7 +188,7 @@
     <string name="webTrackingProtectionActivityTitle">Proteção contra rastreamento na internet</string>
     <string name="webTrackingProtectionLearnMoreTitle">Proteção contra rastreamento na internet</string>
     <string name="webTrackingProtectionTitle">Proteção contra rastreamento na internet</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[O DuckDuckGo bloqueia automaticamente os rastreadores ocultos enquanto navegas na Internet.\n<a href=\"\">Sabe mais</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[O Rio Browser bloqueia automaticamente os rastreadores ocultos enquanto navegas na Internet.\n<a href=\"\">Sabe mais</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Proteção contra pop-ups de cookies</string>
@@ -222,10 +222,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">Saída da aplicação, inativa por 1 hora</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">Sobre o DuckDuckGo</string>
+    <string name="aboutActivityTitle">Sobre o Rio Browser</string>
     <string name="aboutActivityTitleNew">Acerca de</string>
     <string name="aboutHeaderNewTagLine">Proteção. Privacidade. Tranquilidade.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nA DuckDuckGo é a empresa independente de proteção online para quem quer recuperar o controlo das suas informações pessoais.\n\nAcreditamos que a melhor maneira de proteger as tuas informações pessoais de hackers, burlões e empresas que invadem a privacidade é impedir que sejam recolhidas. É por isso que milhões de pessoas <annotation type="chart_comparison">escolhem o DuckDuckGo em vez do Chrome e de outros navegadores</annotation> para pesquisar e navegar online. O nosso motor de busca incorporado é como o Google, mas nunca rastreia as tuas pesquisas. E as nossas proteções de navegação, como o bloqueio de rastreadores de anúncios e o bloqueio de cookies, ajudam a impedir que outras empresas recolham os teus dados. Além disso, o nosso navegador é gratuito — ganhamos dinheiro com <annotation type="privacy_respecting_ads">anúncios de pesquisa que respeitam a tua privacidade</annotation> e não com a exploração dos teus dados.Também oferecemos o <annotation type="ppro_help_page">Privacy Pro</annotation>, um serviço de subscrição três em um, integrado no nosso navegador. Os subscritores do Privacy Pro têm uma maior proteção da privacidade com uma <annotation type="vpn_help_page">VPN</annotation> rápida e simples que ajuda a proteger a tua atividade online, um serviço que encontra e remove as tuas informações pessoais de sites de pesquisa de pessoas, e um serviço que restaura a tua identidade caso seja roubada.\n\nRecupera o controlo sobre as tuas informações pessoais com o navegador concebido para a proteção de dados e não para a recolha de dados.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nA Rio Browser é a empresa independente de proteção online para quem quer recuperar o controlo das suas informações pessoais.\n\nAcreditamos que a melhor maneira de proteger as tuas informações pessoais de hackers, burlões e empresas que invadem a privacidade é impedir que sejam recolhidas. É por isso que milhões de pessoas <annotation type="chart_comparison">escolhem o Rio Browser em vez do Chrome e de outros navegadores</annotation> para pesquisar e navegar online. O nosso motor de busca incorporado é como o Google, mas nunca rastreia as tuas pesquisas. E as nossas proteções de navegação, como o bloqueio de rastreadores de anúncios e o bloqueio de cookies, ajudam a impedir que outras empresas recolham os teus dados. Além disso, o nosso navegador é gratuito — ganhamos dinheiro com <annotation type="privacy_respecting_ads">anúncios de pesquisa que respeitam a tua privacidade</annotation> e não com a exploração dos teus dados.Também oferecemos o <annotation type="ppro_help_page">Privacy Pro</annotation>, um serviço de subscrição três em um, integrado no nosso navegador. Os subscritores do Privacy Pro têm uma maior proteção da privacidade com uma <annotation type="vpn_help_page">VPN</annotation> rápida e simples que ajuda a proteger a tua atividade online, um serviço que encontra e remove as tuas informações pessoais de sites de pesquisa de pessoas, e um serviço que restaura a tua identidade caso seja roubada.\n\nRecupera o controlo sobre as tuas informações pessoais com o navegador concebido para a proteção de dados e não para a recolha de dados.</string>
     <string name="no_suggestions">Sem sugestões</string>
 
     <!-- Broken Site Activity -->
@@ -236,7 +236,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">A desativação das proteções pode ajudar.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">Pesquisar no DuckDuckGo</string>
+    <string name="searchWidgetTextHint">Pesquisar no Rio Browser</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 Adicionar favorito</string>
@@ -261,7 +261,7 @@
     <string name="surveyCtaLaunchButton">Responder ao inquérito</string>
     <string name="surveyCtaDismissButton">Não, obrigado</string>
     <string name="surveyActivityTitle">Inquérito aos utilizadores</string>
-    <string name="surveyTitle">Inquérito do DuckDuckGo</string>
+    <string name="surveyTitle">Inquérito do Rio Browser</string>
     <string name="surveyDismissContentDescription">Ignorar inquérito</string>
     <string name="surveyLoadingErrorTitle">Oh, não!</string>
     <string name="surveyLoadingErrorText">O nosso inquérito não pode ser carregado neste momento.\nVolte a tentar mais tarde.</string>
@@ -276,14 +276,14 @@
     <string name="addWidgetInstruction1Label">1</string>
     <string name="addWidgetInstruction1">Prima prolongadamente o ecrã inicial e, em seguida, abra o menu de widgets.</string>
     <string name="addWidgetInstruction2Label">2</string>
-    <string name="addWidgetInstruction2">Encontre o widget DuckDuckGo.</string>
+    <string name="addWidgetInstruction2">Encontre o widget Rio Browser.</string>
     <string name="addWidgetInstruction3Label">3</string>
     <string name="addWidgetInstruction3">Arraste o widget para a janela inicial.</string>
     <string name="addWidgetInstructionsButtonGoHome">Vá para ecrã inicial</string>
     <string name="addWidgetInstructionsButtonClose">Fechar</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Está a gostar do DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Está a gostar do Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Adoravamos saber o que pensa.</string>
     <string name="appEnjoymentDialogPositiveButton">Gosto</string>
     <string name="appEnjoymentDialogNegativeButton">Precisa de ser trabalhada</string>
@@ -305,15 +305,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Limpeza de dados definida para manual</string>
-    <string name="clearNotificationDescription">Personalize o DuckDuckGo para limpar automaticamente os dados de navegação após cada sessão.</string>
+    <string name="clearNotificationDescription">Personalize o Rio Browser para limpar automaticamente os dados de navegação após cada sessão.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Estamos a proteger a sua privacidade</string>
     <string name="privacyProtectionNotificationReportTitle">O seu relatório de privacidade</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Utilizar a aplicação DuckDuckGo protege os seus dados bloqueando rastreadores e encriptando ligações.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Protegeu os seus dados tornando seguras %1$d ligações não encriptadas durante a utilização do DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Protegeu os seus dados bloqueando %1$d rastreadores durante a utilização do DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Protegeu os seus dados bloqueando %1$d rastreadores e tornando seguras %2$d ligações não encriptadas durante a utilização do DuckDuckGo.</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Utilizar a aplicação Rio Browser protege os seus dados bloqueando rastreadores e encriptando ligações.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Protegeu os seus dados tornando seguras %1$d ligações não encriptadas durante a utilização do Rio Browser.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Protegeu os seus dados bloqueando %1$d rastreadores durante a utilização do Rio Browser.</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Protegeu os seus dados bloqueando %1$d rastreadores e tornando seguras %2$d ligações não encriptadas durante a utilização do Rio Browser.</string>
     <string name="privacyProtectionNotificationLaunchButton">Retomar navegação</string>
 
     <!-- Authentication -->
@@ -325,7 +325,7 @@
     <string name="authenticationDialogPasswordHint">Palavra-passe</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">Pesquisar no DuckDuckGo</string>
+    <string name="systemTextSearchMessage">Pesquisar no Rio Browser</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Partilhar comentários</string>
@@ -344,8 +344,8 @@
     <string name="websiteNotLoadingTitleShort">Problemas de carregamento do site</string>
     <string name="websiteNotLoadingSubtitle">Que site está com falhas?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">A pesquisa do DuckDuckGo não é suficiente boa</string>
-    <string name="searchNotGoodEnoughTitleShort">Problemas com a pesquisa do DuckDuckGo</string>
+    <string name="searchNotGoodEnoughTitleLong">A pesquisa do Rio Browser não é suficiente boa</string>
+    <string name="searchNotGoodEnoughTitleShort">Problemas com a pesquisa do Rio Browser</string>
     <string name="searchNotGoodEnoughSubtitle">Que funcionalidade de pesquisa podemos adicionar ou melhorar?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Programação/pesquisa técnica</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">A disposição deveria ser mais parecida com o Google</string>
@@ -406,8 +406,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">Deste dispositivo</string>
     <string name="systemSearchAppNotFound">Não foi possível encontrar a aplicação</string>
-    <string name="systemSearchOnboardingThanks">Agradecemos-te por escolheres o DuckDuckGo!\nUsar o nosso navegador ajuda a manter a proteção contra hackers, burlões e empresas ávidas por dados.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">A aplicação DuckDuckGo também:</string>
+    <string name="systemSearchOnboardingThanks">Agradecemos-te por escolheres o Rio Browser!\nUsar o nosso navegador ajuda a manter a proteção contra hackers, burlões e empresas ávidas por dados.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">A aplicação Rio Browser também:</string>
     <string name="systemSearchOnboardingFeatureOneText">Bloqueia rastreadores inseguros.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Força a encriptação em websites.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Limpa os dados com um toque.</string>
@@ -425,7 +425,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Agora não</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Damos-lhe as boas-vindas ao DuckDuckGo!"</string>
+    <string name="onboardingWelcomeTitle">"Damos-lhe as boas-vindas ao Rio Browser!"</string>
     <string name="onboardingDaxText"><![CDATA[A Internet pode ser um pouco assustadora.<br/><br/>Mas não se preocupe! Pesquisar e navegar em privado é mais fácil do que pensa.]]></string>
     <string name="onboardingLetsDoItButton">Vamos lá!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Enquanto toca e desliza, eu bloqueio rastreadores irritantes. <br/><br/>Prossiga - continue a navegar!]]></string>
@@ -516,7 +516,7 @@
     <string name="dosErrorMessage">Ligação abortada. Este website poderá ser prejudicial ao seu dispositivo.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Ativar a localização do dispositivo para o Navegador de Privacidade DuckDuckGo?</string>
+    <string name="preciseLocationSystemDialogTitle">Ativar a localização do dispositivo para o Navegador de Privacidade Rio Browser?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s está a pedir a localização do seu dispositivo. Primeiro, precisa permitir que a aplicação envie a localização do dispositivo e, em seguida, %2$s pode pedir permissão.</string>
     <string name="preciseLocationSystemDialogAllow">Permitir</string>
     <string name="preciseLocationSystemDialogDeny">Talvez mais tarde</string>
@@ -528,7 +528,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Apenas para esta sessão</string>
     <string name="preciseLocationSiteDialogDenyAlways">Negar sempre</string>
     <string name="preciseLocationSiteDialogDenyOnce">Negar para esta sessão</string>
-    <string name="preciseLocationFeatureDescription">Os sites que visita podem pedir para saber a localização do dispositivo. Eles não poderão aceder a ele até lhes conceder permissão explicitamente. DuckDuckGo apenas utiliza a sua localização anonimamente para entregar resultados de pesquisas locais.</string>
+    <string name="preciseLocationFeatureDescription">Os sites que visita podem pedir para saber a localização do dispositivo. Eles não poderão aceder a ele até lhes conceder permissão explicitamente. Rio Browser apenas utiliza a sua localização anonimamente para entregar resultados de pesquisas locais.</string>
     <string name="preciseLocationToggleText">Os sites podem solicitar a minha localização</string>
     <string name="preciseLocationEmptyListHint">Nenhum site tem garantia de permissão para aceder à localização</string>
     <string name="preciseLocationNoSystemPermission">Para gerir as permissões de acesso à localização que concedeu a sites individuais, ative a localização para esta aplicação, nas definições do Android.</string>
@@ -544,7 +544,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Controlo Global de Privacidade (CGP)</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo bloqueia automaticamente muitos rastreadores. Com o Controlo de Privacidade Global (CPG), pode também solicitar aos websites participantes para restringir a venda ou a partilha dos seus dados pessoais com outras empresas. <u><a href=\"\">Saiba mais</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[Rio Browser bloqueia automaticamente muitos rastreadores. Com o Controlo de Privacidade Global (CPG), pode também solicitar aos websites participantes para restringir a venda ou a partilha dos seus dados pessoais com outras empresas. <u><a href=\"\">Saiba mais</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Controlo Global de Privacidade (CGP)</string>
     <string name="globalPrivacyControlToggle">Controlo Global de Privacidade (CGP)</string>
     <string name="disabled">Desativado</string>
@@ -582,11 +582,11 @@
     <string name="settingsAccessibility">Acessibilidade</string>
     <string name="accessibilityActivityTitle">Acessibilidade</string>
     <string name="accessibilityFontSizeTitle">Tamanho do texto</string>
-    <string name="accessibilityFontSizeHint">Arraste o slider até poder ler isto confortavelmente. Os websites que visualiza no DuckDuckGo ajustar-se-ão a ele.</string>
+    <string name="accessibilityFontSizeHint">Arraste o slider até poder ler isto confortavelmente. Os websites que visualiza no Rio Browser ajustar-se-ão a ele.</string>
     <string name="accessibilityForceZoomTitle">Imponha o zoom manual da página</string>
     <string name="accessibilityForceZoomSubtitle">Aperte e faça zoom em qualquer site, mesmo aqueles que de outra forma o evitariam</string>
     <string name="accessibilityTextSizeOverrideTitle">Gira o tamanho do texto</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">Os textos nos sites que visualiza no DuckDuckGo serão ajustados para corresponder à definição abaixo</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">Os textos nos sites que visualiza no Rio Browser serão ajustados para corresponder à definição abaixo</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Política de Privacidade</string>
@@ -655,7 +655,7 @@
     <string name="tabSelectedIndicator">Indicador de separador selecionado</string>
     <string name="tabNotSelectedIndicator">Indicador de separador não selecionado</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d links do DuckDuckGo</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d links do Rio Browser</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="one">Partilhar link</item>
         <item quantity="other">Partilhar %1$d links</item>
@@ -716,7 +716,7 @@
     </plurals>
 
     <!-- Private voice search -->
-    <string name="accessibilityVoiceSearchSubtitle">Adicionar opção de pesquisa privada por voz à barra de endereços. O áudio não é armazenado nem partilhado com ninguém, incluindo o DuckDuckGo.</string>
+    <string name="accessibilityVoiceSearchSubtitle">Adicionar opção de pesquisa privada por voz à barra de endereços. O áudio não é armazenado nem partilhado com ninguém, incluindo o Rio Browser.</string>
     <string name="accessibilityVoiceSearchTitle">Pesquisa por voz privada</string>
 
     <!-- Uploading an image from the camera or choosing to use existing image -->
@@ -724,8 +724,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Carrega uma imagem</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Escolher ficheiro</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Tirar fotografia</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Permitir que o DuckDuckGo peça acesso à câmara neste dispositivo</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Os sites só podem utilizar a tua câmara se autorizares o DuckDuckGo a pedir acesso.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Permitir que o Rio Browser peça acesso à câmara neste dispositivo</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Os sites só podem utilizar a tua câmara se autorizares o Rio Browser a pedir acesso.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Abrir Definições</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Cancelar</string>
 
@@ -735,15 +735,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Palavra-passe atualizada</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Abrir no DuckDuckGo</string>
-    <string name="runningInDdgMenuItemTitle">Em execução no DuckDuckGo</string>
+    <string name="openInDdgMenuItemTitle">Abrir no Rio Browser</string>
+    <string name="runningInDdgMenuItemTitle">Em execução no Rio Browser</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Aviso: este site pode ser inseguro</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">O certificado deste site é inválido. Podes estar a ligar a um servidor que finge ser %1$s, o que pode colocar as tuas informações confidenciais em risco.</string>
     <string name="sslErrorLeaveCTA">Deixar este site</string>
     <string name="sslErrorAdvancedCTA">Avançado</string>
-    <string name="sslErrorExpandedHeadline">O DuckDuckGo avisa-te quando um site tem um certificado inválido.</string>
+    <string name="sslErrorExpandedHeadline">O Rio Browser avisa-te quando um site tem um certificado inválido.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Aceitar o risco e visitar o site</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">O certificado de segurança de %1$s expirou. É possível que o site esteja mal configurado, que um invasor tenha comprometido a tua ligação ou que o teu relógio do sistema esteja incorreto.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">O certificado de segurança de %1$s não corresponde a *.%2$s. É possível que o site esteja mal configurado, que um invasor tenha comprometido a tua ligação ou que o teu relógio do sistema esteja incorreto.</string>
@@ -762,7 +762,7 @@
     <string name="preOnboardingDaxDialog3Title">Fantástico! Damos-te as boas-vindas ao Duck Side.</string>
     <string name="preOnboardingDaxDialog3Button">Iniciar a navegação</string>
     <string name="onboardingSearchDaxDialogTitle">Tente uma pesquisa!</string>
-    <string name="onboardingSearchDaxDialogDescription">As tuas pesquisas no DuckDuckGo são sempre anónimas.</string>
+    <string name="onboardingSearchDaxDialogDescription">As tuas pesquisas no Rio Browser são sempre anónimas.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">como dizer \"pato\" em inglês</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">como dizer \"pato\" em espanhol</string>
     <string name="onboardingSearchQueryOption1">como dizer pato em inglês</string>
@@ -779,7 +779,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Surpreende-me!</string>
-    <string name="onboardingSerpDaxDialogDescription">É a DuckDuckGo Search. Privado. Rápido. Menos anúncios.</string>
+    <string name="onboardingSerpDaxDialogDescription">É a Rio Browser Search. Privado. Rápido. Menos anúncios.</string>
     <string name="onboardingSerpDaxDialogButton">Entendi!</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">Em seguida, experimenta visitar um site!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -796,7 +796,7 @@
     <string name="onboardingEndDaxDialogDescription">Lembra-te: sempre que navegas comigo, um anúncio assustador perde as suas asas. 👌</string>
     <string name="onboardingEndDaxDialogButton">Já está!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Antes que me esqueça…</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[O DuckDuckGo também tem uma <b>VPN</b> incorporada!<br/><br/>Ativa-a com uma <b>subscrição paga do Privacy Pro</b>.]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[O Rio Browser também tem uma <b>VPN</b> incorporada!<br/><br/>Ativa-a com uma <b>subscrição paga do Privacy Pro</b>.]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Saiba mais</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Ignorar</string>
 
@@ -817,8 +817,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">Parte inferior</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Fácil de aceder</string>
     <string name="highlightsOnboardingSearchQueryOption4">patinhos bebés</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">As tuas pesquisas no DuckDuckGo são sempre privadas.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[É o <b>DuckDuckGo Search</b>! Privado. Rápido. Menos anúncios.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">As tuas pesquisas no Rio Browser são sempre privadas.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[É o <b>Rio Browser Search</b>! Privado. Rápido. Menos anúncios.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Lembre-se: sempre que navega comigo, um anúncio estranho perde as suas asas.</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Dá cá cinco!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Experimenta-o</string>
@@ -840,27 +840,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Página específica</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Obrigado! O teu relatório ajuda a melhorar o DuckDuckGo para todos!</string>
+    <string name="brokenSiteSubmittedReportMessage">Obrigado! O teu relatório ajuda a melhorar o Rio Browser para todos!</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Novo AI Chat</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Deixa o DuckDuckGo proteger melhor o que fazes online</string>
-    <string name="defaultBrowserBottomSheetDialogSubTitle">Torna-nos o teu navegador predefinido para que todos os links dos sites sejam abertos no DuckDuckGo.</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Deixa o Rio Browser proteger melhor o que fazes online</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">Torna-nos o teu navegador predefinido para que todos os links dos sites sejam abertos no Rio Browser.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Agora não</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">O DuckDuckGo bloqueia rastreadores para proteger a tua navegação</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">O Rio Browser bloqueia rastreadores para proteger a tua navegação</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">Limpar os separadores e os dados elimina o teu histórico de bloqueio de rastreadores e redefine este número para zero.\n\nOculta esta faixa se preferires não a ver na vista de separadores.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Ocultar faixa</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Aviso: este site pode ser um risco para a segurança</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[O DuckDuckGo bloqueou esta página porque pode estar a distribuir malware projetado para comprometer o teu dispositivo ou roubar as tuas informações pessoais.\n<a href=\"\">Sabe mais</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[O Rio Browser bloqueou esta página porque pode estar a distribuir malware projetado para comprometer o teu dispositivo ou roubar as tuas informações pessoais.\n<a href=\"\">Sabe mais</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[Este site pode estar a fazer-se passar por um site legítimo para te enganar a fornecer informações pessoais, como palavras-passe ou números de cartão de crédito.\n<a href=\"\">Sabe mais</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[O DuckDuckGo bloqueou esta página porque pode estar a tentar enganar-te ou manipular-te para transferires dinheiro, comprares produtos falsificados ou instalares malware sob falsos pretextos.\n<a href=\"\">Sabe mais</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[O Rio Browser bloqueou esta página porque pode estar a tentar enganar-te ou manipular-te para transferires dinheiro, comprares produtos falsificados ou instalares malware sob falsos pretextos.\n<a href=\"\">Sabe mais</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Deixar este site</string>
     <string name="maliciousSiteAdvancedCTA">Avançado</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Se considerares que este site é seguro, podes <a href=\"\">denunciar um erro</a>. Mesmo assim, podes visitar o site por tua conta e risco.]]></string>

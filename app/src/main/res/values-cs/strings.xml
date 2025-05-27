@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">Logo DuckDuckGo</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">Logo Rio Browser</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Soukromí.Ochrana.Pocit jistoty.</string>
     <string name="yes">Ano</string>
     <string name="no">Ne</string>
@@ -28,15 +28,15 @@
     <string name="search">Vyhledávání</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Přejděte do Nastavení a vždy vyhledávejte a prohlížejte s DuckDuckGo.</string>
-    <string name="onboardingDefaultBrowserTitle">Nastavte si DuckDuckGo jako výchozí</string>
+    <string name="onboardingDefaultBrowserDescription">Přejděte do Nastavení a vždy vyhledávejte a prohlížejte s Rio Browser.</string>
+    <string name="onboardingDefaultBrowserTitle">Nastavte si Rio Browser jako výchozí</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Nelze spustit výchozí obrazovku nastavení aplikace.</string>
     <string name="setAsDefaultBrowser">Nastavit jako výchozí prohlížeč</string>
     <string name="defaultBrowserMaybeLater">Možná později</string>
     <string name="defaultBrowserDescriptionNoDefault">Otevírejte odkazy s klidem mysli, pokaždé.</string>
-    <string name="defaultBrowserInstructions">Vyberte DuckDuckGo a klepněte na <font color="#678fff">Vždy</font>.</string>
+    <string name="defaultBrowserInstructions">Vyberte Rio Browser a klepněte na <font color="#678fff">Vždy</font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Menu prohlížeče</string>
@@ -99,11 +99,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Otevřít externí aplikaci</string>
     <string name="launchingExternalApp">Otevřít v jiné aplikaci</string>
-    <string name="confirmOpenExternalApp">Chtěl/a byste opustit DuckDuckGo a zobrazit si tento obsah?</string>
+    <string name="confirmOpenExternalApp">Chtěl/a byste opustit Rio Browser a zobrazit si tento obsah?</string>
     <string name="unableToOpenLink">Tento typ odkazu nelze otevřít.</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Karty</string>
     <string name="tabsMenuItem">Karty</string>
     <string name="newTabMenuItem">Nová karta</string>
@@ -137,7 +137,7 @@
     <string name="settingsHeadingProtections">Ochrany</string>
     <string name="settingsHeadingAppearance">Vzhled</string>
     <string name="settingsHeadingAbout">O nás</string>
-    <string name="settingsAboutDuckduckgo">O DuckDuckGo</string>
+    <string name="settingsAboutDuckduckgo">O Rio Browser</string>
     <string name="settingsVersion">Verze</string>
     <string name="leaveFeedback">Podělte se o zpětnou vazbu</string>
     <string name="leaveFeedbackNew">Odeslat zpětnou vazbu</string>
@@ -167,11 +167,11 @@
     <string name="settingsAddWidget">Přidat widget na domovskou obrazovku</string>
     <string name="settingsAddressBarPosition">Nastavte pozici adresního řádku</string>
     <string name="settingsEnableVoiceSearch">Povolit soukromé hlasové vyhledávání</string>
-    <string name="settingsDDGOnOtherPlatforms">DuckDuckGo na jiných platformách</string>
+    <string name="settingsDDGOnOtherPlatforms">Rio Browser na jiných platformách</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">Soukromé vyhledávání</string>
-    <string name="privateSearchDescription">DuckDuckGo Private Search je tvůj výchozí vyhledávač, takže můžeš hledat na webu, aniž by tě někdo sledoval.</string>
+    <string name="privateSearchDescription">Rio Browser Private Search je tvůj výchozí vyhledávač, takže můžeš hledat na webu, aniž by tě někdo sledoval.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Další nastavení vyhledávání</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Přizpůsob si jazyk vyhledávání, region a další nastavení</string>
     <string name="privateSearchMoreSearchSettingsTitle">Další nastavení vyhledávání</string>
@@ -190,7 +190,7 @@
     <string name="webTrackingProtectionActivityTitle">Ochrana před sledováním na webu</string>
     <string name="webTrackingProtectionLearnMoreTitle">Ochrana před sledováním na webu</string>
     <string name="webTrackingProtectionTitle">Ochrana před sledováním na webu</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[DuckDuckGo automaticky blokuje skryté trackery při procházení webu.\n<a href=\"\">Další informace</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[Rio Browser automaticky blokuje skryté trackery při procházení webu.\n<a href=\"\">Další informace</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Ochrana před vyskakovacími okny ohledně cookies</string>
@@ -224,10 +224,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">Ukončení aplikace, neaktivní po dobu 1 hodiny</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">O DuckDuckGo</string>
+    <string name="aboutActivityTitle">O Rio Browser</string>
     <string name="aboutActivityTitleNew">Informace</string>
     <string name="aboutHeaderNewTagLine">Soukromí.Ochrana.Pocit jistoty.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nDuckDuckGo je nezávislá společnost zaměřená na ochranu soukromí na internetu pro každého, kdo chce mít své osobní údaje zase pod kontrolou.\n\nVěříme, že nejlepší způsob, jak ochránit tvoje osobní údaje před hackery, podvodníky a společnostmi, co jim soukromí moc neříká, je vůbec jim přístup k tvým údajům neumožnit. Proto milióny lidí při prohlížení webu <annotation type="chart_comparison">dávají přednost DuckDuckGo před Chromem a dalšími prohlížeči</annotation>. Náš vyhledávač integrovaný v prohlížeči je jako Google, ale nikdy nesleduje, co hledáš. A naše sada funkcí na ochranu soukromí, která zahrnuje blokování reklamních trackerů a cookies, brání firmám ve sběru tvých dat. Náš prohlížeč je navíc zdarma – vyděláváme na <annotation type="privacy_respecting_ads">reklamách ve vyhledávání, které respektují soukromí</annotation> a nezneužívají tvé údaje.\n\nKromě toho nabízíme také <annotation type="ppro_help_page">Privacy Pro</annotation>, předplacenou službu „tři v jednom“, která je integrovaná v našem prohlížeči. Předplatitelé Privacy Pro získávají ještě větší ochranu soukromí díky funkci na vyhledání a vymazání tvých osobních údajů ze stránek pro vyhledávání lidí, funkci pro obnovení tvé identity v případě krádeže a rychlé a jednoduché <annotation type="vpn_help_page">VPN</annotation>, která pomáhá zabezpečit tvoje online aktivity.\n\nPřevezmi kontrolu nad svými osobními údaji a pořiď si prohlížeč navržený tak, aby tvoje data neshromažďoval, ale chránil.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nRio Browser je nezávislá společnost zaměřená na ochranu soukromí na internetu pro každého, kdo chce mít své osobní údaje zase pod kontrolou.\n\nVěříme, že nejlepší způsob, jak ochránit tvoje osobní údaje před hackery, podvodníky a společnostmi, co jim soukromí moc neříká, je vůbec jim přístup k tvým údajům neumožnit. Proto milióny lidí při prohlížení webu <annotation type="chart_comparison">dávají přednost Rio Browser před Chromem a dalšími prohlížeči</annotation>. Náš vyhledávač integrovaný v prohlížeči je jako Google, ale nikdy nesleduje, co hledáš. A naše sada funkcí na ochranu soukromí, která zahrnuje blokování reklamních trackerů a cookies, brání firmám ve sběru tvých dat. Náš prohlížeč je navíc zdarma – vyděláváme na <annotation type="privacy_respecting_ads">reklamách ve vyhledávání, které respektují soukromí</annotation> a nezneužívají tvé údaje.\n\nKromě toho nabízíme také <annotation type="ppro_help_page">Privacy Pro</annotation>, předplacenou službu „tři v jednom“, která je integrovaná v našem prohlížeči. Předplatitelé Privacy Pro získávají ještě větší ochranu soukromí díky funkci na vyhledání a vymazání tvých osobních údajů ze stránek pro vyhledávání lidí, funkci pro obnovení tvé identity v případě krádeže a rychlé a jednoduché <annotation type="vpn_help_page">VPN</annotation>, která pomáhá zabezpečit tvoje online aktivity.\n\nPřevezmi kontrolu nad svými osobními údaji a pořiď si prohlížeč navržený tak, aby tvoje data neshromažďoval, ale chránil.</string>
     <string name="no_suggestions">Žádné návrhy</string>
 
     <!-- Broken Site Activity -->
@@ -238,7 +238,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">Možná zabere vypnutí ochrany.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">Hledat DuckDuckGo</string>
+    <string name="searchWidgetTextHint">Hledat Rio Browser</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 Přidání oblíbených</string>
@@ -263,7 +263,7 @@
     <string name="surveyCtaLaunchButton">Zúčastnit se průzkumu</string>
     <string name="surveyCtaDismissButton">Ne, děkuji</string>
     <string name="surveyActivityTitle">Průzkum uživatelů</string>
-    <string name="surveyTitle">Průzkum DuckDuckGo</string>
+    <string name="surveyTitle">Průzkum Rio Browser</string>
     <string name="surveyDismissContentDescription">Odmítnout průzkum</string>
     <string name="surveyLoadingErrorTitle">Ale ne!</string>
     <string name="surveyLoadingErrorText">Náš průzkum se momentálně nenačítá.\nZkuste to prosím později.</string>
@@ -278,14 +278,14 @@
     <string name="addWidgetInstruction1Label">1.</string>
     <string name="addWidgetInstruction1">Dlouze stiskněte domovskou obrazovku a poté otevřete nabídku widgetů.</string>
     <string name="addWidgetInstruction2Label">2.</string>
-    <string name="addWidgetInstruction2">Najděte widget DuckDuckGo.</string>
+    <string name="addWidgetInstruction2">Najděte widget Rio Browser.</string>
     <string name="addWidgetInstruction3Label">3.</string>
     <string name="addWidgetInstruction3">Přetáhněte widget na domovskou obrazovku.</string>
     <string name="addWidgetInstructionsButtonGoHome">Přejít na domovskou obrazovku</string>
     <string name="addWidgetInstructionsButtonClose">Zavřít</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Líbí se vám DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Líbí se vám Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Rádi bychom věděli, co si myslíte.</string>
     <string name="appEnjoymentDialogPositiveButton">Líbí se mi.</string>
     <string name="appEnjoymentDialogNegativeButton">Je co zlepšovat.</string>
@@ -307,15 +307,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Vymazání dat nastaveno na manuální</string>
-    <string name="clearNotificationDescription">Přizpůsobte DuckDuckGo pro automatické vymazání dat prohlížení po každé relaci.</string>
+    <string name="clearNotificationDescription">Přizpůsobte Rio Browser pro automatické vymazání dat prohlížení po každé relaci.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Chráníme vaše soukromí.</string>
     <string name="privacyProtectionNotificationReportTitle">Vaše zpráva o ochraně soukromí</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Použití aplikace DuckDuckGo chrání vaše data blokováním sledovacích zařízení a šifrováním připojení.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Chránili jste svá data zabezpečením %1$d nešifrovaných připojení při používání DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Chránili jste svá data blokováním %1$d sledovacích zařízení při používání DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Chránili jste svá data blokováním %1$d sledovacích zařízení a zabezpečením %2$d nešifrovaných připojení při používání DuckDuckGo.</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Použití aplikace Rio Browser chrání vaše data blokováním sledovacích zařízení a šifrováním připojení.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Chránili jste svá data zabezpečením %1$d nešifrovaných připojení při používání Rio Browser.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Chránili jste svá data blokováním %1$d sledovacích zařízení při používání Rio Browser.</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Chránili jste svá data blokováním %1$d sledovacích zařízení a zabezpečením %2$d nešifrovaných připojení při používání Rio Browser.</string>
     <string name="privacyProtectionNotificationLaunchButton">Znovu začít prohlížení</string>
 
     <!-- Authentication -->
@@ -327,7 +327,7 @@
     <string name="authenticationDialogPasswordHint">Heslo</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">Hledat DuckDuckGo</string>
+    <string name="systemTextSearchMessage">Hledat Rio Browser</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Podělte se o zpětnou vazbu</string>
@@ -346,8 +346,8 @@
     <string name="websiteNotLoadingTitleShort">Potíže při načítání webu</string>
     <string name="websiteNotLoadingSubtitle">Které webové stránky jsou poškozené?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">Vyhledávání DuckDuckGo není dostatečně dobré</string>
-    <string name="searchNotGoodEnoughTitleShort">Potíže s vyhledáváním DuckDuckGo</string>
+    <string name="searchNotGoodEnoughTitleLong">Vyhledávání Rio Browser není dostatečně dobré</string>
+    <string name="searchNotGoodEnoughTitleShort">Potíže s vyhledáváním Rio Browser</string>
     <string name="searchNotGoodEnoughSubtitle">Kterou funkci vyhledávání můžeme přidat nebo vylepšit?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Programování/technické vyhledávání</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">Rozložení by mělo být více podobné Googlu.</string>
@@ -408,8 +408,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">Z tohoto zařízení</string>
     <string name="systemSearchAppNotFound">Aplikace nebyla nalezena</string>
-    <string name="systemSearchOnboardingThanks">Díky, že používáš DuckDuckGo!\nNáš prohlížeč tě chrání před hackery, podvodníky a společnostmi, které nemají osobních dat nikdy dost.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">Aplikace DuckDuckGo také:</string>
+    <string name="systemSearchOnboardingThanks">Díky, že používáš Rio Browser!\nNáš prohlížeč tě chrání před hackery, podvodníky a společnostmi, které nemají osobních dat nikdy dost.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">Aplikace Rio Browser také:</string>
     <string name="systemSearchOnboardingFeatureOneText">Blokuje nebezpečná sledovací zařízení.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Vynucuje šifrování na webových stránkách.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Vymaže data jedním klepnutím.</string>
@@ -427,7 +427,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Teď ne</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Vítejte v DuckDuckGo!"</string>
+    <string name="onboardingWelcomeTitle">"Vítejte v Rio Browser!"</string>
     <string name="onboardingDaxText"><![CDATA[Internet může být někdy trochu strašidelný.<br/><br/>Nebojte se! Anonymní vyhledávání a procházení je jednodušší, než si myslíte.]]></string>
     <string name="onboardingLetsDoItButton">Pojďme na to!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Zatímco Vy budete klepat a přejíždět, já budu blokovat zlovolné sledovače. <br/><br/>Nenechejte se rušit — pokračujte v prohlížení!]]></string>
@@ -518,7 +518,7 @@
     <string name="dosErrorMessage">Spojení přerušeno. Tato webová stránka může poškodit vaše zařízení.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Povolit polohu zařízení pro prohlížeč DuckDuckGo Privacy?</string>
+    <string name="preciseLocationSystemDialogTitle">Povolit polohu zařízení pro prohlížeč Rio Browser Privacy?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s požaduje polohu vašeho zařízení. Nejprve musíte aplikaci povolit, aby odesílala polohu vašeho zařízení, a pak %2$s může požádat o povolení.</string>
     <string name="preciseLocationSystemDialogAllow">Povolit</string>
     <string name="preciseLocationSystemDialogDeny">Možná později</string>
@@ -530,7 +530,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Pouze pro tuto relaci</string>
     <string name="preciseLocationSiteDialogDenyAlways">Vždy odmítnout</string>
     <string name="preciseLocationSiteDialogDenyOnce">Odmítnout pro tuto relaci</string>
-    <string name="preciseLocationFeatureDescription">Navštívené webové stránky mohou žádat o informace o poloze vašeho zařízení. Dokud výslovně neudělíte oprávnění, nebudou mít k poloze přístup. Platforma DuckDuckGo používá vaši polohu pouze anonymně k zobrazení výsledků místního vyhledávání.</string>
+    <string name="preciseLocationFeatureDescription">Navštívené webové stránky mohou žádat o informace o poloze vašeho zařízení. Dokud výslovně neudělíte oprávnění, nebudou mít k poloze přístup. Platforma Rio Browser používá vaši polohu pouze anonymně k zobrazení výsledků místního vyhledávání.</string>
     <string name="preciseLocationToggleText">Stránky mohou požádat o mou polohu</string>
     <string name="preciseLocationEmptyListHint">Žádným webovým stránkám nebylo uděleno oprávnění k přístupu k poloze</string>
     <string name="preciseLocationNoSystemPermission">Chcete-li spravovat oprávnění k přístupu k poloze, která jste udělili jednotlivým webovým stránkám, povolte v Nastavení systému Android polohu pro tuto aplikaci.</string>
@@ -546,7 +546,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Globální kontrola ochrany osobních údajů (GPC)</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo automaticky blokuje mnoho trackerů. Pomocí Globální kontroly ochrany osobních údajů (GPC) můžete také požádat zúčastněné webové stránky, aby omezily prodej nebo sdílení vašich osobních údajů s jinými společnostmi. <u><a href=\"\">Více informací</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[Rio Browser automaticky blokuje mnoho trackerů. Pomocí Globální kontroly ochrany osobních údajů (GPC) můžete také požádat zúčastněné webové stránky, aby omezily prodej nebo sdílení vašich osobních údajů s jinými společnostmi. <u><a href=\"\">Více informací</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Globální kontrola ochrany osobních údajů (GPC)</string>
     <string name="globalPrivacyControlToggle">Globální kontrola ochrany osobních údajů (GPC)</string>
     <string name="disabled">Zakázáno</string>
@@ -584,11 +584,11 @@
     <string name="settingsAccessibility">Usnadnění</string>
     <string name="accessibilityActivityTitle">Usnadnění</string>
     <string name="accessibilityFontSizeTitle">Velikost textu</string>
-    <string name="accessibilityFontSizeHint">Nastav si posuvníkem pohodlnou velikost písma. Webové stránky, které si zobrazíš v DuckDuckGo, se přizpůsobí.</string>
+    <string name="accessibilityFontSizeHint">Nastav si posuvníkem pohodlnou velikost písma. Webové stránky, které si zobrazíš v Rio Browser, se přizpůsobí.</string>
     <string name="accessibilityForceZoomTitle">Vynutit ruční zvětšení stránky</string>
     <string name="accessibilityForceZoomSubtitle">Nastavit přiblížení rozvíráním a svíráním prstů i na stránkách, které to neumožňují</string>
     <string name="accessibilityTextSizeOverrideTitle">Správa velikosti textu</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">Text na webových stránkách, které si zobrazíš v DuckDuckGo, se přizpůsobí nastavení dole</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">Text na webových stránkách, které si zobrazíš v Rio Browser, se přizpůsobí nastavení dole</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Zásady ochrany osobních údajů</string>
@@ -657,7 +657,7 @@
     <string name="tabSelectedIndicator">Indikátor vybrané karty</string>
     <string name="tabNotSelectedIndicator">Indikátor nevybrané karty</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">Odkazů z DuckDuckGo: %1$d</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">Odkazů z Rio Browser: %1$d</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="one">Sdílet odkaz</item>
         <item quantity="few">Sdílet %1$d odkazy</item>
@@ -744,7 +744,7 @@
     </plurals>
 
     <!-- Private voice search -->
-    <string name="accessibilityVoiceSearchSubtitle">Přidej si na adresní řádek funkci soukromého hlasového vyhledávání. Zvuk nikde neukládáme a s nikým ho nesdílíme. Ani DuckDuckGo se k němu nedostane.</string>
+    <string name="accessibilityVoiceSearchSubtitle">Přidej si na adresní řádek funkci soukromého hlasového vyhledávání. Zvuk nikde neukládáme a s nikým ho nesdílíme. Ani Rio Browser se k němu nedostane.</string>
     <string name="accessibilityVoiceSearchTitle">Soukromé hlasové vyhledávání</string>
 
     <!-- Uploading an image from the camera or choosing to use existing image -->
@@ -752,8 +752,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Nahrát obrázek</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Vyber soubor</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Vyfotit se</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Povolit DuckDuckGo žádat na tomto zařízení o přístup k fotoaparátu</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Weby můžou používat fotoaparát, jen když službě DuckDuckGo povolíš žádat o přístup.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Povolit Rio Browser žádat na tomto zařízení o přístup k fotoaparátu</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Weby můžou používat fotoaparát, jen když službě Rio Browser povolíš žádat o přístup.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Otevřít nastavení</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Zrušit</string>
 
@@ -763,15 +763,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Heslo je aktualizované</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Otevřít v DuckDuckGo</string>
-    <string name="runningInDdgMenuItemTitle">Spuštěno v DuckDuckGo</string>
+    <string name="openInDdgMenuItemTitle">Otevřít v Rio Browser</string>
+    <string name="runningInDdgMenuItemTitle">Spuštěno v Rio Browser</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Pozor: Tenhle web může být nezabezpečený</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">Tenhle web nemá platný certifikát. Možná se dokonce připojuješ k serveru, který předstírá, že je %1$s. Tvoje důvěrné informace by mohly být ohrožené.</string>
     <string name="sslErrorLeaveCTA">Opustit tuhle stránku</string>
     <string name="sslErrorAdvancedCTA">Pokročilé</string>
-    <string name="sslErrorExpandedHeadline">DuckDuckGo tě upozorní, když má web neplatný certifikát.</string>
+    <string name="sslErrorExpandedHeadline">Rio Browser tě upozorní, když má web neplatný certifikát.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Přijmout riziko a přejít na stránku</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">Platnost bezpečnostního certifikátu pro %1$s vypršela. Je možné, že web je nesprávně nakonfigurovaný, že útočník prolomil tvoje připojení nebo že tvoje systémové hodiny jsou nesprávné.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">Bezpečnostní certifikát pro %1$s neodpovídá *.%2$s. Je možné, že web je nesprávně nakonfigurovaný, že útočník prolomil tvoje připojení nebo že tvoje systémové hodiny jsou nesprávné.</string>
@@ -790,7 +790,7 @@
     <string name="preOnboardingDaxDialog3Title">Bezva! Vítej v Kačerově.</string>
     <string name="preOnboardingDaxDialog3Button">Spustit procházení</string>
     <string name="onboardingSearchDaxDialogTitle">Vyzkoušejte vyhledávání!</string>
-    <string name="onboardingSearchDaxDialogDescription">Tvoje vyhledávání v DuckDuckGo je vždycky anonymní.</string>
+    <string name="onboardingSearchDaxDialogDescription">Tvoje vyhledávání v Rio Browser je vždycky anonymní.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">jak se řekne anglicky „kachna“</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">jak se řekne „kachna“ španělsky</string>
     <string name="onboardingSearchQueryOption1">jak se řekne anglicky kachna</string>
@@ -807,7 +807,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Překvap mě!</string>
-    <string name="onboardingSerpDaxDialogDescription">Tohle je vyhledávač DuckDuckGo Search. Soukromý. Rychlý. S méně reklamami.</string>
+    <string name="onboardingSerpDaxDialogDescription">Tohle je vyhledávač Rio Browser Search. Soukromý. Rychlý. S méně reklamami.</string>
     <string name="onboardingSerpDaxDialogButton">Mám to!</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">A teď zkus přejít na nějaký web!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -828,7 +828,7 @@
     <string name="onboardingEndDaxDialogDescription">Pamatuj: Když se mnou na webu surfuješ, příšerné reklamy zaženeš. 👌</string>
     <string name="onboardingEndDaxDialogButton">Všechno je hotové!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Než to zapomenu...</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[DuckDuckGo má také integrovanou <b>VPN</b>!<br/><br/>Můžete ji aktivovat pomocí <b>placeného předplatného Privacy Pro.</b>]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[Rio Browser má také integrovanou <b>VPN</b>!<br/><br/>Můžete ji aktivovat pomocí <b>placeného předplatného Privacy Pro.</b>]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Více informací</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Přeskočit</string>
 
@@ -849,8 +849,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">Dole</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Vždy po ruce</string>
     <string name="highlightsOnboardingSearchQueryOption4">malá káčátka</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">Tvoje vyhledávání v DuckDuckGo je vždycky soukromé.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[To je vyhledávač <b>DuckDuckGo Search</b>! Soukromý. Rychlý. S méně reklamami.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">Tvoje vyhledávání v Rio Browser je vždycky soukromé.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[To je vyhledávač <b>Rio Browser Search</b>! Soukromý. Rychlý. S méně reklamami.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Pamatujte: pokaždé, když internet procházíte s námi, příšerným reklamám přistřihneme křídla.</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Plácnutí!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Vyzkoušejte ho</string>
@@ -872,27 +872,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Konkrétní stránka</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Děkujeme! Podrobnosti od tebe pomůžou zlepšit DuckDuckGo pro všechny!</string>
+    <string name="brokenSiteSubmittedReportMessage">Děkujeme! Podrobnosti od tebe pomůžou zlepšit Rio Browser pro všechny!</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Nový AI Chat</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Používej DuckDuckGo a získej větší ochranu při prohlížení internetu</string>
-    <string name="defaultBrowserBottomSheetDialogSubTitle">Nastav si nás jako výchozí prohlížeč, aby se všechny odkazy na stránky otevíraly v DuckDuckGo.</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Používej Rio Browser a získej větší ochranu při prohlížení internetu</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">Nastav si nás jako výchozí prohlížeč, aby se všechny odkazy na stránky otevíraly v Rio Browser.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Teď ne</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Služba DuckDuckGo blokuje trackery, aby tě chránila při prohlížení</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Služba Rio Browser blokuje trackery, aby tě chránila při prohlížení</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">Vymazáním panelů a dat smažeš historii blokování trackerů a resetuješ údaj o nich na nulu.\n\nPokud tenhle banner v zobrazení panelů už nechceš vidět, můžeš ho skrýt.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Skrýt banner</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Pozor: Tahle stránka může představovat bezpečnostní riziko</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[Služba DuckDuckGo tuhle stránku zablokovala, protože může šířit malware, jehož cílem je narušit zabezpečení zařízení nebo odcizit osobní údaje.\n<a href=\"\">Přečti si víc</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[Služba Rio Browser tuhle stránku zablokovala, protože může šířit malware, jehož cílem je narušit zabezpečení zařízení nebo odcizit osobní údaje.\n<a href=\"\">Přečti si víc</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[Tahle webová stránka se může vydávat za legitimní web, aby tě přiměla k poskytnutí osobních údajů, jako jsou hesla nebo čísla kreditních karet.\n<a href=\"\">Přečti si víc</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[Služba DuckDuckGo zablokovala tuto stránku, protože se tě může pokoušet pod falešnými záminkami přimět k převodu peněz, nákupu padělaného zboží nebo instalaci malwaru.\n<a href=\"\">Přečti si víc</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[Služba Rio Browser zablokovala tuto stránku, protože se tě může pokoušet pod falešnými záminkami přimět k převodu peněz, nákupu padělaného zboží nebo instalaci malwaru.\n<a href=\"\">Přečti si víc</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Opustit tuhle stránku</string>
     <string name="maliciousSiteAdvancedCTA">Pokročilé</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Pokud věříš, že je tahle stránka bezpečná, můžeš <a href=\"\">nahlásit chybu</a>. Můžeš taky stránku navštívit na vlastní nebezpečí.]]></string>

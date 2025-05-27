@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">Логотип DuckDuckGo</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">Логотип Rio Browser</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Защита. Конфиденциальность. Спокойствие.</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
@@ -28,15 +28,15 @@
     <string name="search">Поиск</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Чтобы сделать DuckDuckGo браузером по умолчанию, перейдите в «Настройки».</string>
-    <string name="onboardingDefaultBrowserTitle">Сделайте DuckDuckGo браузером по умолчанию</string>
+    <string name="onboardingDefaultBrowserDescription">Чтобы сделать Rio Browser браузером по умолчанию, перейдите в «Настройки».</string>
+    <string name="onboardingDefaultBrowserTitle">Сделайте Rio Browser браузером по умолчанию</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Не удаётся открыть настройки приложения по умолчанию</string>
     <string name="setAsDefaultBrowser">Сделать браузером по умолчанию</string>
     <string name="defaultBrowserMaybeLater">Позже</string>
     <string name="defaultBrowserDescriptionNoDefault">Открывайте ссылки, ни о чем не беспокоясь.</string>
-    <string name="defaultBrowserInstructions">Выберите DuckDuckGo и нажмите <font color="#678fff">Всегда</font>.</string>
+    <string name="defaultBrowserInstructions">Выберите Rio Browser и нажмите <font color="#678fff">Всегда</font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Меню браузера</string>
@@ -99,11 +99,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Открыть внешнее приложение</string>
     <string name="launchingExternalApp">Открыть в другом приложении</string>
-    <string name="confirmOpenExternalApp">Выйти из DuckDuckGo для просмотра этого контента?</string>
+    <string name="confirmOpenExternalApp">Выйти из Rio Browser для просмотра этого контента?</string>
     <string name="unableToOpenLink">Невозможно открыть ссылку этого типа</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Вкладки</string>
     <string name="tabsMenuItem">Вкладки</string>
     <string name="newTabMenuItem">Новая вкладка</string>
@@ -137,7 +137,7 @@
     <string name="settingsHeadingProtections">Средства защиты</string>
     <string name="settingsHeadingAppearance">Внешний вид</string>
     <string name="settingsHeadingAbout">О нас</string>
-    <string name="settingsAboutDuckduckgo">Несколько слов о DuckDuckGo</string>
+    <string name="settingsAboutDuckduckgo">Несколько слов о Rio Browser</string>
     <string name="settingsVersion">Версия</string>
     <string name="leaveFeedback">Оставьте нам отзыв</string>
     <string name="leaveFeedbackNew">Отправить отзыв</string>
@@ -167,11 +167,11 @@
     <string name="settingsAddWidget">Добавьте виджет на домашний экран</string>
     <string name="settingsAddressBarPosition">Настроить положение адресной строки</string>
     <string name="settingsEnableVoiceSearch">Включить конфиденциальный голосовой поиск</string>
-    <string name="settingsDDGOnOtherPlatforms">DuckDuckGo для других платформ</string>
+    <string name="settingsDDGOnOtherPlatforms">Rio Browser для других платформ</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">Частный поиск</string>
-    <string name="privateSearchDescription">DuckDuckGo Private Search — ваша поисковая система по умолчанию. Вы можете пользоваться поиском в интернете, не опасаясь слежки.</string>
+    <string name="privateSearchDescription">Rio Browser Private Search — ваша поисковая система по умолчанию. Вы можете пользоваться поиском в интернете, не опасаясь слежки.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Дополнительно</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Выбор языка поиска, региона и так далее</string>
     <string name="privateSearchMoreSearchSettingsTitle">Дополнительные настройки поиска</string>
@@ -190,7 +190,7 @@
     <string name="webTrackingProtectionActivityTitle">Защита от отслеживания онлайн</string>
     <string name="webTrackingProtectionLearnMoreTitle">Защита от отслеживания онлайн</string>
     <string name="webTrackingProtectionTitle">Защита от отслеживания онлайн</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[DuckDuckGo автоматически блокирует скрытые трекеры, пока вы посещаете сайты.\n<a href=\"\">Подробнее...</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[Rio Browser автоматически блокирует скрытые трекеры, пока вы посещаете сайты.\n<a href=\"\">Подробнее...</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Защита от всплывающих окон куки</string>
@@ -224,10 +224,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">После выхода из приложения, через 1 час бездействия</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">Несколько слов о DuckDuckGo</string>
+    <string name="aboutActivityTitle">Несколько слов о Rio Browser</string>
     <string name="aboutActivityTitleNew">О нас</string>
     <string name="aboutHeaderNewTagLine">Защита. Конфиденциальность. Спокойствие.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nDuckDuckGo — независимая компания, которая обеспечивает защиту личной информации в интернете тем, кто хочет вернуть себе контроль над собственными данными.\n\nМы считаем, что лучший способ защитить личную информацию от хакеров, мошенников и навязчивых компаний — полностью пресечь ее сбор. Вот почему миллионы людей <annotation type="chart_comparison">выбирают DuckDuckGo вместо Chrome и других браузеров</annotation> для поиска и просмотра сайтов. Наша встроенная поисковая система работает точно так же, как Google, только не отслеживает ваши запросы. А попытки других компаний собрать ваши данные пресекаются защитными функциями, включая блокировку рекламных трекеров и куки-файлов. К тому же наш браузер работает бесплатно: мы получаем доход от <annotation type="privacy_respecting_ads">показа рекламных объявлений</annotation>, а не от продажи ваших персональных данных.\n\nВместе с браузером мы также предлагаем встроенную подписку «три в одном» <annotation type="ppro_help_page">Privacy Pro</annotation>. Ее обладателям открываются расширенные возможности — быстрая и удобная служба <annotation type="vpn_help_page">VPN</annotation> для защиты онлайн-активности, услуга по обнаружению и удалению личной информации с сайтов поиска людей, а также восстановление данных после «кражи личности».\n\nЕсли вы хотите вернуть себе контроль над личной информацией, выбирайте браузер, созданный для защиты, а не сбора данных.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Welcome to the Duck Side!\n\nRio Browser — независимая компания, которая обеспечивает защиту личной информации в интернете тем, кто хочет вернуть себе контроль над собственными данными.\n\nМы считаем, что лучший способ защитить личную информацию от хакеров, мошенников и навязчивых компаний — полностью пресечь ее сбор. Вот почему миллионы людей <annotation type="chart_comparison">выбирают Rio Browser вместо Chrome и других браузеров</annotation> для поиска и просмотра сайтов. Наша встроенная поисковая система работает точно так же, как Google, только не отслеживает ваши запросы. А попытки других компаний собрать ваши данные пресекаются защитными функциями, включая блокировку рекламных трекеров и куки-файлов. К тому же наш браузер работает бесплатно: мы получаем доход от <annotation type="privacy_respecting_ads">показа рекламных объявлений</annotation>, а не от продажи ваших персональных данных.\n\nВместе с браузером мы также предлагаем встроенную подписку «три в одном» <annotation type="ppro_help_page">Privacy Pro</annotation>. Ее обладателям открываются расширенные возможности — быстрая и удобная служба <annotation type="vpn_help_page">VPN</annotation> для защиты онлайн-активности, услуга по обнаружению и удалению личной информации с сайтов поиска людей, а также восстановление данных после «кражи личности».\n\nЕсли вы хотите вернуть себе контроль над личной информацией, выбирайте браузер, созданный для защиты, а не сбора данных.</string>
     <string name="no_suggestions">Нет предложений</string>
 
     <!-- Broken Site Activity -->
@@ -238,7 +238,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">Попробуйте отключить защиту.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">Поиск в DuckDuckGo</string>
+    <string name="searchWidgetTextHint">Поиск в Rio Browser</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 В избранное</string>
@@ -263,7 +263,7 @@
     <string name="surveyCtaLaunchButton">Участвовать в опросе</string>
     <string name="surveyCtaDismissButton">Нет, спасибо</string>
     <string name="surveyActivityTitle">Опрос пользователей</string>
-    <string name="surveyTitle">Опрос DuckDuckGo</string>
+    <string name="surveyTitle">Опрос Rio Browser</string>
     <string name="surveyDismissContentDescription">Закрыть опрос</string>
     <string name="surveyLoadingErrorTitle">О нет!</string>
     <string name="surveyLoadingErrorText">Сейчас невозможно загрузить опрос.\nПовторите попытку позже.</string>
@@ -278,14 +278,14 @@
     <string name="addWidgetInstruction1Label">1</string>
     <string name="addWidgetInstruction1">Удерживайте нажатие на главном экране, а затем откройте меню виджетов.</string>
     <string name="addWidgetInstruction2Label">2</string>
-    <string name="addWidgetInstruction2">Найдите виджет DuckDuckGo.</string>
+    <string name="addWidgetInstruction2">Найдите виджет Rio Browser.</string>
     <string name="addWidgetInstruction3Label">3</string>
     <string name="addWidgetInstruction3">Перетащите виджет на домашний экран.</string>
     <string name="addWidgetInstructionsButtonGoHome">Перейти на домашний экран</string>
     <string name="addWidgetInstructionsButtonClose">Закрыть</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Нравится DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Нравится Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Мы будем рады услышать ваше мнение.</string>
     <string name="appEnjoymentDialogPositiveButton">Мне нравится</string>
     <string name="appEnjoymentDialogNegativeButton">Нужно доработать</string>
@@ -307,15 +307,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Сброс данных вручную</string>
-    <string name="clearNotificationDescription">Настройте DuckDuckGo на автоматический сброс данных браузера после каждого сеанса.</string>
+    <string name="clearNotificationDescription">Настройте Rio Browser на автоматический сброс данных браузера после каждого сеанса.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Мы защищаем вашу конфиденциальность</string>
     <string name="privacyProtectionNotificationReportTitle">Ваш отчёт о конфиденциальности</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Приложение DuckDuckGo защищает ваши данные, блокируя трекеры и шифруя соединения.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Вы обезопасили свои данные, защитив %1$d незашифрованных соединений при использовании DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Вы обезопасили свои данные, заблокировав %1$d трекеров при использовании DuckDuckGo.</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Вы обезопасили свои данные, заблокировав %1$d трекеров и защитив %2$d незашифрованных соединений при использовании DuckDuckGo.</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Приложение Rio Browser защищает ваши данные, блокируя трекеры и шифруя соединения.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Вы обезопасили свои данные, защитив %1$d незашифрованных соединений при использовании Rio Browser.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Вы обезопасили свои данные, заблокировав %1$d трекеров при использовании Rio Browser.</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Вы обезопасили свои данные, заблокировав %1$d трекеров и защитив %2$d незашифрованных соединений при использовании Rio Browser.</string>
     <string name="privacyProtectionNotificationLaunchButton">Продолжить</string>
 
     <!-- Authentication -->
@@ -327,7 +327,7 @@
     <string name="authenticationDialogPasswordHint">Пароль</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">Поиск в DuckDuckGo</string>
+    <string name="systemTextSearchMessage">Поиск в Rio Browser</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Оставьте нам отзыв</string>
@@ -346,8 +346,8 @@
     <string name="websiteNotLoadingTitleShort">Проблемы с загрузкой сайтов</string>
     <string name="websiteNotLoadingSubtitle">На каком сайте возникает проблема?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">Не устраивает поиск в DuckDuckGo</string>
-    <string name="searchNotGoodEnoughTitleShort">Проблемы с поиском DuckDuckGo</string>
+    <string name="searchNotGoodEnoughTitleLong">Не устраивает поиск в Rio Browser</string>
+    <string name="searchNotGoodEnoughTitleShort">Проблемы с поиском Rio Browser</string>
     <string name="searchNotGoodEnoughSubtitle">Какую функцию поиска мы могли бы добавить или улучшить?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Программирование/технический поиск</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">Оформление должно быть больше похоже на поиск Google</string>
@@ -408,8 +408,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">С этого устройства</string>
     <string name="systemSearchAppNotFound">Приложение не найдено</string>
-    <string name="systemSearchOnboardingThanks">Благодарим за выбор DuckDuckGo!\nНаш браузер помогает защищать вас от хакеров, мошенников и компаний, собирающих чужие данные.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">Приложение DuckDuckGo также:</string>
+    <string name="systemSearchOnboardingThanks">Благодарим за выбор Rio Browser!\nНаш браузер помогает защищать вас от хакеров, мошенников и компаний, собирающих чужие данные.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">Приложение Rio Browser также:</string>
     <string name="systemSearchOnboardingFeatureOneText">Блокирует небезопасные трекеры.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Принудительно использует шифрование на сайтах.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Удаляет данные в одно нажатие.</string>
@@ -427,7 +427,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Не сейчас</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Добро пожаловать в DuckDuckGo!"</string>
+    <string name="onboardingWelcomeTitle">"Добро пожаловать в Rio Browser!"</string>
     <string name="onboardingDaxText"><![CDATA[Интернет набит трекерами.<br/><br/>Но выход есть! Пользоваться сетью без слежки проще, чем вы думали.]]></string>
     <string name="onboardingLetsDoItButton">Поехали!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Вы жмете на кнопки и листаете страницы — мы блокируем трекеры. <br/><br/>Пользуйтесь сайтами без страха!]]></string>
@@ -518,7 +518,7 @@
     <string name="dosErrorMessage">Соединение прервано. Этот сайт может навредить вашему устройству.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Включить определение геопозиции устройства для браузера DuckDuckGo с защитой данных?</string>
+    <string name="preciseLocationSystemDialogTitle">Включить определение геопозиции устройства для браузера Rio Browser с защитой данных?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s запрашивает геопозицию вашего устройства. Сначала вам нужно разрешить приложению отправлять геопозицию устройства, затем %2$s сможет запрашивать разрешение.</string>
     <string name="preciseLocationSystemDialogAllow">Включить</string>
     <string name="preciseLocationSystemDialogDeny">Позже</string>
@@ -530,7 +530,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Только для этой сессии</string>
     <string name="preciseLocationSiteDialogDenyAlways">Всегда отказывать</string>
     <string name="preciseLocationSiteDialogDenyOnce">Отказать для этой сессии</string>
-    <string name="preciseLocationFeatureDescription">Сайты, которые вы посещаете, могут запрашивать информацию о геопозиции вашего устройства. Они не смогут получить к нему доступ, пока вы не предоставите разрешение. DuckDuckGo использует вашу геопозицию анонимно для предоставления результатов местного поиска.</string>
+    <string name="preciseLocationFeatureDescription">Сайты, которые вы посещаете, могут запрашивать информацию о геопозиции вашего устройства. Они не смогут получить к нему доступ, пока вы не предоставите разрешение. Rio Browser использует вашу геопозицию анонимно для предоставления результатов местного поиска.</string>
     <string name="preciseLocationToggleText">Сайты могут запрашивать моё местоположение</string>
     <string name="preciseLocationEmptyListHint">Ни одному сайту не предоставлено разрешение на доступ к геопозиции</string>
     <string name="preciseLocationNoSystemPermission">Чтобы управлять доступом к геопозиции, который вы предоставили отдельным сайтам, включите определение геопозиции для этого приложения в настройках Android.</string>
@@ -546,7 +546,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Глобальный контроль конфиденциальности (GPC)</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[DuckDuckGo блокирует многие трекеры автоматически. Функция «Глобальный контроль конфиденциальности» (GPC) позволяет затребовать от участвующих в программе сайтов остановить передачу и продажу ваших личных данных другим компаниям. <u><a href=\"\">Подробнее…</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[Rio Browser блокирует многие трекеры автоматически. Функция «Глобальный контроль конфиденциальности» (GPC) позволяет затребовать от участвующих в программе сайтов остановить передачу и продажу ваших личных данных другим компаниям. <u><a href=\"\">Подробнее…</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Глобальный контроль конфиденциальности (GPC)</string>
     <string name="globalPrivacyControlToggle">Глобальный контроль конфиденциальности (GPC)</string>
     <string name="disabled">Отключено</string>
@@ -584,11 +584,11 @@
     <string name="settingsAccessibility">Универсальный доступ</string>
     <string name="accessibilityActivityTitle">Универсальный доступ</string>
     <string name="accessibilityFontSizeTitle">Размер текста</string>
-    <string name="accessibilityFontSizeHint">Потяните ползунок, чтобы выбрать приятный для глаз вид. Вид сайтов, которые вы просматриваете в DuckDuckGo, будет соответственно изменен автоматически.</string>
+    <string name="accessibilityFontSizeHint">Потяните ползунок, чтобы выбрать приятный для глаз вид. Вид сайтов, которые вы просматриваете в Rio Browser, будет соответственно изменен автоматически.</string>
     <string name="accessibilityForceZoomTitle">Масштабирование вручную</string>
     <string name="accessibilityForceZoomSubtitle">Используйте жесты масштабирования на любом сайте, даже если обычно он их не поддерживает</string>
     <string name="accessibilityTextSizeOverrideTitle">Размер текста</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">DuckDuckGo скорректирует размер текста на сайтах согласно настройке ниже</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">Rio Browser скорректирует размер текста на сайтах согласно настройке ниже</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Политика конфиденциальности</string>
@@ -657,7 +657,7 @@
     <string name="tabSelectedIndicator">Указатель выбранной вкладки</string>
     <string name="tabNotSelectedIndicator">Указатель невыбранной вкладки</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">Ссылок из DuckDuckGo: %1$d</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">Ссылок из Rio Browser: %1$d</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="one">Поделиться ссылкой</item>
         <item quantity="few">Поделиться %1$d ссылками</item>
@@ -744,7 +744,7 @@
     </plurals>
 
     <!-- Private voice search -->
-    <string name="accessibilityVoiceSearchSubtitle">Добавить опцию «Частный голосовой поиск» в адресную строку. Ваш голосовой запрос не сохраняется и никуда не передается, даже в DuckDuckGo.</string>
+    <string name="accessibilityVoiceSearchSubtitle">Добавить опцию «Частный голосовой поиск» в адресную строку. Ваш голосовой запрос не сохраняется и никуда не передается, даже в Rio Browser.</string>
     <string name="accessibilityVoiceSearchTitle">Конфиденциальный голосовой поиск</string>
 
     <!-- Uploading an image from the camera or choosing to use existing image -->
@@ -752,8 +752,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Загрузка изображения</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Выбрать файл</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Снять фото</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Разрешить DuckDuckGo запрашивать доступ к камере на этом устройстве</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Если вы разрешите DuckDuckGo запрашивать доступ, сайты смогут использовать камеру.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Разрешить Rio Browser запрашивать доступ к камере на этом устройстве</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Если вы разрешите Rio Browser запрашивать доступ, сайты смогут использовать камеру.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Открыть Настройки</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Отменить</string>
 
@@ -763,15 +763,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Пароль обновлен</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Открыть в DuckDuckGo</string>
-    <string name="runningInDdgMenuItemTitle">Выполняется в DuckDuckGo</string>
+    <string name="openInDdgMenuItemTitle">Открыть в Rio Browser</string>
+    <string name="runningInDdgMenuItemTitle">Выполняется в Rio Browser</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Внимание! Возможно, сайт небезопасен</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">Сертификат этого сайта недействителен. Возможно, вы пытаетесь подключиться к серверу, который выдает себя за %1$s, что ставит под угрозу вашу конфиденциальную информацию.</string>
     <string name="sslErrorLeaveCTA">Покинуть сайт</string>
     <string name="sslErrorAdvancedCTA">Дополнительно</string>
-    <string name="sslErrorExpandedHeadline">DuckDuckGo предупредит вас, если у сайта окажется недействительный сертификат.</string>
+    <string name="sslErrorExpandedHeadline">Rio Browser предупредит вас, если у сайта окажется недействительный сертификат.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Принять риск и перейти на сайт</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">Срок действия сертификата безопасности сайта %1$s истек. Возможно, неверно задана конфигурация сайта, соединение перехвачено злоумышленником либо неправильно настроены системные часы.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">Сертификат безопасности сайта %1$s не подходит для домена *.%2$s. Возможно, неверно задана конфигурация сайта, соединение перехвачено злоумышленником либо неправильно настроены системные часы.</string>
@@ -790,7 +790,7 @@
     <string name="preOnboardingDaxDialog3Title">Супер! Добро пожаловать в утиную команду!</string>
     <string name="preOnboardingDaxDialog3Button">Начать просмотр</string>
     <string name="onboardingSearchDaxDialogTitle">Попробуйте поискать!</string>
-    <string name="onboardingSearchDaxDialogDescription">Ваши поисковые запросы в DuckDuckGo всегда анонимны.</string>
+    <string name="onboardingSearchDaxDialogDescription">Ваши поисковые запросы в Rio Browser всегда анонимны.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">Как сказать «утка» по-английски?</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">Как сказать «утка» по-испански?</string>
     <string name="onboardingSearchQueryOption1">как сказать «утка» на английском?</string>
@@ -807,7 +807,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Удиви меня!</string>
-    <string name="onboardingSerpDaxDialogDescription">Это — DuckDuckGo Search. Надежно. Быстро. Меньше рекламы.</string>
+    <string name="onboardingSerpDaxDialogDescription">Это — Rio Browser Search. Надежно. Быстро. Меньше рекламы.</string>
     <string name="onboardingSerpDaxDialogButton">Понятно</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">А теперь попробуйте посетить сайт!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -828,7 +828,7 @@
     <string name="onboardingEndDaxDialogDescription">Бродить по сайтам с нами — значит подрезать крылья назойливой рекламе. 👌</string>
     <string name="onboardingEndDaxDialogButton">Всё готово!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Кстати, пока не забыл...</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[В DuckDuckGo также есть встроенный <b>VPN</b>!<br/><br/>Для активации этой услуги требуется <b>платная подписка Privacy Pro</b>.]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[В Rio Browser также есть встроенный <b>VPN</b>!<br/><br/>Для активации этой услуги требуется <b>платная подписка Privacy Pro</b>.]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Узнать больше</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Пропустить</string>
 
@@ -849,8 +849,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">Внизу</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Легко использовать</string>
     <string name="highlightsOnboardingSearchQueryOption4">утята</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">Ваши поисковые запросы в DuckDuckGo всегда конфиденциальны.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Это — <b>DuckDuckGo Search</b>! Надежно. Быстро. Меньше рекламы.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">Ваши поисковые запросы в Rio Browser всегда конфиденциальны.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Это — <b>Rio Browser Search</b>! Надежно. Быстро. Меньше рекламы.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Бродить по сайтам с нами — значит подрезать крылья назойливой рекламе.</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Дай пять!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Попробовать</string>
@@ -872,27 +872,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Конкретная страница</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Спасибо! Ваш отчет поможет улучшить DuckDuckGo для всех.</string>
+    <string name="brokenSiteSubmittedReportMessage">Спасибо! Ваш отчет поможет улучшить Rio Browser для всех.</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Запустить AI Chat</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Оставайтесь под защитой DuckDuckGo большую часть времени, проводимого в Интернете</string>
-    <string name="defaultBrowserBottomSheetDialogSubTitle">Сделайте его браузером по умолчанию, чтобы все ссылки на сайты открывались в DuckDuckGo.</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Оставайтесь под защитой Rio Browser большую часть времени, проводимого в Интернете</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">Сделайте его браузером по умолчанию, чтобы все ссылки на сайты открывались в Rio Browser.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Не сейчас</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Для безопасности просмотра DuckDuckGo блокирует трекеры</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">Для безопасности просмотра Rio Browser блокирует трекеры</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">В результате закрытия вкладок и очистки данных также будет удалена история блокировки трекеров, а их счетчик будет сброшен до нуля.\n\nЭтот баннер на вкладках можно при желании скрыть.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Скрыть баннер</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Предупреждение: этот сайт может быть опасным</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[DuckDuckGo заблокировал эту страницу: возможно, она распространяет вредоносное ПО для взлома устройств или кражи личной информации.\n<a href=\"\">Подробнее</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[Rio Browser заблокировал эту страницу: возможно, она распространяет вредоносное ПО для взлома устройств или кражи личной информации.\n<a href=\"\">Подробнее</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[Возможно, это лишь имитация настоящего сайта, созданная с целью собрать ваши данные (например, пароли и номера платежных карт) обманным путем.\n<a href=\"\">Подробнее</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[DuckDuckGo заблокировал эту страницу. Есть подозрение, она работает с целью убедить посетителей перевести деньги, купить поддельные товары или установить вредоносное ПО под ложным предлогом.\n<a href=\"\">Подробнее...</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[Rio Browser заблокировал эту страницу. Есть подозрение, она работает с целью убедить посетителей перевести деньги, купить поддельные товары или установить вредоносное ПО под ложным предлогом.\n<a href=\"\">Подробнее...</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Покинуть сайт</string>
     <string name="maliciousSiteAdvancedCTA">Дополнительно</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Если вы уверены в безопасности этого сайта, можете <a href=\"\">сообщить нам об ошибке</a>. Решив посетить его, вы принимаете на себя все связанные с этим риски.]]></string>

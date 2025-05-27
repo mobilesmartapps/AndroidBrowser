@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2022 DuckDuckGo
+  ~ Copyright (c) 2022 Rio Browser
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 <!-- smartling.entity_escaping = false -->
 <!-- smartling.instruction_attributes = instruction -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="appName" translatable="false">DuckDuckGo</string>
-    <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">„DuckDuckGo“ logotipas</string>
+    <string name="appName" translatable="false">Rio Browser</string>
+    <string name="appDescription" translatable="false">Rio Browser</string>
+    <string name="duckDuckGoLogoDescription">„Rio Browser“ logotipas</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Apsauga. Privatumas. Ramybės jausmas.</string>
     <string name="yes">Taip</string>
     <string name="no">Ne</string>
@@ -28,15 +28,15 @@
     <string name="search">Paieška</string>
 
     <!-- Onboarding Activity -->
-    <string name="onboardingDefaultBrowserDescription">Jei visada norite ieškoti ir naršyti naudojant „DuckDuckGo“, apsilankykite nustatymuose.</string>
-    <string name="onboardingDefaultBrowserTitle">Nustatykite „DuckDuckGo“ savo numatytuoju puslapiu</string>
+    <string name="onboardingDefaultBrowserDescription">Jei visada norite ieškoti ir naršyti naudojant „Rio Browser“, apsilankykite nustatymuose.</string>
+    <string name="onboardingDefaultBrowserTitle">Nustatykite „Rio Browser“ savo numatytuoju puslapiu</string>
 
     <!-- Default Browser -->
     <string name="cannotLaunchDefaultAppSettings">Nepavyko paleisti numatytųjų programos nustatymų ekrano</string>
     <string name="setAsDefaultBrowser">Nustatyti kaip numatytąją naršyklę</string>
     <string name="defaultBrowserMaybeLater">Galbūt vėliau</string>
     <string name="defaultBrowserDescriptionNoDefault">Kiekvieną kartą be jaudulio atverkite nuorodas.</string>
-    <string name="defaultBrowserInstructions">Pasirinkite „DuckDuckGo“ ir bakstelėkite <font color="#678fff"> „Always“ (visada) </font>.</string>
+    <string name="defaultBrowserInstructions">Pasirinkite „Rio Browser“ ir bakstelėkite <font color="#678fff"> „Always“ (visada) </font>.</string>
 
     <!-- Browser Activity -->
     <string name="browserPopupMenu">Naršyklės meniu</string>
@@ -99,11 +99,11 @@
     <!-- Opening external apps -->
     <string name="openExternalApp">Atidaryti išorinę programą</string>
     <string name="launchingExternalApp">Atidaryti kitoje programoje</string>
-    <string name="confirmOpenExternalApp">Ar norite išeiti iš „DuckDuckGo“ ir peržiūrėti šį turinį?</string>
+    <string name="confirmOpenExternalApp">Ar norite išeiti iš „Rio Browser“ ir peržiūrėti šį turinį?</string>
     <string name="unableToOpenLink">Nepavyko atverti šio tipo nuorodos</string>
 
     <!-- Tabs -->
-    <string name="homeTab" translatable="false">DuckDuckGo</string>
+    <string name="homeTab" translatable="false">Rio Browser</string>
     <string name="tabActivityTitle">Kortelės</string>
     <string name="tabsMenuItem">Kortelės</string>
     <string name="newTabMenuItem">Nauja kortelė</string>
@@ -137,7 +137,7 @@
     <string name="settingsHeadingProtections">Apsaugos</string>
     <string name="settingsHeadingAppearance">Išvaizda</string>
     <string name="settingsHeadingAbout">Apie</string>
-    <string name="settingsAboutDuckduckgo">Apie „DuckDuckGo“</string>
+    <string name="settingsAboutDuckduckgo">Apie „Rio Browser“</string>
     <string name="settingsVersion">Versija</string>
     <string name="leaveFeedback">Bendrinti atsiliepimą</string>
     <string name="leaveFeedbackNew">Siųsti atsiliepimą</string>
@@ -167,11 +167,11 @@
     <string name="settingsAddWidget">Įtraukti valdiklį į pagrindinį ekraną</string>
     <string name="settingsAddressBarPosition">Nustatykite adreso juostos padėtį</string>
     <string name="settingsEnableVoiceSearch">Įjungti privačią paiešką balsu</string>
-    <string name="settingsDDGOnOtherPlatforms">„DuckDuckGo“ kitose platformose</string>
+    <string name="settingsDDGOnOtherPlatforms">„Rio Browser“ kitose platformose</string>
 
     <!-- Private Search -->
     <string name="privateSearchActivityTitle">privati paieška</string>
-    <string name="privateSearchDescription">„DuckDuckGo Private Search“ yra jūsų numatytoji paieškos sistema, todėl galite ieškoti žiniatinklyje nesekami.</string>
+    <string name="privateSearchDescription">„Rio Browser Private Search“ yra jūsų numatytoji paieškos sistema, todėl galite ieškoti žiniatinklyje nesekami.</string>
     <string name="privateSearchMoreSearchSettingsPrimaryText">Daugiau paieškos nustatymų</string>
     <string name="privateSearchMoreSearchSettingsSecondaryText">Tinkinkite savo paieškos kalbą, regioną ir kt.</string>
     <string name="privateSearchMoreSearchSettingsTitle">Daugiau paieškos nustatymų</string>
@@ -190,7 +190,7 @@
     <string name="webTrackingProtectionActivityTitle">Apsauga nuo žiniatinklio sekimo</string>
     <string name="webTrackingProtectionLearnMoreTitle">Apsauga nuo žiniatinklio sekimo</string>
     <string name="webTrackingProtectionTitle">Apsauga nuo žiniatinklio sekimo</string>
-    <string name="webTrackingProtectionDescriptionNew"><![CDATA[„DuckDuckGo“ automatiškai blokuoja paslėptas stebėjimo priemones naršant internete.\n<a href=\"\">Sužinoti daugiau</a>]]></string>
+    <string name="webTrackingProtectionDescriptionNew"><![CDATA[„Rio Browser“ automatiškai blokuoja paslėptas stebėjimo priemones naršant internete.\n<a href=\"\">Sužinoti daugiau</a>]]></string>
 
     <!-- Cookie Pop-Up Protection -->
     <string name="cookiePopupProtectionTitle">Apsauga nuo slapukų iškylančiųjų langų</string>
@@ -224,10 +224,10 @@
     <string name="settingsAutomaticallyClearWhenAppExit60Minutes">Išeinant iš programos, po 1 val. neveikimo</string>
 
     <!-- About Activity -->
-    <string name="aboutActivityTitle">Apie „DuckDuckGo“</string>
+    <string name="aboutActivityTitle">Apie „Rio Browser“</string>
     <string name="aboutActivityTitleNew">Apie</string>
     <string name="aboutHeaderNewTagLine">Apsauga. Privatumas. Ramybės jausmas.</string>
-    <string name="aboutDescriptionBrandUpdate2025">Sveiki atvykę į „Duck Side“!\n\n„DuckDuckGo“ yra nepriklausoma interneto apsaugos bendrovė, skirta visiems, norintiems susigrąžinti savo asmeninės informacijos kontrolę.\n\nManome, kad geriausias būdas apsaugoti jūsų asmeninę informaciją nuo įsilaužėlių, sukčių ir į privatumą pasikėsinančių įmonių – visiškai sustabdyti jos rinkimą. Štai kodėl milijonai žmonių <annotation type="chart_comparison">pasirenka „DuckDuckGo“, o ne „Chrome“ ir kitas naršykles</annotation> ieškoti ir naršyti internete. Mūsų integruota paieškos sistema yra kaip „Google“, bet niekada nestebi jūsų paieškų. O mūsų naršymo apsaugos priemonės, tokios kaip skelbimų sekimo ir slapukų blokavimas, padeda neleisti kitoms įmonėms rinkti jūsų duomenų. O, ir mūsų naršyklė nemokama – mes uždirbame pinigus iš <annotation type="privacy_respecting_ads">privatumo paisančių paieškos skelbimų</annotation>, o ne išnaudodami jūsų duomenis.Be to, mes taip pat siūlome <annotation type="ppro_help_page">„Privacy Pro“</annotation>, trijų viename prenumeratos paslaugą, integruotą į mūsų naršyklę. „Privacy Pro“ prenumeratoriai gauna dar daugiau privatumo apsaugos su greitu ir paprastu naudoti <annotation type="vpn_help_page">VPN</annotation>, kuris padeda apsaugoti naršymą internete, paslaugą, kuri randa ir pašalina asmeninę informaciją iš žmonių paieškos svetainių, ir paslaugą, kuri atkuria tapatybę, jei ji būtų pavogta.\n\nSusigrąžinkite savo asmeninės informacijos kontrolę naudodami naršyklę, sukurtą duomenų apsaugai, o ne jų rinkimui.</string>
+    <string name="aboutDescriptionBrandUpdate2025">Sveiki atvykę į „Duck Side“!\n\n„Rio Browser“ yra nepriklausoma interneto apsaugos bendrovė, skirta visiems, norintiems susigrąžinti savo asmeninės informacijos kontrolę.\n\nManome, kad geriausias būdas apsaugoti jūsų asmeninę informaciją nuo įsilaužėlių, sukčių ir į privatumą pasikėsinančių įmonių – visiškai sustabdyti jos rinkimą. Štai kodėl milijonai žmonių <annotation type="chart_comparison">pasirenka „Rio Browser“, o ne „Chrome“ ir kitas naršykles</annotation> ieškoti ir naršyti internete. Mūsų integruota paieškos sistema yra kaip „Google“, bet niekada nestebi jūsų paieškų. O mūsų naršymo apsaugos priemonės, tokios kaip skelbimų sekimo ir slapukų blokavimas, padeda neleisti kitoms įmonėms rinkti jūsų duomenų. O, ir mūsų naršyklė nemokama – mes uždirbame pinigus iš <annotation type="privacy_respecting_ads">privatumo paisančių paieškos skelbimų</annotation>, o ne išnaudodami jūsų duomenis.Be to, mes taip pat siūlome <annotation type="ppro_help_page">„Privacy Pro“</annotation>, trijų viename prenumeratos paslaugą, integruotą į mūsų naršyklę. „Privacy Pro“ prenumeratoriai gauna dar daugiau privatumo apsaugos su greitu ir paprastu naudoti <annotation type="vpn_help_page">VPN</annotation>, kuris padeda apsaugoti naršymą internete, paslaugą, kuri randa ir pašalina asmeninę informaciją iš žmonių paieškos svetainių, ir paslaugą, kuri atkuria tapatybę, jei ji būtų pavogta.\n\nSusigrąžinkite savo asmeninės informacijos kontrolę naudodami naršyklę, sukurtą duomenų apsaugai, o ne jų rinkimui.</string>
     <string name="no_suggestions">Pasiūlymų nėra</string>
 
     <!-- Broken Site Activity -->
@@ -238,7 +238,7 @@
     <string name="brokenSiteProtectionsOnBannerMessage">Gali padėti apsaugos priemonių išjungimas.</string>
 
     <!-- Widget -->
-    <string name="searchWidgetTextHint">Ieškoti „DuckDuckGo“</string>
+    <string name="searchWidgetTextHint">Ieškoti „Rio Browser“</string>
 
     <!-- Favorites widget -->
     <string name="addFavoriteMenuTitleHighlighted">👋 Pridėti mėgstamą</string>
@@ -263,7 +263,7 @@
     <string name="surveyCtaLaunchButton">Dalyvauti apklausoje</string>
     <string name="surveyCtaDismissButton">Ne, dėkoju</string>
     <string name="surveyActivityTitle">Naudotojų apklausa</string>
-    <string name="surveyTitle">„DuckDuckGo“ apklausa</string>
+    <string name="surveyTitle">„Rio Browser“ apklausa</string>
     <string name="surveyDismissContentDescription">Išjungti apklausą</string>
     <string name="surveyLoadingErrorTitle">Ak, ne!</string>
     <string name="surveyLoadingErrorText">Mūsų apklausa šiuo metu neįkeliama.\nBandykite dar kartą vėliau.</string>
@@ -278,14 +278,14 @@
     <string name="addWidgetInstruction1Label">1</string>
     <string name="addWidgetInstruction1">Ilgai spauskite ant pagrindinio ekrano, paskui atidarykite valdiklių meniu.</string>
     <string name="addWidgetInstruction2Label">2</string>
-    <string name="addWidgetInstruction2">Raskite „DuckDuckGo“ valdiklį.</string>
+    <string name="addWidgetInstruction2">Raskite „Rio Browser“ valdiklį.</string>
     <string name="addWidgetInstruction3Label">3</string>
     <string name="addWidgetInstruction3">Nuvilkite valdiklį į pagrindinį ekraną.</string>
     <string name="addWidgetInstructionsButtonGoHome">Pereikite į pagrindinį ekraną</string>
     <string name="addWidgetInstructionsButtonClose">Uždaryti</string>
 
     <!-- App Enjoyment / Rating / Feedback -->
-    <string name="appEnjoymentDialogTitle">Jums patinka „DuckDuckGo?</string>
+    <string name="appEnjoymentDialogTitle">Jums patinka „Rio Browser?</string>
     <string name="appEnjoymentDialogMessage">Norėtume sužinoti jūsų nuomonę.</string>
     <string name="appEnjoymentDialogPositiveButton">Man patinka</string>
     <string name="appEnjoymentDialogNegativeButton">Reikia patobulinti</string>
@@ -307,15 +307,15 @@
 
     <!-- Clear Notification -->
     <string name="clearNotificationTitle">Duomenų valymas nustatytas į rankinį</string>
-    <string name="clearNotificationDescription">Tinkinkite „DuckDuckGo“ automatiškai išvalyti naršymo duomenis po kiekvieno seanso.</string>
+    <string name="clearNotificationDescription">Tinkinkite „Rio Browser“ automatiškai išvalyti naršymo duomenis po kiekvieno seanso.</string>
 
     <!-- Privacy Protection Notification -->
     <string name="privacyProtectionNotificationDefaultTitle">Mes saugome jūsų privatumą</string>
     <string name="privacyProtectionNotificationReportTitle">Jūsų privatumo ataskaita</string>
-    <string name="privacyProtectionNotificationDefaultDescription">Naudodamiesi „DuckDuckGo“ saugote savo duomenų privatumą blokuodami sekiklius ir šifruodami ryšius.</string>
-    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Apsaugokite duomenis naudojant „DuckDuckGo“, apsaugodami %1$d nešifruotus ryšius „DuckDuckGo“.</string>
-    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Naudojant „DuckDuckGo“ apsaugojote duomenis blokuodami %1$d sekiklius (-ių).</string>
-    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Naudojant „DuckDuckGo“ apsaugojote duomenis blokuodami %1$d sekiklius (-ių) ir apsaugodami %2$d nešifruotus (-ų) ryšius (-ių).</string>
+    <string name="privacyProtectionNotificationDefaultDescription">Naudodamiesi „Rio Browser“ saugote savo duomenų privatumą blokuodami sekiklius ir šifruodami ryšius.</string>
+    <string name="privacyProtectionNotificationUpgadeDescription" instruction="Placeholder is a the number of connections we have protected">Apsaugokite duomenis naudojant „Rio Browser“, apsaugodami %1$d nešifruotus ryšius „Rio Browser“.</string>
+    <string name="privacyProtectionNotificationTrackerDescription" instruction="Placeholder is the numer of trackers blocked">Naudojant „Rio Browser“ apsaugojote duomenis blokuodami %1$d sekiklius (-ių).</string>
+    <string name="privacyProtectionNotificationBothDescription" instruction="%1$d is the number of trackers blocked and %2$d is the number of unencrypted connections">Naudojant „Rio Browser“ apsaugojote duomenis blokuodami %1$d sekiklius (-ių) ir apsaugodami %2$d nešifruotus (-ų) ryšius (-ių).</string>
     <string name="privacyProtectionNotificationLaunchButton">Tęsti naršymą</string>
 
     <!-- Authentication -->
@@ -327,7 +327,7 @@
     <string name="authenticationDialogPasswordHint">Slaptažodis</string>
 
     <!-- User-facing label for when a user selects text and might want to search for that text -->
-    <string name="systemTextSearchMessage">Ieškoti „DuckDuckGo“</string>
+    <string name="systemTextSearchMessage">Ieškoti „Rio Browser“</string>
 
     <!-- App feedback disambiguation -->
     <string name="feedbackActivityTitle">Bendrinti atsiliepimą</string>
@@ -346,8 +346,8 @@
     <string name="websiteNotLoadingTitleShort">Problemos kraunantis svetainei</string>
     <string name="websiteNotLoadingSubtitle">Kuri svetainė neveikia?</string>
 
-    <string name="searchNotGoodEnoughTitleLong">„DuckDuckGo“ paieška nepakankamai gera</string>
-    <string name="searchNotGoodEnoughTitleShort">Problemos paieškai naudojant „DuckDuckGo“</string>
+    <string name="searchNotGoodEnoughTitleLong">„Rio Browser“ paieška nepakankamai gera</string>
+    <string name="searchNotGoodEnoughTitleShort">Problemos paieškai naudojant „Rio Browser“</string>
     <string name="searchNotGoodEnoughSubtitle">Kokią paieškos funkciją galime pridėti arba patobulinti?</string>
     <string name="searchNotGoodEnoughSubReasonTechnicalSearches">Programavimas / techninė paieška</string>
     <string name="searchNotGoodEnoughSubReasonGoogleLayout">Išdėstymas turėtų būti panašesnis į „Google“</string>
@@ -408,8 +408,8 @@
     <!-- System Search-->
     <string name="systemSearchDeviceAppLabel">Iš šio įrenginio</string>
     <string name="systemSearchAppNotFound">Nepavyko rasti programos</string>
-    <string name="systemSearchOnboardingThanks">Ačiū, kad pasirinkote „DuckDuckGo“!\nNaudodami mūsų naršyklę galite apsisaugoti nuo įsilaužėlių, sukčių ir duomenų trokštančių įmonių.</string>
-    <string name="systemSearchOnboardingFeaturesIntroText">„DuckDuckGo“ programėlė taip pat:</string>
+    <string name="systemSearchOnboardingThanks">Ačiū, kad pasirinkote „Rio Browser“!\nNaudodami mūsų naršyklę galite apsisaugoti nuo įsilaužėlių, sukčių ir duomenų trokštančių įmonių.</string>
+    <string name="systemSearchOnboardingFeaturesIntroText">„Rio Browser“ programėlė taip pat:</string>
     <string name="systemSearchOnboardingFeatureOneText">Blokuoja nesaugias stebėjimo priemones.</string>
     <string name="systemSearchOnboardingFeatureTwoText">Priverstinis tinklalapių šifravimas.</string>
     <string name="systemSearchOnboardingFeatureThreeText">Išvalo duomenis vienu bakstelėjimu.</string>
@@ -427,7 +427,7 @@
     <string name="daxDialogAppTpRetentionSecondaryButtonText">Ne dabar</string>
 
     <!-- New Onboarding Experience -->
-    <string name="onboardingWelcomeTitle">"Sveiki atvykę į „DuckDuckGo“!"</string>
+    <string name="onboardingWelcomeTitle">"Sveiki atvykę į „Rio Browser“!"</string>
     <string name="onboardingDaxText"><![CDATA[Internetas gali būti bauginantis.<br/><br/>Nesijaudinkite! Ieškoti ir naršyti privačiai yra lengviau, nei manote.]]></string>
     <string name="onboardingLetsDoItButton">Pasiekime tai!</string>
     <string name="daxNonSerpCtaText"><![CDATA[Bakstelėjus ir slenkant, bus blokuojami įkyrūs sekimo įrenginiai. <br/><br/>Pirmyn – naršykite toliau!]]></string>
@@ -518,7 +518,7 @@
     <string name="dosErrorMessage">Prisijungimas nutrauktas. Ši svetainė gali pakenkti jūsų įrenginiui.</string>
 
     <!-- Precise Location -->
-    <string name="preciseLocationSystemDialogTitle">Įgalinti įrenginio vietą „DuckDuckGo“ privatumo naršyklėje?</string>
+    <string name="preciseLocationSystemDialogTitle">Įgalinti įrenginio vietą „Rio Browser“ privatumo naršyklėje?</string>
     <string name="preciseLocationSystemDialogSubtitle" instruction="%1$s and %2$s are both the name of the website requesting the location">%1$s prašo jūsų įrenginio vietos. Pirmiausia turėsite leisti programai siųsti jūsų įrenginio vietą, tuomet %2$s gali prašyti leidimo.</string>
     <string name="preciseLocationSystemDialogAllow">Įjungti</string>
     <string name="preciseLocationSystemDialogDeny">Galbūt vėliau</string>
@@ -530,7 +530,7 @@
     <string name="preciseLocationSiteDialogAllowOnce">Tik šiam seansui</string>
     <string name="preciseLocationSiteDialogDenyAlways">Visada atsisakyti</string>
     <string name="preciseLocationSiteDialogDenyOnce">Atsisakyti šiam seansui</string>
-    <string name="preciseLocationFeatureDescription">Svetainės, kuriose lankotės, gali prašyti jūsų įrenginio vietos. Jos negalės jo pasiekti, kol duosite leidimą. „DuckDuckGo“ jūsų vietą naudoja tik anonimiškai, kad pateiktų vietinės paieškos rezultatus.</string>
+    <string name="preciseLocationFeatureDescription">Svetainės, kuriose lankotės, gali prašyti jūsų įrenginio vietos. Jos negalės jo pasiekti, kol duosite leidimą. „Rio Browser“ jūsų vietą naudoja tik anonimiškai, kad pateiktų vietinės paieškos rezultatus.</string>
     <string name="preciseLocationToggleText">Svetainės gali prašyti mano vietos</string>
     <string name="preciseLocationEmptyListHint">Jokios svetainės nesuteikė leidimo pasiekti vietą</string>
     <string name="preciseLocationNoSystemPermission">Norėdami tvarkyti vietos prieigos leidimus, kuriuos suteikėte atskiroms svetainėms, „Android“ nustatymuose šiai programai įjunkite vietą.</string>
@@ -546,7 +546,7 @@
 
     <!--  Global Privacy Control-->
     <string name="globalPrivacyControlActivityTitle">Visuotinė privatumo kontrolė (VPK)</string>
-    <string name="globalPrivacyControlDescription"><![CDATA[„DuckDuckGo“ automatiškai blokuoja daugelį stebėjimo priemonių. Pasirinkę visuotinę privatumo kontrolę (VPK), taip pat galite paprašyti dalyvaujančių svetainių apriboti jūsų asmeninių duomenų prekybą ir bendrinimą su kitomis įmonėmis. <u><a href=\"\">Sužinoti daugiau</a><u/>]]></string>
+    <string name="globalPrivacyControlDescription"><![CDATA[„Rio Browser“ automatiškai blokuoja daugelį stebėjimo priemonių. Pasirinkę visuotinę privatumo kontrolę (VPK), taip pat galite paprašyti dalyvaujančių svetainių apriboti jūsų asmeninių duomenų prekybą ir bendrinimą su kitomis įmonėmis. <u><a href=\"\">Sužinoti daugiau</a><u/>]]></string>
     <string name="globalPrivacyControlSetting">Visuotinė privatumo kontrolė (VPK)</string>
     <string name="globalPrivacyControlToggle">Visuotinė privatumo kontrolė (VPK)</string>
     <string name="disabled">Išjungta</string>
@@ -584,11 +584,11 @@
     <string name="settingsAccessibility">Pritaikymas neįgaliems</string>
     <string name="accessibilityActivityTitle">Pritaikymas neįgaliems</string>
     <string name="accessibilityFontSizeTitle">Teksto dydis</string>
-    <string name="accessibilityFontSizeHint">Slinkite slinkiklį, kol bus patogu skaityti. „DuckDuckGo“ rodomos svetainės prisitaikys pagal šį nustatymą.</string>
+    <string name="accessibilityFontSizeHint">Slinkite slinkiklį, kol bus patogu skaityti. „Rio Browser“ rodomos svetainės prisitaikys pagal šį nustatymą.</string>
     <string name="accessibilityForceZoomTitle">Įjunkite rankinį puslapio priartinimą</string>
     <string name="accessibilityForceZoomSubtitle">Suimkite ir priartinkite bet kurioje svetainėje, net ir tose, kur neleistų</string>
     <string name="accessibilityTextSizeOverrideTitle">Tvarkyti teksto dydį</string>
-    <string name="accessibilityTextSizeOverrideSubtitle">„DuckDuckGo“ tekstas peržiūrimose svetainėse prisitaikys atitinkamai pagal žemiau pateiktą nustatymą</string>
+    <string name="accessibilityTextSizeOverrideSubtitle">„Rio Browser“ tekstas peržiūrimose svetainėse prisitaikys atitinkamai pagal žemiau pateiktą nustatymą</string>
 
     <!-- Privacy Policy -->
     <string name="settingsPrivacyPolicyDuckduckgo">Privatumo politika</string>
@@ -657,7 +657,7 @@
     <string name="tabSelectedIndicator">Pasirinkto skirtuko indikatorius</string>
     <string name="tabNotSelectedIndicator">Nepasirinkto skirtuko indikatorius</string>
 
-    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d nuorodų iš „DuckDuckGo“</string>
+    <string name="shareMultipleLinksTitle" tools:ignore="MissingInstruction">%1$d nuorodų iš „Rio Browser“</string>
     <plurals name="shareLinksMenuItem" tools:ignore="ImpliedQuantity,MissingInstruction">
         <item quantity="one">Bendrinti nuorodą</item>
         <item quantity="few">Bendrinti %1$d nuorodas</item>
@@ -744,7 +744,7 @@
     </plurals>
 
     <!-- Private voice search -->
-    <string name="accessibilityVoiceSearchSubtitle">Adreso juostoje pridėkite privačios paieškos balsu parinktį. Garso įrašai nesaugomi ir jais su niekuo nesidalijama, įskaitant „DuckDuckGo“.</string>
+    <string name="accessibilityVoiceSearchSubtitle">Adreso juostoje pridėkite privačios paieškos balsu parinktį. Garso įrašai nesaugomi ir jais su niekuo nesidalijama, įskaitant „Rio Browser“.</string>
     <string name="accessibilityVoiceSearchTitle">Privati paieška balsu</string>
 
     <!-- Uploading an image from the camera or choosing to use existing image -->
@@ -752,8 +752,8 @@
     <string name="imageCaptureCameraGalleryDisambiguationTitle">Įkelti vaizdą</string>
     <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Pasirinkti failą</string>
     <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Padaryti nuotrauką</string>
-    <string name="imageCaptureCameraPermissionDeniedTitle">Leisti „DuckDuckGo“ prašyti prieigos prie kameros šiame įrenginyje</string>
-    <string name="imageCaptureCameraPermissionDeniedMessage">Svetainės gali naudoti jūsų kamerą tik tada, jei leisite „DuckDuckGo“ prašyti prieigos.</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Leisti „Rio Browser“ prašyti prieigos prie kameros šiame įrenginyje</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Svetainės gali naudoti jūsų kamerą tik tada, jei leisite „Rio Browser“ prašyti prieigos.</string>
     <string name="imageCaptureCameraPermissionDeniedPositiveButton">Atidaryti nustatymus</string>
     <string name="imageCaptureCameraPermissionDeniedNegativeButton">Atšaukti</string>
 
@@ -763,15 +763,15 @@
     <string name="autofillLoginUpdatedSnackbarMessage">Slaptažodis atnaujintas</string>
 
     <!-- Custom Tab -->
-    <string name="openInDdgMenuItemTitle">Atidaryti „DuckDuckGo“</string>
-    <string name="runningInDdgMenuItemTitle">Veikia sistemoje „DuckDuckGo“</string>
+    <string name="openInDdgMenuItemTitle">Atidaryti „Rio Browser“</string>
+    <string name="runningInDdgMenuItemTitle">Veikia sistemoje „Rio Browser“</string>
 
     <!-- SSL Error -->
     <string name="sslErrorTitle">Įspėjimas: ši svetainė gali būti nesaugi</string>
     <string name="sslErrorHeadline" instruction="Placeholder is domain with certificate issues">Šios svetainės sertifikatas negalioja. Galbūt jungiatės prie serverio, kuris apsimeta %1$s, o tai gali kelti pavojų jūsų konfidencialiai informacijai.</string>
     <string name="sslErrorLeaveCTA">Išeiti iš šios svetainės</string>
     <string name="sslErrorAdvancedCTA">Išplėstinė</string>
-    <string name="sslErrorExpandedHeadline">„DuckDuckGo“ įspėja jus, kai svetainėje yra netinkamas sertifikatas.</string>
+    <string name="sslErrorExpandedHeadline">„Rio Browser“ įspėja jus, kai svetainėje yra netinkamas sertifikatas.</string>
     <string name="sslErrorExpandedCTA"><![CDATA[<u>Priimti riziką ir apsilankyti svetainėje</u>]]></string>
     <string name="sslErrorExpiredMessage" instruction="Placeholder is domain with certificate issues">%1$s saugumo sertifikato galiojimas yra pasibaigęs. Gali būti, kad svetainė neteisingai sukonfigūruota arba atakos vykdytojas pakenkė jūsų ryšiui arba kad jūsų sistemos laikrodžio rodomas laikas yra neteisingas.</string>
     <string name="sslErrorWrongHostMessage" instruction="Placeholder is domain with certificate issues">%1$s saugos sertifikatas neatitinka *.%2$s. Gali būti, kad svetainė neteisingai sukonfigūruota arba atakos vykdytojas pakenkė jūsų ryšiui arba kad jūsų sistemos laikrodžio rodomas laikas yra neteisingas.</string>
@@ -790,7 +790,7 @@
     <string name="preOnboardingDaxDialog3Title">Nuostabu! Sveiki prisijungę prie „Duck“!</string>
     <string name="preOnboardingDaxDialog3Button">Pradėti naršyti</string>
     <string name="onboardingSearchDaxDialogTitle">Išmėgink paiešką!</string>
-    <string name="onboardingSearchDaxDialogDescription">Jūsų „DuckDuckGo“ paieškos visada yra anoniminės.</string>
+    <string name="onboardingSearchDaxDialogDescription">Jūsų „Rio Browser“ paieškos visada yra anoniminės.</string>
     <string name="onboardingSearchDaxDialogOption1" instruction="translate &apos;duck&apos; too.">kaip pasakyti „antis“ anglų kalba</string>
     <string name="onboardingSearchDaxDialogOption1English" instruction="translate &apos;duck&apos; too. Don&apos;t add question mark">kaip pasakyti „antis“ ispanų kalba</string>
     <string name="onboardingSearchQueryOption1">kaip pasakyti antis anglų kalba</string>
@@ -807,7 +807,7 @@
     <string name="onboardingSitesDaxDialogOption2">yahoo.com</string>
     <string name="onboardingSitesDaxDialogOption3">ebay.com</string>
     <string name="onboardingSitesDaxDialogOption4">Nustebink mane!</string>
-    <string name="onboardingSerpDaxDialogDescription">Tai „DuckDuckGo Search“. Privati. Sparti. Mažiau reklamų.</string>
+    <string name="onboardingSerpDaxDialogDescription">Tai „Rio Browser Search“. Privati. Sparti. Mažiau reklamų.</string>
     <string name="onboardingSerpDaxDialogButton">Supratau!</string>
     <string name="onboardingSitesSuggestionsDaxDialogTitle">Pabandyk apsilankyti svetainėje!</string>
     <plurals name="onboardingTrackersBlockedDialogDescription">
@@ -828,7 +828,7 @@
     <string name="onboardingEndDaxDialogDescription">Įsidėmėkite: kiekvieną kartą, kai naršai su manimi, bauginantis skelbimas praranda galią. 👌</string>
     <string name="onboardingEndDaxDialogButton">Viskas!</string>
     <string name="onboardingPrivacyProDaxDialogTitle">Oi, kol nepamiršau...</string>
-    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[„DuckDuckGo“ taip pat turi integruotą <b>VPN</b>!<br/><br/>Aktyvuokite jį su <b>mokama „Privacy Pro“ prenumerata.</b>]]></string>
+    <string name="onboardingPrivacyProDaxDialogDescription"><![CDATA[„Rio Browser“ taip pat turi integruotą <b>VPN</b>!<br/><br/>Aktyvuokite jį su <b>mokama „Privacy Pro“ prenumerata.</b>]]></string>
     <string name="onboardingPrivacyProDaxDialogOkButton">Sužinoti daugiau</string>
     <string name="onboardingPrivacyProDaxDialogCancelButton">Praleisti</string>
 
@@ -849,8 +849,8 @@
     <string name="highlightsPreOnboardingAddressBarOption2Title">Apačia</string>
     <string name="highlightsPreOnboardingAddressBarOption2Description">Lengvai pasiekiama</string>
     <string name="highlightsOnboardingSearchQueryOption4">kūdikių ančiukai</string>
-    <string name="highlightsOnboardingSearchDaxDialogDescription">Jūsų „DuckDuckGo“ paieškos visada yra privačios.</string>
-    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Tai „<b>DuckDuckGo Search</b>“! Privati. Sparti. Mažiau reklamų.]]></string>
+    <string name="highlightsOnboardingSearchDaxDialogDescription">Jūsų „Rio Browser“ paieškos visada yra privačios.</string>
+    <string name="highlightsOnboardingSerpDaxDialogDescription"><![CDATA[Tai „<b>Rio Browser Search</b>“! Privati. Sparti. Mažiau reklamų.]]></string>
     <string name="highlightsOnboardingEndDaxDialogDescription">Įsidėmėk: kiekvieną kartą, kai naršai su manimi, bauginantis skelbimas praranda galią.</string>
     <string name="highlightsOnboardingEndDaxDialogButton">Duok penkis!</string>
     <string name="onboardingFireButtonDaxDialogOkButton">Išbandykite</string>
@@ -872,27 +872,27 @@
     <string name="showOnAppLaunchOptionSpecificPage">Konkretus puslapis</string>
 
     <!-- Privacy Dashboard -->
-    <string name="brokenSiteSubmittedReportMessage">Dėkojame! Jūsų pateikta informacija padeda tobulinti „DuckDuckGo“ visiems!</string>
+    <string name="brokenSiteSubmittedReportMessage">Dėkojame! Jūsų pateikta informacija padeda tobulinti „Rio Browser“ visiems!</string>
 
     <!-- DuckChat -->
     <string name="duckChatTitle">Duck.ai</string>
     <string name="duckChatMenuItem">Naujas DI pokalbis</string>
 
     <!--    Default Browser Bottom Sheet Dialog -->
-    <string name="defaultBrowserBottomSheetDialogTitle">Leiskite „DuckDuckGo“ apsaugoti daugiau jūsų veiklos internete</string>
-    <string name="defaultBrowserBottomSheetDialogSubTitle">Nustatykite „DuckDuckGo“ kaip numatytąją naršyklę, kad visos svetainių nuorodos atsidarytų su ja.</string>
+    <string name="defaultBrowserBottomSheetDialogTitle">Leiskite „Rio Browser“ apsaugoti daugiau jūsų veiklos internete</string>
+    <string name="defaultBrowserBottomSheetDialogSubTitle">Nustatykite „Rio Browser“ kaip numatytąją naršyklę, kad visos svetainių nuorodos atsidarytų su ja.</string>
     <string name="defaultBrowserBottomSheetDialogGhostButton">Ne dabar</string>
 
     <!--TabSwitcher Animation Tile Dialog-->
-    <string name="tabSwitcherAnimationTileRemovalDialogTitle">„DuckDuckGo“ blokuoja stebėjimo priemones, kad apsaugotų tavo naršymą</string>
+    <string name="tabSwitcherAnimationTileRemovalDialogTitle">„Rio Browser“ blokuoja stebėjimo priemones, kad apsaugotų tavo naršymą</string>
     <string name="tabSwitcherAnimationTileRemovalDialogBody">Išvalius tavo skirtukus ir duomenis, bus ištrinta tavo sekimo blokavimo istorija ir ši vertė bus nustatyta į nulį.\n\nPaslėpk šią reklamjuostę, jei nenori jos matyti skirtukų rodinyje.</string>
     <string name="tabSwitcherAnimationTileRemovalDialogNegativeButton">Paslėpti reklamjuostę</string>
 
     <!-- Malicious Site -->
     <string name="maliciousSiteTitle">Įspėjimas: ši svetainė gali kelti saugumo riziką</string>
-    <string name="maliciousSiteMalwareHeadline"><![CDATA[„DuckDuckGo“ užblokavo šį puslapį, nes jame gali būti platinama kenkėjiška programinė įranga, kuria siekiama pakenkti jūsų įrenginiui arba pavogti jūsų asmeninę informaciją.\n<a href=\"\">Sužinokite daugiau</a>]]></string>
+    <string name="maliciousSiteMalwareHeadline"><![CDATA[„Rio Browser“ užblokavo šį puslapį, nes jame gali būti platinama kenkėjiška programinė įranga, kuria siekiama pakenkti jūsų įrenginiui arba pavogti jūsų asmeninę informaciją.\n<a href=\"\">Sužinokite daugiau</a>]]></string>
     <string name="maliciousSitePhishingHeadline"><![CDATA[Ši svetainė gali apsimesti teisėta svetaine, siekiant apgauti jus pateikti asmeninę informaciją, pvz., slaptažodžius ar kredito kortelių numerius.\n<a href=\"\">Sužinokite daugiau</a>]]></string>
-    <string name="maliciousSiteScamHeadline"><![CDATA[„DuckDuckGo“ užblokavo šį puslapį, nes jis gali bandyti apgauti ar manipuliuoti tavimi, siekdamas, kad pervestum pinigus, pirktum padirbtas prekes arba įdiegtum kenkėjiškas programas prisidengiant melagingais pretekstais.\n<a href=\"\">Sužinokite daugiau</a>]]></string>
+    <string name="maliciousSiteScamHeadline"><![CDATA[„Rio Browser“ užblokavo šį puslapį, nes jis gali bandyti apgauti ar manipuliuoti tavimi, siekdamas, kad pervestum pinigus, pirktum padirbtas prekes arba įdiegtum kenkėjiškas programas prisidengiant melagingais pretekstais.\n<a href=\"\">Sužinokite daugiau</a>]]></string>
     <string name="maliciousSiteLeaveCTA">Išeiti iš šios svetainės</string>
     <string name="maliciousSiteAdvancedCTA">Išplėstinė</string>
     <string name="maliciousSiteExpandedHeadline"><![CDATA[Jei manote, kad ši svetainė yra saugi, galite <a href=\"\">pranešti apie klaidą</a>. Vis dar galite apsilankyti svetainėje savo rizika.]]></string>

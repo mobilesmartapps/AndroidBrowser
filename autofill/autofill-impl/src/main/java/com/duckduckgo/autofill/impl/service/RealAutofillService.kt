@@ -175,8 +175,8 @@ class RealAutofillService : AutofillService() {
 
     companion object {
         private val DDG_PACKAGE_IDS = setOf(
-            "com.duckduckgo.mobile.android",
-            "com.duckduckgo.mobile.android.debug",
+            "com.internet.vsbrowser",
+            "com.internet.vsbrowser.debug",
         )
         private val BROWSERS_PACKAGE_IDS = DDG_PACKAGE_IDS + setOf(
             "alook.browser",

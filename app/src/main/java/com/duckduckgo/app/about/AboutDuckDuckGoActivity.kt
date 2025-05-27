@@ -96,13 +96,14 @@ class AboutDuckDuckGoActivity : DuckDuckGoActivity() {
 
     private fun configureClickableLinks() {
         with(binding.includeContent.aboutText) {
-            text = addClickableLinks()
+            //text = addClickableLinks() //vsbrowser_changes
+            text = getText(R.string.aboutDescriptionRioBrowser)
             movementMethod = LinkMovementMethod.getInstance()
         }
     }
 
     private fun addClickableLinks(): SpannableString {
-        val fullText = getText(R.string.aboutDescriptionBrandUpdate2025) as SpannedString
+        val fullText = getText(R.string.aboutDescriptionRioBrowser) as SpannedString
 
         val spannableString = SpannableString(fullText)
         val annotations = fullText.getSpans(0, fullText.length, Annotation::class.java)
@@ -251,7 +252,8 @@ class AboutDuckDuckGoActivity : DuckDuckGoActivity() {
     companion object {
         private const val PRIVACY_PROTECTION_ANNOTATION = "privacy_protection_link"
         private const val LEARN_MORE_ANNOTATION = "learn_more_link"
-        private const val PRIVACY_POLICY_WEB_LINK = "https://duckduckgo.com/privacy"
+	//rio browser_changes
+        private const val PRIVACY_POLICY_WEB_LINK = "https://private-browser-4428b.web.app/privacypolicy.html"
         private const val PRIVACY_PROTECTIONS_WEB_LINK = "https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/"
         private const val COMPARISON_CHART_ANNOTATION = "chart_comparison"
         private const val COMPARISON_CHART_URL = "https://duckduckgo.com/compare-privacy"

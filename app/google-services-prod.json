@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906419986829",
+    "project_id": "vsbrower-internet",
+    "storage_bucket": "vsbrower-internet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906419986829:android:67f6b7c43301eeed299dc4",
+        "android_client_info": {
+          "package_name": "com.internet.vsbrowser"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSdc2tyirNvAdCW-rkiFtimRwTeRw_5sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

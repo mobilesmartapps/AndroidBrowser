@@ -49,7 +49,7 @@ interface TabRepository {
      * @return tabId of new record
      */
     suspend fun add(
-        url: String? = null,
+        url: String? = "https://riobrowser.web.app",
         skipHome: Boolean = false,
     ): String
 

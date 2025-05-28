@@ -82,7 +82,7 @@
     <string name="bookmarkAddedInBookmarks" instruction="%1$s is the folder name">Bookmark added in %1$s</string>
     <string name="addToFavorites">Add to Favorites</string>
     <string name="editBookmark">Edit Bookmark</string>
-    <string name="importBookmarksDescription">If your bookmarks are saved in another browser, you\ncan import them into DuckDuckGo.</string>
+    <string name="importBookmarksDescription">If your bookmarks are saved in another browser, you\ncan import them into Rio Browser.</string>
     <string name="importBookmarks">Import Bookmarks</string>
     <string name="noResultsFor" instruction="%1$s is the search term">No results for \'%1$s\'</string>
     <string name="removeFromFavorites">Remove From Favorites</string>

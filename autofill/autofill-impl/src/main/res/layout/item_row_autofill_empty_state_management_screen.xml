@@ -66,6 +66,7 @@
         app:layout_constraintWidth_max="300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emptyPlaceholderTitle"
+        android:visibility="gone"
         android:text="@string/credentialManagementNoLoginsSavedSubtitle" />
 
     <com.duckduckgo.common.ui.view.button.DaxButtonPrimary
@@ -76,6 +77,7 @@
         app:layout_constraintEnd_toEndOf="@id/importPasswordsViaDesktopSyncButton"
         app:layout_constraintTop_toBottomOf="@id/emptyPlaceholderSubtitle"
         app:daxButtonSize="large"
+        android:visibility="gone"
         android:text="@string/autofillImportGooglePasswordEmptyStateButtonTitle" />
 
     <com.duckduckgo.common.ui.view.button.DaxButtonSecondary
@@ -88,6 +90,7 @@
         app:layout_constraintEnd_toEndOf="@id/emptyPlaceholderSubtitle"
         app:layout_constraintTop_toBottomOf="@id/importPasswordsFromGoogleButton"
         app:daxButtonSize="large"
+        android:visibility="gone"
         android:text="@string/autofillSyncDesktopPasswordEmptyStateButtonTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

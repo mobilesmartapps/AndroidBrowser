@@ -18,9 +18,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/bookmark_import"
+        android:visibility="gone"
         android:title="@string/importBookmarksMenu" />
     <item
         android:id="@+id/bookmark_export"
+        android:visibility="gone"
         android:title="@string/exportBookmarksMenu" />
     <item
         android:id="@+id/action_search"

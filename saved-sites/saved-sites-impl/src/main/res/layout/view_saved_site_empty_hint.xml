@@ -62,6 +62,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Lorem ipsum dolor sit amet"
             android:text="@string/importBookmarksDescription"
+            android:visibility="gone"
             app:textType="secondary"
             app:typography="body2" />
 
@@ -73,6 +74,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Lorem ipsum dolor sit amet"
+            android:visibility="gone"
             android:text="@string/importBookmarks" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

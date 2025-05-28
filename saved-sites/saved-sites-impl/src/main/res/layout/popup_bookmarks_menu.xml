@@ -42,11 +42,13 @@
         android:id="@+id/importBookmarks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:primaryText="@string/importBookmarksMenu" />
 
     <com.duckduckgo.common.ui.view.PopupMenuItemView
         android:id="@+id/exportBookmarks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:primaryText="@string/exportBookmarksMenu" />
 </LinearLayout>

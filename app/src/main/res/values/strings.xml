@@ -802,7 +802,11 @@
     <string name="onboardingPrivacyProDaxDialogCancelButton">Skip</string>
 
     <!-- Highlight Onboarding Experiment-->
-    <string name="highlightsPreOnboardingDaxDialog1Title"><![CDATA[Hi there.<br/><br/>Ready for a 100% secure & fast private browser?]]></string>
+
+    <!-- <string name="highlightsPreOnboardingDaxDialog1Title"><![CDATA[Hi there.<br/><br/>Ready for a 100% secure & fast private browser?]]></string>
+    -->
+    <string name="highlightsPreOnboardingDaxDialog1Title"><![CDATA[Welcome to 100% secure & fast private browser!<br/><br/>Enjoy powerful features like:<br/><br/>- Built-in Ad Blocker<br/>- Web Tracking Protection<br/>- Cookie Pop-up Blocker<br/>- Private Search<br/><br/>Your privacy, our priority.]]></string>
+    
     <string name="highlightsPreOnboardingDaxDialog2Title">Protections activated!</string>
     <string name="highlightsPreOnboardingComparisonChartItem2">Block 3rd party trackers</string>
     <string name="highlightsPreOnboardingComparisonChartItem3">Block cookie requests &amp; pop-ups</string>

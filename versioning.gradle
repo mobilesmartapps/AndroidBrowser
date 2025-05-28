@@ -9,7 +9,7 @@ ext {
         def versionName = getVersionName()
         def (major, minor, patch) = versionName.toLowerCase().tokenize('.')
         (major, minor, patch) = [major, minor, patch].collect { it.toInteger() }
-        (major * 10_000_000) + (minor * 10_000) + (patch * 1_000) + versionCode
+        (major * 100) + (minor * 10) + (patch * 1) + versionCode
     }
 
     getVersionName = {

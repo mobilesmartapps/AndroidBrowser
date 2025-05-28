@@ -86,23 +86,6 @@
             android:name=".service.state.VpnStateMonitorService"
             android:exported="false"/>
 
-        <service
-            android:name=".service.TrackerBlockingVpnService"
-            android:exported="false"
-            android:foregroundServiceType="specialUse"
-            android:permission="android.permission.BIND_VPN_SERVICE"
-            android:process=":vpn">
-            <property
-                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="VPN"
-                />
-            <intent-filter>
-                <action android:name="android.net.VpnService" />
-            </intent-filter>
-            <meta-data
-                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
-                android:value="true" />
-        </service>
 
         <service
             android:name=".service.DeviceShieldTileService"
